@@ -1039,7 +1039,7 @@ header .navigaion .humburger {
 }
 @media only screen and (max-width: 380px) {
   header .navigaion .humburger {
-    width: 38px;
+    width: 28px;
     height: 38px;
     margin-left: 10px;
   }
@@ -1559,7 +1559,7 @@ header.no-banner .logo {
 @media only screen and (max-width: 991px) {
   .VepoHomeSecA .img img {
     width: 100%;
-    max-width: 350px;
+    max-width: 230px;
     display: block;
     margin: 0 auto;
   }
