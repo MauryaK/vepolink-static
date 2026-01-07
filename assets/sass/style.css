@@ -1403,7 +1403,7 @@ header.no-banner .logo {
 }
 @media only screen and (max-width: 675px) {
   .banner .banner-wrapper .img img, .banner .banner-wrapper .img video {
-    height: 420px;
+    height: 260px;
   }
 }
 .banner.home-banner .banner-wrapper .img::after, .banner.home-banner .banner-wrapper .img::before {
@@ -1558,6 +1558,7 @@ header.no-banner .logo {
 }
 @media only screen and (max-width: 991px) {
   .VepoHomeSecA .img img {
+    width: 100%;
     max-width: 350px;
     display: block;
     margin: 0 auto;
