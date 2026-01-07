@@ -1,0 +1,266 @@
+footer
+    .footerStrip
+        background: var(--black)
+        padding: 15px 0
+        @include responsive(991px)
+            padding: 0
+        @include responsive(520px)
+            display: none
+        .col
+            flex: 0 1 25%
+            max-width: 25%
+            @include responsive(991px)
+                padding: 12px 0
+            @include responsive(675px)
+                flex: 0 1 33.33%
+                max-width: 33.33%
+            &:last-child
+                @include responsive(675px)
+                    display: none
+            .item
+                position: relative
+                padding-left: 60px
+                display: block
+                @include responsive(991px)
+                    padding: 0
+                    text-align: center
+                .icon
+                    width: 45px
+                    height: 45px
+                    background: var(--gradient)
+                    border-radius: 55px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    position: absolute
+                    left: 0
+                    top: 0
+                    @include responsive(991px)
+                        position: static
+                        margin: 0 auto 5px
+                    img
+                        width: auto
+                        height: 22px
+                .title,p
+                    color: var(--white)
+                .title
+                    font-size: 18px
+                    font-weight: 500
+                    @include responsive(991px)
+                        font-size: 16px
+                p
+                    opacity: .7
+                    font-size: 14px
+                    @include responsive(991px)
+                        font-size: 12px
+            &:not(:last-child)
+                @include responsive(991px)
+                    border-right: 1px solid #212121
+                @include responsive(675px)
+                    border-right: 0
+    .footer-wrapper
+        padding: 40px 0
+        .col1
+            flex: 0 30%
+            width: 30%
+            padding: 0 15px
+            @include responsive(991px)
+                padding: 0 15px
+                flex: 0 44%
+                width: 44%
+                order: 0
+            @include responsive(675px)
+                flex: 0 100%
+                width: 100%
+            .item
+                @include responsive(675px)
+                    padding: 0 30px 30px
+                @include responsive(520px)
+                    padding: 0 0px 30px
+                .link_btn
+                    @include responsive(675px)
+                        display: none
+
+        .col2
+            flex: 0 1 25%
+            width: 25%
+            padding: 0 15px
+            padding-left: 40px
+            @include responsive(991px)
+                flex: 0 1 28%
+                width: 28%
+                order: 3
+                padding: 0 15px
+                flex: 0 1 28%
+                width: 28%
+                flex: 0 1 28%
+                width: 28%
+            @include responsive(675px)
+                flex: 0 1 50%
+                width: 50%
+        .col3
+            flex: 0 1 20%
+            width: 20%
+            padding: 0 15px
+            @include responsive(991px)
+                flex: 0 1 25%
+                width: 25%
+                order: 2
+            @include responsive(675px)
+                flex: 0 1 50%
+                width: 50%
+        .col4
+            flex: 0 1 25%
+            width: 25%
+            padding: 0 15px
+            @include responsive(991px)
+                flex: 0 1 100%
+                width: 100%
+                order: 4
+            .item
+                @include responsive(991px)
+                    display: flex
+                    gap: 0 35px
+                    flex-wrap: wrap
+                .newsLett,.social_links
+                    @include responsive(991px)
+                        flex: 1
+                    @include responsive(520px)
+                        flex: 0 1 100%
+
+        .item
+            display: block
+            position: relative
+            .logo
+                margin-bottom: 20px
+                img
+                    max-width: 170px
+                    @include responsive(675px)
+                        max-width: 150px
+                        display: block
+                        margin: 0 auto
+            p
+                color: var(--gray)
+                font-size: 14px
+                @include responsive(675px)
+                    text-align: center
+            .link_btn
+                max-width: 143px
+                margin-top: 20px
+                a
+                    padding: 0
+                    font-size: 14px
+                    span
+                        color: var(--secondaryDark)
+            .title
+                font-size: 18px
+                font-weight: 600
+                color: var(--black)
+                margin-bottom: 12px
+            ul
+                li
+                    display: block
+                    a
+                        font-size: 14px
+                        display: inline-block
+                        color: var(--gray)
+                        padding: 2px 0
+                        transition: .5s ease
+                        &:hover
+                            color: var(--secondaryDark)
+            .newsLett
+                p
+                    margin-bottom: 10px
+                    @include responsive(675px)
+                        text-align: left
+
+    .social_links
+        margin-top: 15px
+        .title
+            margin-bottom: 15px
+        ul
+            display: flex
+            gap: 0 8px
+            li
+                a
+                    width: 40px
+                    height: 40px
+                    background: var(--black)
+                    border-radius: 50px
+                    display: flex !important
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    transition: .5s ease
+                    svg
+                        width: 18px
+                        height: 18px
+                        color: var(--white)
+                    &:hover
+                        background: var(--gradient)
+.newsLett
+    margin-top: 15px
+    .form
+        @include responsive(767px)
+            margin-top: 12px
+        .form-group
+            position: relative
+            .form-input
+                width: 100%
+                height: 45px
+                border: 1px solid var(--grey)
+                border-radius: 5px
+                padding: 8px 15px
+            .button
+                position: absolute
+                top: 0
+                right: 0
+                width: 45px
+                height: 45px
+                background: transparent
+                border: 0
+                outline: none
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                img
+                    width: 22px
+
+.footer_bottom_strip
+    background: var(--black)
+    padding: 8px 0
+    .copyright
+        position: relative
+        .termCon
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            @include responsive(675px)
+                position: static
+            p
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                gap: 0 15px
+                @include responsive(767px)
+                    font-size: 12px
+                a
+                    transition: .5s ease
+                    &:hover
+                        color: var(--secondaryDark)
+    p
+        color: var(--white)
+        font-size: 14px
+        @include responsive(767px)
+            font-size: 12px
+        @include responsive(675px)
+            text-align: center
+        a
+            color: inherit

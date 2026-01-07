@@ -1,0 +1,320 @@
+.about-banner
+    position: relative
+    .bg
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            height: 320px
+            background: linear-gradient(to bottom, #00000082, transparent)
+            @include responsive(675px)
+                height: 250px
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: linear-gradient(to right, #000000db, transparent)
+            @include responsive(675px)
+                background: var(--black)
+                opacity: .5
+        img,video
+            width: 100%
+            height: 100vh
+            object-fit: cover
+            @include responsive(1024px)
+                height: 620px
+            @include responsive(991px)
+                height: 500px
+            @include responsive(675px)
+                height: 420px
+    .banner-wrapper
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-bottom: 5%
+        .content
+            max-width: 480px
+            @include responsive(675px)
+                max-width: 320px
+                text-align: center
+                margin: 0 auto
+            h1,p
+                color: var(--white)
+            h1
+                line-height: 1.2
+                margin-bottom: 15px
+                @include responsive(675px)
+                    margin-bottom: 12px
+                    font-size: 30px
+            p
+                padding-right: 59px
+                font-weight: 500
+                @include responsive(991px)
+                    padding-right: 0
+.AboutSecInA
+    padding: 100px 0
+    background: var(--white)
+    @include responsive(991px)
+        padding: 40px 0
+        text-align: center
+    @include responsive(675px)
+        padding-bottom: 0
+    .flex
+        align-items: center
+    .colA
+        flex: 0 1 50%
+        max-width: 50%
+        width: 100%
+        @include responsive(1204px)
+            flex: 0 1 40%
+            max-width: 40%
+        @include responsive(991px)
+            display: none
+    .colB
+        flex: 0 1 50%
+        max-width: 50%
+        width: 100%
+        padding: 0 25px
+        @include responsive(1204px)
+            flex: 0 1 60%
+            max-width: 60%
+        @include responsive(991px)
+            padding: 0
+            flex: 0 1 100%
+            max-width: 100%
+    .bg
+        img
+            max-width: 480px
+            display: block
+            margin: 0 auto
+            background: url(../images/about/bg2.jpg)
+            background-size: cover
+            background-position: center
+            animation: bganimate 120s linear infinite
+            @include responsive(1204px)
+                max-width: 350px
+    .headingIn
+        margin-bottom: 28px
+        @include responsive(991px)
+            margin-bottom: 15px
+            max-width: 100%
+        @include responsive(675px)
+            max-width: 320px
+            margin: 0 auto 15px
+        h2
+            font-size: var(--font-siz-48)
+            line-height: 50px
+            color: var(--black)
+            @include responsive(991px)
+                font-size: var(--font-siz-40)
+                line-height: 50px
+            @include responsive(675px)
+                font-size: var(--font-siz-32)
+                line-height: 35px
+    .content
+        p
+            margin-bottom: 20px
+            color: var(--grey-dark)
+            text-align: justify
+            line-height: 24px
+            font-weight: 500
+            @include responsive(991px)
+                text-align: center
+                margin-bottom: 15px
+.AboutSecInB
+    background: var(--white)
+    padding: 50px 0
+    @include responsive(991px)
+        padding: 50px 0 0
+    @include responsive(675px)
+        padding: 30px 0 0
+    .container-full
+        padding: 0
+        @include responsive(675px)
+            padding: 0 15px
+    .headingIn
+        margin: 0 auto 56px
+        max-width: 750px
+        text-align: center
+        @include responsive(991px)
+            max-width: 600px
+        @include responsive(675px)
+            margin-bottom: 30px
+        h2
+            font-size: var(--font-siz-48)
+            line-height: 50px
+            margin-bottom: 12px
+            color: var(--black)
+            @include responsive(675px)
+                font-size: var(--font-siz-32)
+                line-height: 35px
+        p
+            color: var(--grey-dark)
+            font-weight: var(--font-500)
+    .SlideAbout
+        .item
+            position: relative
+            .img
+                img
+                    display: block
+                    @include responsive(675px)
+                        height: 300px
+                        object-fit: cover
+            .overlay_after::after
+                height: 340px
+                background: linear-gradient(to top, rgb(0 0 0 / 96%), transparent)
+            .content
+                position: absolute
+                bottom: 20px
+                max-width: 570px
+                width: 100%
+                margin: 0 auto
+                left: 0
+                right: 0
+                padding: 20px
+                text-align: center
+                .icon
+                    img
+                        width: auto
+                        display: block
+                        margin: 0 auto
+                .title,p
+                    color: var(--white)
+                .title
+                    font-size: 36px
+                    line-height: 36px
+                    font-weight: var(--font-600)
+                    margin: 15px 0
+                    @include responsive(675px)
+                        margin: 10px 0
+                        font-size: 25px
+                        line-height: 25px
+                p
+                    @include responsive(675px)
+                        line-height: 1.3
+        &.navCenter
+            .owl-nav
+                button
+                    box-shadow: 0 0 2px #3732325c
+    .slide~.center
+        margin-top: 40px
+.AboutSecInfounder
+    background: var(--white) url('../images/img1bg.png')
+    background-repeat: no-repeat
+    background-position: -20px 0px
+    padding: 60px 0 120px
+    @include responsive(991px)
+        padding-bottom: 90px
+    @include responsive(675px)
+        padding: 45px 0
+        background-size: 220px
+        background-position: -20px 20px
+    .headingIn
+        margin: 0 auto 56px
+        max-width: 790px
+        text-align: center
+        @include responsive(991px)
+            max-width: 600px
+        @include responsive(675px)
+            margin-bottom: 42px
+        h2
+            font-size: var(--font-siz-48)
+            line-height: 50px
+            margin-bottom: 12px
+            color: var(--black)
+            @include responsive(675px)
+                font-size: var(--font-siz-32)
+                line-height: 35px
+        p
+            color: var(--grey-dark)
+            font-weight: var(--font-500)
+    .founderSecDe
+        max-width: 1214px
+        margin: 0 auto
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        @include responsive(675px)
+            display: block
+        .img
+            flex-grow: 1
+            flex: 1
+            img
+                display: block
+                margin-left: auto
+                margin-right: -75px
+                position: relative
+                bottom: -28px
+                border-radius: 20px
+                @include responsive(991px)
+                    margin-right: -35px
+                @include responsive(675px)
+                    max-width: 280px
+                    display: block
+                    margin: 0 auto -30px
+                    position: static
+                    border-radius: 20px
+        .founderConte
+            max-width: 740px
+            width: 100%
+            margin-left: auto
+            margin-right: 0
+            padding: 50px 100px 50px 135px
+            border: 1px solid var(--grey-light)
+            border-radius: 20px
+            box-shadow: 111px -20px 20px 20px #ffffff, 81px 20px 30px 10px #00000017
+            @include responsive(991px)
+                max-width: 70%
+                padding: 25px 20px 50px 60px
+            @include responsive(675px)
+                max-width: 100%
+                padding: 25px
+                padding-top: 50px
+            .content
+                position: relative
+                @include responsive(675px)
+                    text-align: center
+                p
+                    font-size: var(--font-siz-24)
+                    line-height: var(--font-siz-30)
+                    color: var(--black)
+                    @include responsive(991px)
+                        font-size: var(--font-siz-16)
+                        line-height: var(--font-siz-24)
+                .name
+                    font-size: var(--font-siz-24)
+                    font-weight: var(--font-600)
+                    color: var(--black)
+                    line-height: var(--font-siz-26)
+                    margin-top: 45px
+                    @include responsive(991px)
+                        margin-top: 25px
+                .desig
+                    font-size: var(--font-siz-14)
+                    color: var(--black)
+                    margin-bottom: 12px
+                .sig
+                    padding-bottom: 25px
+                    @include responsive(675px)
+                        padding-bottom: 12px
+                .vieProf
+                    font-size: var(--font-siz-16)
+                    font-weight: var(--font-500)
+                    color: var(--black)
+                    cursor: pointer
+                    position: absolute
+                    bottom: 0
+                    right: 0
+                    @include responsive(675px)
+                        position: static

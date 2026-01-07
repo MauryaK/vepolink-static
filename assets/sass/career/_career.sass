@@ -1,0 +1,449 @@
+@charset "UTF-8"
+.banner
+    .bg
+        img
+            width: 100%
+            @include responsive(991px)
+                height: 500px
+                object-fit: cover
+            @include responsive(520px)
+                height: 440px
+        &.overlay_after
+            &::after
+                background: linear-gradient(to top, rgb(0 0 0), transparent)
+
+    .banner-content
+        position: absolute
+        bottom: 130px
+        left: 0
+        right: 0
+        padding: 0 70px
+        @include responsive(1140px)
+            padding: 0 25px
+        @include responsive(991px)
+            padding: 0 15px
+        @include responsive(767px)
+            bottom: 30px
+        @include responsive(520px)
+            bottom: 60px
+        .content
+            max-width: 465px
+            @include responsive(675px)
+                max-width: 372px
+        h1,p,.date
+            color: var(--white)
+        .date
+            font-size: var(--font-siz-14)
+        h1
+            font-size: 60px
+            line-height: 60px
+            margin-bottom: 15px
+            @include responsive(991px)
+                margin-bottom: 10px
+                line-height: 46px
+                font-size: 45px
+                font-weight: var(--font-600)
+            @include responsive(767px)
+                margin-top: 10px
+                font-size: 26px
+                line-height: 30px
+            @include responsive(675px)
+                margin-bottom: 0
+                font-size: 50px
+                line-height: 50px
+                margin-bottom: 10px
+        p
+            font-weight: var(--font-500)
+            line-height: 24px
+            @include responsive(520px)
+                font-size: var(--font-siz-16)
+                line-height: 1.4
+                margin-top: 20px
+        .linkBtn
+            a
+                border-color: var(--white)
+                color: var(--white)
+                img
+                    filter: invert(1) brightness(11)
+
+.AboutSecInA
+    padding: 100px 0
+    background: var(--white)
+    @include responsive(991px)
+        padding: 40px 0
+        text-align: center
+    @include responsive(675px)
+        padding-bottom: 0
+    .colA
+        flex: 0 1 50%
+        max-width: 50%
+        width: 100%
+        @include responsive(991px)
+            display: none
+    .colB
+        flex: 0 1 50%
+        max-width: 50%
+        width: 100%
+        padding: 0 25px
+        @include responsive(991px)
+            padding: 0
+            flex: 0 1 100%
+            max-width: 100%
+    .bg
+        img
+            background: url(../images/career/slide.jpg)
+            background-size: cover
+            background-position: center
+            animation: bganimate 120s linear infinite
+    .headingIn
+        margin-bottom: 28px
+        max-width: 100%
+        @include responsive(991px)
+            margin-bottom: 15px
+            max-width: 100%
+        @include responsive(675px)
+            max-width: 320px
+            margin: 0 auto 15px
+        h2
+            font-size: var(--font-siz-48)
+            line-height: 50px
+            @include responsive(991px)
+                font-size: var(--font-siz-40)
+                line-height: 50px
+            @include responsive(675px)
+                font-size: var(--font-siz-32)
+                line-height: 35px
+    .content
+        p
+            margin-bottom: 30px
+            color: var(--grey-dark)
+            text-align: justify
+            line-height: 24px
+            @include responsive(991px)
+                text-align: center
+                margin-bottom: 15px
+
+.careerHowItWorks
+    padding: 65px 0 35px
+    background: var(--white)
+    .container-full
+        max-width: 100%
+        padding: 0
+        @include responsive(991px)
+            padding: 0 15px
+    .headingIn
+        margin: 0 auto 55px
+        max-width: 787px
+        h2
+            font-size: 48px
+            line-height: 48px
+            margin-bottom: 12px
+.galleryImg
+    .col-3
+        padding: 6px
+        @include responsive(767px)
+            flex: 0 1 50%
+            max-width: 50%
+        @include responsive(520px)
+            flex: 0 1 100%
+            max-width: 100%
+    .item
+        position: relative
+        height: 100%
+        a
+            height: 100%
+            display: block
+            img
+                height: 100%
+                width: 100%
+                object-fit: cover
+.CareerCurentOpeSec
+    background: var(--white)
+    padding: 35px 0 65px
+    @include responsive(675px)
+        padding-bottom: 35px
+    .headingIn
+        margin: 0 auto 55px
+        max-width: 787px
+        @include responsive(675px)
+            margin-bottom: 35px
+        .icon
+            margin-bottom: 12px
+        h2
+            font-size: 48px
+            line-height: 48px
+            margin-bottom: 12px
+.Carrer-JobOpenList
+    .item
+        position: relative
+        margin: 10px 0
+        border: 1px solid transparent
+        &:first-child
+            .content
+                display: block
+        h5
+            font-size: 18px
+            line-height: 48px
+            background: #ededed
+            padding: 0 15px
+            cursor: pointer
+            color: var(--black)
+            font-weight: var(--font-500)
+            transition: 500ms ease
+            @include responsive(675px)
+                font-size: 16px
+        .Carre-Trigger
+            position: absolute
+            left: auto
+            right: 20px
+            top: 13px
+            width: 19px
+            height: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            pointer-events: none
+            @include responsive(675px)
+                right: 15px
+                width: 15px
+                height: 15px
+            &:before,&:after
+                content: ""
+                background: var(--black)
+                position: absolute
+            &:before
+                width: 100%
+                height: 3px
+                @include responsive(675px)
+                    height: 2px
+            &:after
+                width: 3px
+                height: 100%
+                transform: rotate(0deg)
+                transition: 500ms ease
+                @include responsive(675px)
+                    width: 2px
+        .content
+            padding: 25px 15px
+            display: none
+            p
+                font-size: 14px
+                color: var(--grey-dark)
+                margin-bottom: 8px
+            h6
+                font-size: 18px
+                color: var(--black)
+                font-weight: 500
+                margin: 15px 0
+            .bullet
+                margin-left: 15px
+                li
+                    font-size: var(--font-siz-14)
+                    margin-bottom: 8px
+            button
+                position: absolute
+                width: 140px
+                height: 37px
+                border: 1px solid var(--blue)
+                border-radius: 40px
+                color: var(--blue)
+                font-weight: var(--font-500)
+                top: 65px
+                left: auto
+                right: 45px
+                cursor: pointer
+                background: var(--white)
+                transition: .5s ease
+                @include responsive(675px)
+                    position: static
+                    margin-left: auto
+                    margin-right: 0
+                    display: block
+                    margin-bottom: 20px
+                &:hover
+                    background: var(--blue)
+                    color: var(--white)
+        &.current
+            border-color: #dfdfdf
+            h5
+                background: var(--gradient)
+                color: var(--white)
+            .Carre-Trigger
+                &:before,&:after
+                    background: var(--white)
+                &:after
+                    transform: rotate(-90deg)
+
+.CaeerFormSec
+    background: #f7f7f7
+    padding: 75px 0
+    @include responsive(675px)
+        padding: 45px 0
+    .container
+        max-width: 720px
+    .headingIn
+        margin: 0 auto 55px
+        max-width: 787px
+        @include responsive(675px)
+            margin-bottom: 35px
+        .icon
+            margin-bottom: 12px
+        h2
+            font-size: 48px
+            line-height: 48px
+            margin-bottom: 10px
+        p
+            color: var(--black)
+    .career-form
+        .col-2
+            @include responsive(675px)
+                flex: 0 1 100%
+                max-width: 100%
+        .form-group
+            input[type="file"]
+                opacity: 0
+                cursor: pointer
+        .inFilGroup
+            padding: 10px
+            padding-left: 0
+            padding-right: 0
+            padding-bottom: 0
+            .inputFile
+                background: var(--white)
+                top: -10px
+                .labelfile_upload
+                    font-size: 14px
+                    color: var(--black)
+                    text-overflow: ellipsis
+                    white-space: nowrap
+                    overflow: hidden
+                    width: 80%
+                    position: absolute
+                    top: 11px
+                    left: 15px
+                    pointer-events: none
+                &.servIcon
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: 0
+                        width: 20px
+                        bottom: 0px
+                        right: 10px
+                        background: url(../icons/attach.png)
+                        background-repeat: no-repeat
+                        background-position: center
+
+        .customDropDown
+            @include responsive(675px)
+                margin-bottom: 20px
+            .wrapper
+                .selectedBox
+                    height: 45px
+                    p,.label
+                        font-weight: normal
+            .listDropDown
+                z-index: 3
+        .btn-form
+            margin-top: 0
+            .btn
+                width: 170px
+                @include responsive(675px)
+                    width: 100%
+        .form
+            .btn-form
+                padding: 0 8px
+                width: auto
+                display: inline-block
+                .form-button
+                    margin-top: 0
+                    padding: 8px 35px
+.customDropDown
+    .wrapper
+        .selectedBox
+            width: 100%
+            display: block
+            width: 100%
+            display: block
+            padding: 9px 15px
+            border: 1px solid var(--grey)
+            background: var(--white)
+            outline: none
+            border-radius: 5px
+            height: 42.6px
+            transition: 0.5s ease
+            &::before
+                content: ""
+                background: url(../icons/servIcon.png)
+                position: absolute
+                right: 8px
+                top: 0
+                bottom: 0
+                width: 25px
+                background-repeat: no-repeat
+                background-position: center
+            p
+                font-weight: var(--font-500)
+            .label
+                color: var(--blacklight)
+                font-weight: var(--font-500)
+                top: -12px
+                position: absolute
+                opacity: 0
+                transition: .5s ease
+                font-size: var(--font-siz-11)
+            &.active
+                padding: 15px 15px 5px
+                .label
+                    opacity: 1
+                    font-size: 12px
+                    top: 3px
+                p
+                    color: var(--black)
+    .listDropDown
+        position: absolute
+        left: 0
+        right: 0
+        top: 100%
+        background: var(--white)
+        padding: 8px 0 0
+        max-height: 200px
+        overflow-y: scroll
+        box-shadow: 0 10px 16px 1px #00000030
+        z-index: 2
+        &::-webkit-scrollbar
+            width: 5px
+        &::-webkit-scrollbar-track
+            box-shadow: unset
+            background: var(--white)
+        &::-webkit-scrollbar-thumb
+            background-color: var(--gradient)
+        .list
+            .button
+                display: block
+                cursor: pointer
+                padding: 8px 15px
+                background: var(--white)
+                transition: .5s ease
+                position: relative
+                text-transform: capitalize
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 15px
+                    width: 15px
+                    height: 15px
+                    background: url(../icons/tik.png)
+                    top: 11px
+                    opacity: 0
+                    background-repeat: no-repeat
+                    background-position: center
+                    transition: .5s ease
+                &:hover
+                    background: var(--grey-light)
+                &.selected
+                    padding-left: 38px
+                    background: var(--gradient)
+                    color: var(--white)
+                    &::before
+                        opacity: 1

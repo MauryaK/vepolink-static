@@ -1,0 +1,139 @@
+[
+    {
+        "application": [
+            {
+                "id": 1,
+                "name": "Water Analyzer",
+                "category": "water"
+            },
+            {
+                "id": 2,
+                "name": "Gas Analyzer",
+                "category": "gas"
+            },
+            {
+                "id": 3,
+                "name": "Air Analyzer",
+                "category": "air"
+            }
+        ]
+    },
+    {
+        "parameters": [
+            {
+                "id": 1,
+                "name": "Ammonium",
+                "category": "water"
+            },
+            {
+                "id": 2,
+                "name": "Nitrates",
+                "category": "water"
+            },
+            {
+                "id": 95,
+                "name": "SPM",
+                "category": "gas"
+            },
+            {
+                "id": 95,
+                "name": "PM 1",
+                "category": "air"
+            }
+        ]
+    },
+    {
+        "brands": [
+            {
+                "id": 1,
+                "name": "Advance Analytik",
+                "category": "water"
+            },
+            {
+                "id": 2,
+                "name": "Uniphos",
+                "category": "gas"
+            },
+            {
+                "id": 3,
+                "name": "Horiba",
+                "category": "water"
+            }
+        ]
+    },
+    {
+        "products": [
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000",
+                "parameters": [
+                    "Ammonium",
+                    "Nitrates",
+                    "Nitrites",
+                    "Total Nitrogen",
+                    "Phosphates",
+                    "Total Phosphates",
+                    "Organic Matter",
+                    "Total Organic",
+                    "Carbon",
+                    "Sulfides",
+                    "Sulfites",
+                    "Total Sulfur",
+                    "pH"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "OPTICS-1000",
+                    "Ammonium",
+                    "Nitrates",
+                    "Nitrites",
+                    "Total Nitrogen",
+                    "Phosphates",
+                    "Total Phosphates",
+                    "Organic Matter",
+                    "Ozone",
+                    "pH"
+                ]
+            },
+            {
+                "category": "gas",
+                "application": "emission",
+                "brands": "Vepolink",
+                "name": "ADMS 2000",
+                "parameters": [
+                    "SPM"
+                ],
+                "img": "assets/dummy/adms.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "gas",
+                    "Vepolink",
+                    "SPM"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Turnkey Instruments UK",
+                "name": "DUSTMATE",
+                "parameters": [
+                    "PM 1"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "DUSTMATE",
+                    "Turnkey Instruments UK",
+                    "PM 1"
+                ]
+            }
+        ]
+    }
+]

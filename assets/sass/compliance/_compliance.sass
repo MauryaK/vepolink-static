@@ -1,0 +1,199 @@
+.compliancePageSecA
+    @include responsive(675px)
+        padding: 0 0 45px 0
+    .col1
+        flex: 0 1 50%
+        max-width: 50%
+        padding: 0 20px
+        height: 100%
+        position: sticky
+        top: 20px
+        @include responsive(675px)
+            position: static
+            flex: 0 1 100%
+            max-width: 100%
+
+    .col2
+        flex: 0 1 50%
+        max-width: 50%
+        @include responsive(675px)
+            position: static
+            flex: 0 1 100%
+            max-width: 100%
+
+    .card
+        @include responsive(675px)
+            text-align: center
+            padding-top: 30px
+        h3
+            color: var(--black)
+            font-size: 28px
+            font-weight: 600
+            line-height: 1.2
+            margin-bottom: 15px
+        p
+            color: var(--grey-dark)
+            margin-bottom: 15px
+            a
+                color: var(--blue)
+    .item
+        background: #fcfbfd
+        padding: 65px 0
+        @include responsive(675px)
+            padding: 40px 0
+        .img
+            background: #fcfbfd
+        &:nth-child(even)
+            background: #fff
+            .flex
+                flex-direction: row-reverse
+    .comFqit
+        .faqLi
+            border: 1px solid #ebebeb
+            border-radius: 5px
+            overflow: hidden
+            margin-bottom: 15px
+            .que
+                display: block
+                color: var(--black)
+                font-weight: 600
+                font-size: 17px
+                cursor: pointer
+                padding: 11px 12px
+                background: #f1f1f1
+                position: relative
+                img
+                    position: absolute
+                    width: 26px
+                    right: 7px
+                    top: 9
+            .ans
+                padding: 15px
+                display: none
+                .content
+                    ul
+                        li
+                            position: relative
+                            display: block
+                            padding-left: 22px
+                            &::before
+                                content: ''
+                                position: absolute
+                                width: 8px
+                                height: 8px
+                                background: var(--black)
+                                border-radius: 50%
+                                left: 0px
+                                top: 5px
+                            p
+                                font-size: 14px
+
+.compliancePageSecB
+    padding: 65px 0 65px
+    background: #fcfbfd
+    @include responsive(991px)
+        padding: 45px 0 45px
+    .col
+        flex: 0 1 50%
+        max-width: 50%
+        @include responsive(991px)
+            flex: 0 1 100%
+            max-width: 100%
+        &.pl24
+            padding-left: 75px
+            @include responsive(991px)
+                padding-left: 0
+                margin-top: 45px
+    .heading
+        margin-bottom: 80px
+        @include responsive(991px)
+            margin-bottom: 40px
+    .segMentCard
+        .titl
+            padding-left: 25px
+            font-weight: 600
+            color: var(--black)
+            margin-bottom: 15px
+        .listWrap
+            position: relative
+            padding-left: 25px
+            display: flex
+            flex-direction: column
+            gap: 15px 0
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                width: 2px
+                background: var(--black)
+                top: 26px
+                bottom: 26px
+        .item
+            display: flex
+            align-items: center
+            position: relative
+            padding: 8px
+            padding-right: 15px
+            gap: 0 15px
+            border-radius: 8px
+            &::before
+                content: ""
+                position: absolute
+                left: -25px
+                width: 25px
+                background: var(--black)
+                height: 2px
+            &.shadeA
+                background: #deebf7
+            &.shadeB
+                background: #fbe5d6
+            &.shadeC
+                background: #c5e0b4
+            .count
+                width: 35px
+                height: 35px
+                background: var(--black)
+                border-radius: 40px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                color: var(--white)
+                font-weight: 500
+                font-size: 16px
+            p
+                flex: 1
+                color: var(--black)
+                font-size: 14px
+                line-height: 1.3
+    .tag_intro
+        display: flex
+        gap: 0 4px
+        align-items: center
+        justify-content: center
+        padding-left: 25px
+        margin-top: 20px
+        @include responsive(1100px)
+            padding-left: 0
+        @include responsive(520px)
+            flex-direction: column
+            gap: 4px 4px
+        .tag
+            padding: 8px 15px
+            border-radius: 5px
+            flex: 1
+            white-space: nowrap
+            font-size: 14px
+            color: var(--black)
+            text-align: center
+            @include responsive(1100px)
+                padding: 8px 5px
+                font-size: 12px
+            @include responsive(520px)
+                width: 100%
+            &.shadeA
+                background: #deebf7
+            &.shadeB
+                background: #fbe5d6
+            &.shadeC
+                background: #c5e0b4

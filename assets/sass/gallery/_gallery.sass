@@ -1,0 +1,165 @@
+.gallaeryBanner
+    position: relative
+    .video_
+        line-height: 0
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: var(--gradient)
+            opacity: .89
+            display: none
+            @include responsive(767px)
+                display: block
+        video
+            width: 60%
+            height: 100vh
+            object-fit: cover
+            @include responsive(991px)
+                height: 440px
+            @include responsive(767px)
+                width: 100%
+                height: 350px
+    .bg
+
+        background: url('../images/gallery/bg1.png')
+        padding: 180px 0 100px
+        background-size: cover
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        @include responsive(991px)
+            padding: 180px 0
+        @include responsive(767px)
+            background: transparent
+            padding: 0
+
+    .flex
+        align-items: center
+    .col
+        flex: 0 1 50%
+        max-width: 50%
+        width: 100%
+    .banner_shape
+        figure
+            display: block
+            max-width: 680px
+            margin: 0 auto
+            scale: 1.1
+            img,video
+                display: block
+                width: 100%
+                height: auto
+                -webkit-mask-image: url(../images/gallery/sh4.png)
+                mask-image: url(../images/gallery/sh4.png)
+                -webkit-mask-position: center
+                mask-position: center
+                -webkit-mask-repeat: no-repeat
+                mask-repeat: no-repeat
+                mask-size: 415px
+                @include responsive(1200px)
+                    mask-size: 345px
+
+    .bannerContent
+        width: 50%
+        margin-left: auto
+        margin-right: 0
+        @include responsive(767px)
+            width: 320px
+            padding-right: 0
+            margin: 0 auto
+            text-align: center
+        .content
+            max-width: 355px
+            margin: 0 auto
+            @include responsive(767px)
+                text-align: center
+        h1
+            font-size: 38px
+            color: var(--white)
+            margin: 0 0 10px
+            line-height: 44px
+            display: flex
+            gap: 0 6px
+            align-items: center
+            font-weight: 500
+            text-transform: uppercase
+            @include responsive(767px)
+                flex-direction: column
+
+            img
+                width: 190px
+                @include responsive(767px)
+                    display: none
+
+        p
+            font-weight: 500
+            color: var(--white)
+            margin-bottom: 15px
+            @include responsive(520px)
+                margin-bottom: 8px
+        .linkBtn
+            a
+                border-color: var(--white)
+                color: var(--white)
+                img
+                    filter: invert(1) brightness(11)
+
+.galleryGrid
+    padding: 55px 0
+    @include responsive(675px)
+        padding: 15px 0
+
+    .col
+        flex: 0 1 33.333333%
+        max-width: 33.333333%
+        width: 100%
+        padding: 6px
+        @include responsive(767px)
+            flex: 0 1 50%
+            max-width: 50%
+        @include responsive(520px)
+            flex: 0 1 100%
+            max-width: 100%
+            padding: 6px 0
+    .galleryItem
+        a
+            display: block
+            position: relative
+            overflow: hidden
+            border-radius: 8px
+            img
+                scale: 1
+                transition: 5s ease
+            &:hover
+                img
+                    scale: 1.1
+
+            &::after
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                opacity: .8
+                height: 40%
+                background: linear-gradient(to top, var(--black), transparent)
+        p
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            padding: 12px
+            text-align: center
+            z-index: 1
+            color: var(--white)

@@ -1,0 +1,139 @@
+.banner
+    &.contactBanner
+        .bg
+            img
+                width: auto
+                max-width: 100%
+                height: auto
+                @include responsive(991px)
+                    height: 460px
+                    object-fit: cover
+        .banner-wrapper
+            .content
+                max-width: 470px
+                @include responsive(675px)
+                    max-width: 310px
+                h1
+                    line-height: 1.2
+                    margin-bottom: 15px
+                    @include responsive(767px)
+                        font-size: 25px
+.contactSecA
+    background: var(--white)
+    padding: 80px 0
+    @include responsive(991px)
+        padding: 40px 0
+    .heading
+        margin-bottom: 45px
+        max-width: 430px
+        @include responsive(991px)
+            max-width: 330px
+        .tag
+            display: inline-block
+            background: var(--gradient)
+            padding: 5px 20px
+            color: var(--white)
+            border-radius: 25px
+            font-size: 14px
+            margin-bottom: 10px
+        h2
+            text-transform: capitalize
+    .col1
+        flex: 0 1 40%
+        max-width: 40%
+        padding-right: 30px
+        @include responsive(991px)
+            padding-right: 0
+        @include responsive(767px)
+            flex: 0 1 100%
+            max-width: 100%
+    .col2
+        flex: 0 1 60%
+        max-width: 60%
+        padding-left: 30px
+        @include responsive(767px)
+            padding-left: 15px
+        @include responsive(767px)
+            flex: 0 1 100%
+            max-width: 100%
+            padding: 0
+    .cardGrad
+        background: var(--gradient)
+        height: 100%
+        min-height: 520px
+        padding: 8px 45px
+        border-radius: 15px
+        @include responsive(991px)
+            padding: 8px 25px
+        .item
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 4px 0
+            text-align: center
+            padding: 30px
+            @include responsive(1130px)
+                padding: 30px 0
+            &:not(:last-child)
+                border-bottom: 1px solid #ffffff24
+            .dirC
+                margin: 15px 0 0
+                a
+                    display: inline-flex
+                    align-items: center
+                    justify-content: center
+                    gap: 0 8px
+                    background: var(--white)
+                    padding: 4px 25px
+                    border-radius: 25px
+                    color: var(--black)
+                    font-size: 14px
+                    font-weight: 500
+                    img
+                        width: 30px
+            .icon
+                width: 60px
+                height: 60px
+                border-radius: 5px
+                margin-bottom: 12px
+                overflow: hidden
+            .title
+                font-size: 18px
+                font-weight: 500
+                color: var(--white)
+                text-transform: uppercase
+            p
+                color: var(--white)
+                opacity: .9
+                a
+                    display: inline-block
+                    color: inherit
+                    opacity: inherit
+.contactPForm
+    padding: 45px 0
+    margin: 0 auto
+    max-width: 610px
+    @include responsive(767px)
+        padding-bottom: 0
+    .form-flex
+        display: flex
+        flex-wrap: wrap
+        .form-col1
+            flex: 0 1 100%
+            max-width: 100%
+            padding: 0 8px
+            @include responsive(520px)
+                padding: 0
+        .form-col2
+            flex: 0 1 50%
+            max-width: 50%
+            padding: 0 8px
+            @include responsive(520px)
+                flex: 0 1 100%
+                max-width: 100%
+                padding: 0
+.mapAddress
+    &.contMap
+        @include responsive(767px)
+            padding-bottom: 0

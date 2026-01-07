@@ -1,0 +1,1875 @@
+[
+    {
+        "application": [
+            {
+                "id": 1,
+                "name": "Water Analyzer",
+                "category": "water"
+            },
+            {
+                "id": 2,
+                "name": "Gas Analyzer",
+                "category": "gas"
+            },
+            {
+                "id": 3,
+                "name": "Air Analyzer",
+                "category": "air"
+            }
+        ]
+    },
+    {
+        "parameters": [
+            {
+                "id": 1,
+                "name": "Ammonium",
+                "category": "water"
+            },
+            {
+                "id": 2,
+                "name": "Nitrates",
+                "category": "water"
+            },
+            {
+                "id": 3,
+                "name": "Nitrites",
+                "category": "water"
+            },
+            {
+                "id": 4,
+                "name": "Total Nitrogen",
+                "category": "water"
+            },
+            {
+                "id": 5,
+                "name": "Phosphates",
+                "category": "water"
+            },
+            {
+                "id": 6,
+                "name": "Total Phosphates",
+                "category": "water"
+            },
+            {
+                "id": 7,
+                "name": "Organic Matter",
+                "category": "water"
+            },
+            {
+                "id": 8,
+                "name": "Total Organic",
+                "category": "water"
+            },
+            {
+                "id": 9,
+                "name": "Carbon",
+                "category": "water"
+            },
+            {
+                "id": 10,
+                "name": "Sulfides",
+                "category": "water"
+            },
+            {
+                "id": 11,
+                "name": "Sulfites",
+                "category": "water"
+            },
+            {
+                "id": 12,
+                "name": "Total Sulfur",
+                "category": "water"
+            },
+            {
+                "id": 13,
+                "name": "Total Suspended Solids",
+                "category": "water"
+            },
+            {
+                "id": 14,
+                "name": "turbidity",
+                "category": "water"
+            },
+            {
+                "id": 15,
+                "name": "Color",
+                "category": "water"
+            },
+            {
+                "id": 16,
+                "name": "Chlorine",
+                "category": "water"
+            },
+            {
+                "id": 17,
+                "name": "chlorine dioxide",
+                "category": "water"
+            },
+            {
+                "id": 18,
+                "name": "Hydrocarbon",
+                "category": "water"
+            },
+            {
+                "id": 19,
+                "name": "Aromatic Compounds",
+                "category": "water"
+            },
+            {
+                "id": 20,
+                "name": "Nitrate (NO3-)",
+                "category": "water"
+            },
+            {
+                "id": 21,
+                "name": "Dissolved Oxygen",
+                "category": "water"
+            },
+            {
+                "id": 22,
+                "name": "Conductivity",
+                "category": "water"
+            },
+            {
+                "id": 23,
+                "name": "Ozone",
+                "category": "water"
+            },
+            {
+                "id": 24,
+                "name": "pH",
+                "category": "water"
+            },
+            {
+                "id": 25,
+                "name": "pH (alkalinity)",
+                "category": "water"
+            },
+            {
+                "id": 26,
+                "name": "chloride",
+                "category": "water"
+            },
+            {
+                "id": 27,
+                "name": "Chromium VI",
+                "category": "water"
+            },
+            {
+                "id": 28,
+                "name": "Cyanide",
+                "category": "water"
+            },
+            {
+                "id": 29,
+                "name": "Hydrazine",
+                "category": "water"
+            },
+            {
+                "id": 29,
+                "name": "IRON",
+                "category": "water"
+            },
+            {
+                "id": 30,
+                "name": "Phenol",
+                "category": "water"
+            },
+            {
+                "id": 31,
+                "name": "Phosphate-Hr",
+                "category": "water"
+            },
+            {
+                "id": 32,
+                "name": "Phosphate-Lr",
+                "category": "water"
+            },
+            {
+                "id": 33,
+                "name": "silica-Hr",
+                "category": "water"
+            },
+            {
+                "id": 34,
+                "name": "silica-Lr",
+                "category": "water"
+            },
+            {
+                "id": 35,
+                "name": "Total Chromium",
+                "category": "water"
+            },
+            {
+                "id": 36,
+                "name": "Total Hardness",
+                "category": "water"
+            },
+            {
+                "id": 37,
+                "name": "Zinc",
+                "category": "water"
+            },
+            {
+                "id": 38,
+                "name": "pH – Analog",
+                "category": "water"
+            },
+            {
+                "id": 40,
+                "name": "pH – Digital",
+                "category": "water"
+            },
+            {
+                "id": 41,
+                "name": "ORP – Analog",
+                "category": "water"
+            },
+            {
+                "id": 42,
+                "name": "ORP – Digital",
+                "category": "water"
+            },
+            {
+                "id": 43,
+                "name": "Chlorine Sensor – Potentiometric",
+                "category": "water"
+            },
+            {
+                "id": 44,
+                "name": "Conductivity/Total Dissolved solids – Analog/Digital",
+                "category": "water"
+            },
+            {
+                "id": 45,
+                "name": "Dissolved Oxygen – Polarographic/Optical",
+                "category": "water"
+            },
+            {
+                "id": 46,
+                "name": "turbidity – Digital",
+                "category": "water"
+            },
+            {
+                "id": 47,
+                "name": "Sludge Level – Optical/Digital",
+                "category": "water"
+            },
+            {
+                "id": 48,
+                "name": "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                "category": "water"
+            },
+            {
+                "id": 49,
+                "name": "Total Suspended solids – IR Based",
+                "category": "water"
+            },
+            {
+                "id": 50,
+                "name": "Ion Selective Electrode – Analog/4 to 20 mA",
+                "category": "water"
+            },
+            {
+                "id": 51,
+                "name": "Temperature – PT100, PT1000, RTD, Thermocouple",
+                "category": "water"
+            },
+            {
+                "id": 52,
+                "name": "ORP",
+                "category": "water"
+            },
+            {
+                "id": 53,
+                "name": "TDS",
+                "category": "water"
+            },
+            {
+                "id": 54,
+                "name": "Suspended Solids",
+                "category": "water"
+            },
+            {
+                "id": 5894,
+                "name": "Sludge",
+                "category": "water"
+            },
+            {
+                "id": 55,
+                "name": "Chlorophyll",
+                "category": "water"
+            },
+            {
+                "id": 56,
+                "name": "Blue Green Algae",
+                "category": "water"
+            },
+            {
+                "id": 58,
+                "name": "Ammonia Nitrogen (NH4N)",
+                "category": "water"
+            },
+            {
+                "id": 59,
+                "name": "Nitrate Nitrogen (NO3N)",
+                "category": "water"
+            },
+            {
+                "id": 61,
+                "name": "UV Visible Measurement",
+                "category": "water"
+            },
+            {
+                "id": 62,
+                "name": "COD",
+                "category": "water"
+            },
+            {
+                "id": 63,
+                "name": "BOD",
+                "category": "water"
+            },
+            {
+                "id": 64,
+                "name": "TSS",
+                "category": "water"
+            },
+            {
+                "id": 65,
+                "name": "TOC",
+                "category": "water"
+            },
+            {
+                "id": 66,
+                "name": "Temperature",
+                "category": "water"
+            },
+            {
+                "id": 67,
+                "name": "ISE",
+                "category": "water"
+            },
+            {
+                "id": 68,
+                "name": "Ammonia (NH3)",
+                "category": "water"
+            },
+            {
+                "id": 69,
+                "name": "Cyanide (CN-)",
+                "category": "water"
+            },
+            {
+                "id": 70,
+                "name": "Fluoride (F-)",
+                "category": "water"
+            },
+            {
+                "id": 71,
+                "name": "Sodium (Na+)",
+                "category": "water"
+            },
+            {
+                "id": 72,
+                "name": "Chloride (Cl-)",
+                "category": "water"
+            },
+            {
+                "id": 73,
+                "name": "Water Hardness",
+                "category": "water"
+            },
+            {
+                "id": 74,
+                "name": "PH(Analog)",
+                "category": "water"
+            },
+            {
+                "id": 75,
+                "name": "ORP(Analog)",
+                "category": "water"
+            },
+            {
+                "id": 76,
+                "name": "Conductivity Sensor(Analog)",
+                "category": "water"
+            },
+            {
+                "id": 76,
+                "name": "pH (Digital)",
+                "category": "water"
+            },
+            {
+                "id": 77,
+                "name": "Optical Dissolved Oxygen",
+                "category": "water"
+            },
+            {
+                "id": 78,
+                "name": "residual chlorine",
+                "category": "water"
+            },
+            {
+                "id": 81,
+                "name": "Low Range turbidity",
+                "category": "water"
+            },
+            {
+                "id": 82,
+                "name": "LChlorophyll Sensor",
+                "category": "water"
+            },
+            {
+                "id": 83,
+                "name": "Blue-Green Algae",
+                "category": "water"
+            },
+            {
+                "id": 84,
+                "name": "Oil in water",
+                "category": "water"
+            },
+            {
+                "id": 85,
+                "name": "Ammonia Nitrogen (NH4-N)",
+                "category": "water"
+            },
+            {
+                "id": 86,
+                "name": "Nitrate nitrogen",
+                "category": "water"
+            },
+            {
+                "id": 87,
+                "name": "PAH",
+                "category": "water"
+            },
+            {
+                "id": 88,
+                "name": "Chlorophyll A",
+                "category": "water"
+            },
+            {
+                "id": 89,
+                "name": "Iron (Fe)",
+                "category": "water"
+            },
+            {
+                "id": 90,
+                "name": "Aluminum (Al3+)",
+                "category": "water"
+            },
+            {
+                "id": 91,
+                "name": "Hexavalent Chrome (Cr6+)",
+                "category": "water"
+            },
+            {
+                "id": 92,
+                "name": "Nitrite (NO2-)",
+                "category": "water"
+            },
+            {
+                "id": 93,
+                "name": "Silica (SiO2)",
+                "category": "water"
+            },
+            {
+                "id": 94,
+                "name": "Ammonium (NH4+)",
+                "category": "water"
+            },
+            {
+                "id": 95,
+                "name": "Hydrogen Sulphide (H2S)",
+                "category": "water"
+            },
+            {
+                "id": 95,
+                "name": "Nickel",
+                "category": "water"
+            },
+            {
+                "id": 95,
+                "name": "SPM",
+                "category": "gas"
+            },
+            {
+                "id": 95,
+                "name": "PM 1",
+                "category": "air"
+            }
+        ]
+    },
+    {
+        "brands": [
+            {
+                "id": 1,
+                "name": "Advance Analytik",
+                "category": "water"
+            },
+            {
+                "id": 2,
+                "name": "Uniphos",
+                "category": "gas"
+            },
+            {
+                "id": 3,
+                "name": "Horiba",
+                "category": "water"
+            },
+            {
+                "id": 4,
+                "name": "Vepolink",
+                "category": "water"
+            },
+            {
+                "id": 5,
+                "name": "Turnkey Instruments UK",
+                "category": "air"
+            },
+            {
+                "id": 6,
+                "name": "Dynoptics",
+                "category": "water"
+            },
+            {
+                "id": 3,
+                "name": "Adept Fluidyne",
+                "category": "water"
+            },
+            {
+                "id": 7,
+                "name": "Georg Fischer",
+                "category": "water"
+            },
+            {
+                "id": 8,
+                "name": "Siemens",
+                "category": "water"
+            }
+        ]
+    },
+    {
+        "products": [
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000",
+                "parameters": [
+                    "Ammonium",
+                    "Nitrates",
+                    "Nitrites",
+                    "Total Nitrogen",
+                    "Phosphates",
+                    "Total Phosphates",
+                    "Organic Matter",
+                    "Total Organic",
+                    "Carbon",
+                    "Sulfides",
+                    "Sulfites",
+                    "Total Sulfur",
+                    "Total Suspended Solids",
+                    "turbidity",
+                    "Color",
+                    "Chlorine",
+                    "chlorine dioxide",
+                    "Hydrocarbon",
+                    "Aromatic Compounds",
+                    "Phenol",
+                    "Dissolved Oxygen",
+                    "Conductivity",
+                    "Ozone",
+                    "pH"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "OPTICS-1000",
+                    "Ammonium",
+                    "Nitrates",
+                    "Nitrites",
+                    "Total Nitrogen",
+                    "Phosphates",
+                    "Total Phosphates",
+                    "Organic Matter",
+                    "Total Organic",
+                    "Carbon",
+                    "Sulfides",
+                    "Sulfites",
+                    "Total Sulfur",
+                    "Total Suspended Solids",
+                    "turbidity",
+                    "Color",
+                    "Chlorine",
+                    "chlorine dioxide",
+                    "Hydrocarbon",
+                    "Aromatic Compounds",
+                    "Phenol",
+                    "Dissolved Oxygen",
+                    "Conductivity",
+                    "Ozone",
+                    "pH"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Chloride",
+                "parameters": [
+                    "chloride"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "OPTICS-1000 Chloride",
+                    "chloride"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Alkalinity",
+                "parameters": [
+                    "pH (alkalinity)"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH (alkalinity)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Chromium VI",
+                "parameters": [
+                    "Chromium VI"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Chromium VI"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Cyanide",
+                "parameters": [
+                    "Cyanide"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Cyanide"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Hydrazine",
+                "parameters": [
+                    "Hydrazine"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Hydrazine"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 IRON",
+                "parameters": [
+                    "IRON"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "IRON"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Nickel",
+                "parameters": [
+                    "Nickel"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Nickel"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Phenol",
+                "parameters": [
+                    "Phenol"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Phenol"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Phosphate-Hr",
+                "parameters": [
+                    "Phosphate-Hr"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Phosphate-Hr"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Phosphate-Lr",
+                "parameters": [
+                    "Phosphate-Lr"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Phosphate-Lr"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 silica-Hr",
+                "parameters": [
+                    "silica-Hr"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "silica-Hr"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 silica-Lr",
+                "parameters": [
+                    "silica-Lr"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "silica-Lr"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Total Chromium",
+                "parameters": [
+                    "Total Chromium"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Total Chromium"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Total Hardness",
+                "parameters": [
+                    "Total Hardness"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Total Hardness"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "OPTICS-1000 Zinc",
+                "parameters": [
+                    "Zinc"
+                ],
+                "img": "assets/dummy/advance.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Zinc"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "Viz Pro Solo (single channel transmitter)",
+                "parameters": [
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "Conductivity",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ],
+                "img": "assets/dummy/viz-pro-solo.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "Viz Pro Duo(Dual channel transmitter)",
+                "parameters": [
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Conductivity",
+                    "Total Dissolved solids – Analog",
+                    "Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ],
+                "img": "assets/dummy/viz-pro-solo.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Conductivity",
+                    "Total Dissolved solids – Analog",
+                    "Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "Viz Pro Duo ( multi channel transmitter)",
+                "parameters": [
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Conductivity",
+                    "Total Dissolved solids – Analog",
+                    "Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ],
+                "img": "assets/dummy/viz-pro-solo.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Conductivity",
+                    "Total Dissolved solids – Analog",
+                    "Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "Viz Eco Solo ( single channel transmitter)",
+                "parameters": [
+                    "pH",
+                    "Conductivity",
+                    "ORP",
+                    "Dissolved Oxygen",
+                    "TDS",
+                    "turbidity",
+                    "Suspended Solids",
+                    "Sludge",
+                    "Chlorophyll",
+                    "Blue Green Algae",
+                    "Oil in water",
+                    "Ammonia Nitrogen (NH4N)",
+                    "Nitrate Nitrogen (NO3N)",
+                    "residual chlorine",
+                    "UV Visible Measurement",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "(Other parameters available on request)",
+                    "Temperature",
+                    "ISE",
+                    "Ammonia",
+                    "Ammonia (NH3)",
+                    "Cyanide (CN-)",
+                    "Fluoride (F-)",
+                    "Sodium (Na+)",
+                    "Chloride (Cl-)",
+                    "Water Hardness",
+                    "(Other ISE available on request)"
+                ],
+                "img": "assets/dummy/viz-eco-solo.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH",
+                    "Conductivity",
+                    "ORP",
+                    "Dissolved Oxygen",
+                    "TDS",
+                    "turbidity",
+                    "Suspended Solids",
+                    "Sludge",
+                    "Chlorophyll",
+                    "Blue Green Algae",
+                    "Oil in water",
+                    "Ammonia Nitrogen (NH4N)",
+                    "Nitrate Nitrogen (NO3N)",
+                    "residual chlorine",
+                    "UV Visible Measurement",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "(Other parameters available on request)",
+                    "Temperature",
+                    "ISE",
+                    "Ammonia (NH3)",
+                    "Cyanide (CN-)",
+                    "Fluoride (F-)",
+                    "Sodium (Na+)",
+                    "Chloride (Cl-)",
+                    "Water Hardness",
+                    "(Other ISE available on request)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "Viz Eco Duo (multi channel transmitter)",
+                "parameters": [
+                    "pH",
+                    "Conductivity",
+                    "ORP",
+                    "Dissolved Oxygen",
+                    "TDS",
+                    "turbidity",
+                    "Suspended Solids",
+                    "Sludge",
+                    "Chlorophyll",
+                    "Blue Green Algae",
+                    "Oil in water",
+                    "Ammonia Nitrogen (NH4N)",
+                    "Nitrate Nitrogen (NO3N)",
+                    "residual chlorine",
+                    "UV Visible Measurement",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "(Other parameters available on request)",
+                    "Temperature",
+                    "ISE",
+                    "Ammonia (NH3)",
+                    "Cyanide (CN-)",
+                    "Fluoride (F-)",
+                    "Sodium (Na+)",
+                    "Chloride (Cl-)",
+                    "Water Hardness",
+                    "(Other ISE available on request)"
+                ],
+                "img": "assets/dummy/viz-eco-duo.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH",
+                    "Conductivity",
+                    "ORP",
+                    "Dissolved Oxygen",
+                    "TDS",
+                    "turbidity",
+                    "Suspended Solids",
+                    "Sludge",
+                    "Chlorophyll",
+                    "Blue Green Algae",
+                    "Oil in water",
+                    "Ammonia Nitrogen (NH4N)",
+                    "Nitrate Nitrogen (NO3N)",
+                    "residual chlorine",
+                    "UV Visible Measurement",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "(Other parameters available on request)",
+                    "Temperature",
+                    "ISE",
+                    "Ammonia (NH3)",
+                    "Cyanide (CN-)",
+                    "Fluoride (F-)",
+                    "Sodium (Na+)",
+                    "Chloride (Cl-)",
+                    "Water Hardness",
+                    "(Other ISE available on request)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "Viz Eco Multi ( multi channel transmitter)",
+                "parameters": [
+                    "pH",
+                    "Conductivity",
+                    "ORP",
+                    "Dissolved Oxygen",
+                    "TDS",
+                    "turbidity",
+                    "Suspended Solids",
+                    "Sludge",
+                    "Chlorophyll",
+                    "Blue Green Algae",
+                    "Oil in water",
+                    "Ammonia Nitrogen (NH4N)",
+                    "Nitrate Nitrogen (NO3N)",
+                    "residual chlorine",
+                    "UV Visible Measurement",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "(Other parameters available on request)",
+                    "Temperature",
+                    "ISE",
+                    "Ammonia (NH3)",
+                    "Cyanide (CN-)",
+                    "Fluoride (F-)",
+                    "Sodium (Na+)",
+                    "Chloride (Cl-)",
+                    "Water Hardness",
+                    "(Other ISE available on request)"
+                ],
+                "img": "assets/dummy/viz-eco-multi.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH",
+                    "Conductivity",
+                    "ORP",
+                    "Dissolved Oxygen",
+                    "TDS",
+                    "turbidity",
+                    "Suspended Solids",
+                    "Sludge",
+                    "Chlorophyll",
+                    "Blue Green Algae",
+                    "Oil in water",
+                    "Ammonia Nitrogen (NH4N)",
+                    "Nitrate Nitrogen (NO3N)",
+                    "residual chlorine",
+                    "UV Visible Measurement",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "(Other parameters available on request)",
+                    "Temperature",
+                    "ISE",
+                    "Ammonia (NH3)",
+                    "Cyanide (CN-)",
+                    "Fluoride (F-)",
+                    "Sodium (Na+)",
+                    "Chloride (Cl-)",
+                    "Water Hardness",
+                    "(Other ISE available on request)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-PH(Analog)",
+                "parameters": [
+                    "PH(Analog)"
+                ],
+                "img": "assets/dummy/vizsens-ph-analog.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "PH(Analog)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-ORP(Analog)",
+                "parameters": [
+                    "ORP(Analog)"
+                ],
+                "img": "assets/dummy/vizsens-ph-analog.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "ORP(Analog)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-EC(Analog)",
+                "parameters": [
+                    "Conductivity Sensor(Analog)"
+                ],
+                "img": "assets/dummy/vizsens-ph-analog.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Conductivity Sensor(Analog)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-PH(Digital)",
+                "parameters": [
+                    "pH (Digital)"
+                ],
+                "img": "assets/dummy/VizSens-PH(Digital).png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH (Digital)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-ODO",
+                "parameters": [
+                    "Optical Dissolved Oxygen"
+                ],
+                "img": "assets/dummy/VizSens-ODO.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Optical Dissolved Oxygen"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-RCL",
+                "parameters": [
+                    "residual chlorine",
+                    "chlorine dioxide"
+                ],
+                "img": "assets/dummy/VizSens-RCL.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "residual chlorine",
+                    "chlorine dioxide"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-UV",
+                "parameters": [
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC"
+                ],
+                "img": "assets/dummy/vizsens-uvcod.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-SS",
+                "parameters": [
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "Suspended Solids/Sludge"
+                ],
+                "img": "assets/dummy/VizSens-SS.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "COD",
+                    "BOD",
+                    "TSS",
+                    "TOC",
+                    "Suspended Solids/Sludge"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-Turb",
+                "parameters": [
+                    "turbidity"
+                ],
+                "img": "assets/dummy/VizSens-SS.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "turbidity"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-TurbLo",
+                "parameters": [
+                    "Low Range turbidity"
+                ],
+                "img": "assets/dummy/VizSens-TurbLo.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Low Range turbidity"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-CPHL",
+                "parameters": [
+                    "LChlorophyll Sensor"
+                ],
+                "img": "assets/dummy/VizSens-CPHL.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "LChlorophyll Sensor"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-BGA",
+                "parameters": [
+                    "Blue-Green Algae"
+                ],
+                "img": "assets/dummy/VizSens-CPHL.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Blue-Green Algae"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-OIW",
+                "parameters": [
+                    "Oil in water"
+                ],
+                "img": "assets/dummy/VizSens-OIW.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Oil in water"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-NH4N",
+                "parameters": [
+                    "Ammonia Nitrogen (NH4-N)"
+                ],
+                "img": "assets/dummy/VizSens-NH4N.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Ammonia Nitrogen (NH4-N)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "VizSens-NO3N",
+                "parameters": [
+                    "Nitrate nitrogen"
+                ],
+                "img": "assets/dummy/VizSens-NO3N.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "Nitrate nitrogen"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Horiba",
+                "name": "UV 300",
+                "parameters": [
+                    "pH",
+                    "ORP",
+                    "BOD",
+                    "TDS",
+                    "TSS",
+                    "Nitrate (NO3-)",
+                    "Chlorophyll A",
+                    "Iron (Fe)",
+                    "Aluminum (Al3+)",
+                    "Hexavalent Chrome (Cr6+)",
+                    "Nitrite (NO2-)",
+                    "Silica (SiO2)",
+                    "Ammonium (NH4+)",
+                    "Ammonia (NH3)",
+                    "Hydrogen Sulphide (H2S)",
+                    "Total Nitrogen",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "turbidity",
+                    "Conductivity",
+                    "Phosphates"
+                ],
+                "img": "assets/dummy/p1.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Horiba",
+                    "Horiba Advanced Techno Systems",
+                    "pH",
+                    "ORP",
+                    "BOD",
+                    "TDS",
+                    "TSS",
+                    "Nitrate (NO3-)",
+                    "Chlorophyll A",
+                    "Iron (Fe)",
+                    "Aluminum (Al3+)",
+                    "Hexavalent Chrome (Cr6+)",
+                    "Nitrite (NO2-)",
+                    "Silica (SiO2)",
+                    "Ammonium (NH4+)",
+                    "Ammonia (NH3)",
+                    "Hydrogen Sulphide (H2S)",
+                    "Total Nitrogen",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "turbidity",
+                    "Conductivity",
+                    "Phosphates"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Horiba",
+                "name": "UV 400",
+                "parameters": [
+                    "BOD",
+                    "Nitrate (NO3-)",
+                    "Chlorophyll A",
+                    "Ammonia (NH3)",
+                    "Hydrogen Sulphide (H2S)",
+                    "Total Nitrogen",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "turbidity"
+                ],
+                "img": "assets/dummy/p1.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Horiba",
+                    "Horiba Advanced Techno Systems",
+                    "BOD",
+                    "Nitrate (NO3-)",
+                    "Chlorophyll A",
+                    "Ammonia (NH3)",
+                    "Hydrogen Sulphide (H2S)",
+                    "Total Nitrogen",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "turbidity"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Horiba",
+                "name": "UV 500",
+                "parameters": [
+                    "BOD",
+                    "TSS",
+                    "Nitrate (NO3-)",
+                    "Chlorophyll A",
+                    "Ammonia (NH3)",
+                    "Hydrogen Sulphide (H2S)",
+                    "Total Nitrogen",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Silica (SiO2)",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "turbidity",
+                    "Hexavalent Chrome (Cr6+)",
+                    "Nitrite (NO2-)",
+                    "Phosphates",
+                    "Ammonium (NH4+)"
+                ],
+                "img": "assets/dummy/p1.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Horiba",
+                    "Horiba Advanced Techno Systems",
+                    "BOD",
+                    "TSS",
+                    "Nitrate (NO3-)",
+                    "Chlorophyll A",
+                    "Ammonia (NH3)",
+                    "Silica (SiO2)",
+                    "Hydrogen Sulphide (H2S)",
+                    "Nitrite (NO2-)",
+                    "Total Nitrogen",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "turbidity",
+                    "Hexavalent Chrome (Cr6+)",
+                    "Phosphates",
+                    "Ammonium (NH4+)"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Horiba",
+                "name": "EL300 with UV – Vis 200 Probe",
+                "parameters": [
+                    "COD",
+                    "TSS",
+                    "Color",
+                    "PAH",
+                    "Ammonium (NH4+)",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "Oil in water"
+                ],
+                "img": "assets/dummy/el300.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Horiba",
+                    "Horiba Advanced Techno Systems",
+                    "COD",
+                    "TSS",
+                    "Color",
+                    "PAH",
+                    "Ammonium (NH4+)",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "Oil in water"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Horiba",
+                "name": "EL200",
+                "parameters": [
+                    "COD",
+                    "TSS",
+                    "Color",
+                    "PAH",
+                    "Ammonium (NH4+)",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "Oil in water"
+                ],
+                "img": "assets/dummy/el200.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Horiba",
+                    "Horiba Advanced Techno Systems",
+                    "COD",
+                    "TSS",
+                    "Color",
+                    "PAH",
+                    "Ammonium (NH4+)",
+                    "pH",
+                    "ORP",
+                    "TDS",
+                    "Conductivity",
+                    "Chlorine",
+                    "Dissolved Oxygen",
+                    "Oil in water"
+                ]
+            },
+            {
+                "category": "gas",
+                "application": "emission",
+                "brands": "Uniphos",
+                "name": "ADMS 1000",
+                "parameters": [
+                    "SPM"
+                ],
+                "img": "assets/dummy/adms.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "gas",
+                    "Uniphos",
+                    "SPM"
+                ]
+            },
+            {
+                "category": "gas",
+                "application": "emission",
+                "brands": "Uniphos",
+                "name": "ADMS 2000",
+                "parameters": [
+                    "SPM"
+                ],
+                "img": "assets/dummy/adms.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "gas",
+                    "Uniphos",
+                    "SPM"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Turnkey Instruments UK",
+                "name": "Osiris",
+                "parameters": [
+                    "PM 1"
+                ],
+                "img": "assets/dummy/osiris.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "Osiris",
+                    "Turnkey Instruments UK",
+                    "PM 1"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Turnkey Instruments UK",
+                "name": "TOPAS",
+                "parameters": [
+                    "PM 1"
+                ],
+                "img": "assets/dummy/Topas-Front.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "TOPAS",
+                    "Turnkey Instruments UK",
+                    "PM 1"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Turnkey Instruments UK",
+                "name": "DUSTMATE",
+                "parameters": [
+                    "PM 1"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "DUSTMATE",
+                    "Turnkey Instruments UK",
+                    "PM 1"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Turnkey Instruments UK",
+                "name": "DUSTMATE",
+                "parameters": [
+                    "PM 1"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "DUSTMATE",
+                    "Turnkey Instruments UK",
+                    "PM 1"
+                ]
+            }
+        ]
+    }
+]

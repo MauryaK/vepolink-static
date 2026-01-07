@@ -1,0 +1,33 @@
+@charset "UTF-8"
+
+@mixin responsive($media)
+    @media only screen and (max-width: $media)
+        @content
+
+
+        
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
++keyframes(blink)
+    50%
+        border-color: transparent
+  
++keyframes(type)
+    0% 
+        width: 0
+
++keyframes(bganimate)        
+    0%
+        background-position: 0 100%
+    100%
+        background-position: -100vw 100%
+  
+

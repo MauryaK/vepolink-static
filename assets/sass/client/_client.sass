@@ -1,0 +1,173 @@
+.ClientPageSecA
+    padding: 60px 0
+    background: var(--white)
+    .heading
+        margin-bottom: 45px
+    .col1
+        flex: 0 1 55%
+        max-width: 55%
+        padding: 15px
+        @include responsive(991px)
+            padding: 15px 0
+        @include responsive(767px)
+            flex: 0 1 100%
+            max-width: 100%
+            order: 1
+    .col2
+        flex: 0 1 45%
+        max-width: 45%
+        padding: 15px
+        @include responsive(991px)
+            padding: 15px 0
+        @include responsive(767px)
+            flex: 0 1 100%
+            max-width: 100%
+            order: 0
+            display: none
+    .tabStrip
+        margin-bottom: 45px
+        @include responsive(675px)
+            margin-bottom: 30px
+        .wrap
+            padding: 0
+            overflow: hidden
+            .tab
+                text-indent: 0
+                text-indent: 0
+                padding: 13px 25px
+                min-width: 200px
+                border-radius: 50px
+                font-weight: 500
+                @include responsive(520px)
+                    min-width: auto
+                    padding: 13px 19px
+                &.active
+                    background: var(--gradient)
+                    color: #fff
+    .listClinet
+        display: flex
+        flex-wrap: wrap
+        .item
+            flex: 0 1 25%
+            max-width: 25%
+            padding: 3px
+            cursor: pointer
+            @include responsive(991px)
+                flex: 0 1 33.33%
+                max-width: 33.33%
+            @include responsive(520px)
+                flex: 0 1 50%
+                max-width: 50%
+
+            .card
+                border: 1px solid #f0f0f0
+                border-radius: 5px
+                height: 100%
+                padding: 7px
+                overflow: hidden
+                transition: all 0.3s ease
+                position: relative
+                .img
+                    max-width: 100px
+                    width: 100%
+                    margin: 0 auto
+                    overflow: hidden
+                    margin-bottom: 11px
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                p
+                    font-size: 14px
+                    color: var(--gray)
+                    text-align: center
+                    padding: 0 8px
+                    font-weight: 500
+                    line-height: 1.22
+                .hoverCard
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    background: linear-gradient(to right, #b75be9e0, #1631baf5)
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    gap: 4px 0px
+                    transform: scale(0)
+                    opacity: 0
+                    transition: .5s ease
+                    img
+                        max-width: 30px
+                        filter: invert(1)
+                    p
+                        color: var(--white)
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 1.22
+
+            &:hover
+                .hoverCard
+                    transform: scale(1)
+                    opacity: 1
+                    @include responsive(520px)
+                        display: none
+            &.active
+                .hoverCard
+                    transform: scale(0)
+                    opacity: 0
+                .card
+                    border-color: var(--blue)
+
+    .clinetConte
+        background: #f5f4f4
+        height: 100%
+        padding: 45px 25px
+        border-radius: 8px
+        .item
+            &:not(:first-child)
+                display: none
+
+            .content
+                text-align: center
+                .img
+                    margin-bottom: 15px
+                    img
+                        display: block
+                        max-width: 100%
+                        margin: 0 auto
+                        mix-blend-mode: multiply
+                .title
+                    color: var(--black)
+                    font-size: 22px
+                    font-weight: 600
+                    line-height: 1.2
+                    margin-bottom: 15px
+                p
+                    color: var(--grey-dark)
+                    margin-bottom: 15px
+    .tabContent
+        .tabItem
+            &:not(:first-child)
+                display: none
+
+.ClientSecB
+    padding: 25px 0 65px 0
+    @include responsive(675px)
+        padding: 45px 0
+    .heading
+        @include responsive(675px)
+            margin-bottom: 30px
+    .listPartners
+        .img
+            padding: 15px
+            img
+                width: auto
+                max-width: 100%
+                display: block
+                margin: 0 auto
+#map
+    width: 100%
+    height: 450px

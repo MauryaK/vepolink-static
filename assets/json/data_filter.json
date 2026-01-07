@@ -1,0 +1,96 @@
+[
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "OPTICS-1000",
+        "parameters": [
+            "BOD",
+            "COD",
+            "TSS",
+            "TOC"
+        ],
+        "img": "assets/dummy/advance.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "meta": [
+            "effluent",
+            "Advance Analytik",
+            "OPTICS-1000",
+            "BOD",
+            "COD",
+            "TSS",
+            "TOC"
+        ]
+    },
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "VizSens-PH(Analog)",
+        "parameters": [
+            "pH"
+        ],
+        "img": "assets/dummy/vizsens-ph-analog.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "meta": [
+            "effluent",
+            "Advance Analytik",
+            "VizSens-PH(Analog)",
+            "pH"
+        ]
+    },
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "VizSens-PH(Digital)",
+        "parameters": [
+            "pH"
+        ],
+        "img": "assets/dummy/VizSens-PH(Digital).png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "meta": [
+            "effluent",
+            "Advance Analytik",
+            "VizSens-PH(Digital)",
+            "pH"
+        ]
+    },
+    {
+        "application": "Emission",
+        "brands": "Uniphos",
+        "name": "Continuous Emission Monitoring System (CEMS)",
+        "parameters": [
+            "NOx",
+            "SO2"
+        ],
+        "img": "assets/dummy/emission.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "meta": [
+            "Emission",
+            "Uniphos",
+            "Continuous Emission Monitoring System (CEMS)",
+            "NOx",
+            "SO2"
+        ]
+    },
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "VizSens-UV",
+        "parameters": [
+            "BOD",
+            "COD",
+            "TSS",
+            "TOC"
+        ],
+        "img": "assets/dummy/vizsens-uvcod.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "meta": [
+            "effluent",
+            "Advance Analytik",
+            "VizSens-UV",
+            "BOD",
+            "COD",
+            "TSS",
+            "TOC"
+        ]
+    }
+]

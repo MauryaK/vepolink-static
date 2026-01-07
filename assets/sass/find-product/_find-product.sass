@@ -1,0 +1,148 @@
+.find-product-main
+.heroSect_prod
+    padding: 120px 0 80px
+    .title
+        max-width: 490px
+        margin: 0 auto
+        text-align: center
+        h1
+            display: block
+            font-size: 35px
+            color: var(--black)
+        p
+            color: var(--grey-dark)
+
+.filter-BoxWrap
+    max-width: 750px
+    width: 100%
+    margin: 0 auto
+    margin-top: 40px
+    .filterWrapper
+        .flex
+            gap: 0 8px
+        .col
+            flex: 1
+        .btn_
+            .btn
+                width: 100%
+                display: block
+                background: var(--gradient)
+                color: var(--white)
+                padding: 12px 20px
+                border-radius: 5px
+    .filterBox
+        position: relative
+        .slected
+            padding: 12px 15px
+            border: 1px solid var(--grey-light)
+            cursor: pointer
+            position: relative
+            transition: all 0.3s ease
+            background: var(--white)
+            &::after
+                content: ""
+                position: absolute
+                right: 10px
+                top: 13px
+                width: 20px
+                height: 20px
+                background: url(../icons/down.png)
+                z-index: 11
+                background-size: contain
+                background-position: center
+            &:active
+                background: #f1f0ff
+        .dropdownList
+            border: 1px solid var(--grey-light)
+            border-top: 0
+            padding: 8px
+            padding-bottom: 4px
+            display: none
+            position: absolute
+            top: 100%
+            left: 0
+            right: 0
+            background: var(--white)
+            width: 100%
+            z-index: 2
+            max-height: 220px
+            overflow-y: scroll
+            &::-webkit-scrollbar
+                width: 4px
+            &::-webkit-scrollbar-track
+                box-shadow: 0
+            &::-webkit-scrollbar-thumb
+                background-color: var(--blue)
+                outline: 1px solid slategrey
+
+            .list
+                label
+                    display: flex
+                    gap: 0 6px
+                    position: relative
+                    margin-bottom: 4px
+                    text-transform: capitalize
+                    font-size: 14px
+                    padding: 2px 0
+                    .checkBox
+                        width: 22px
+                        height: 21px
+                        background: var(--grey-light)
+                        position: relative
+                        &::after
+                            content: ""
+                            position: absolute
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: url(../icons/check.png)
+                            background-repeat: no-repeat
+                            background-size: 12px
+                            background-position: center
+                            filter: invert(1)
+                            opacity: 0
+                    input
+                        display: none
+                        &:checked ~ .checkBox
+                            background: var(--blue)
+                            &::after
+                                opacity: 1
+
+.lostProduct-Filter
+    .stripFilProd
+        padding: 8px 55px
+        background: #f7f7f7
+        .flex
+            position: relative
+            align-items: center
+    .totalProduct
+        color: var(--black)
+        padding: 8px 0
+.filtTot
+    display: flex
+    flex-wrap: wrap
+    gap: 3px 3px
+    margin-top: 8px
+    label
+        display: inline-block
+        padding: 4px 10px
+        background: #f1f0ff
+        border-radius: 16px
+        font-size: 12px
+        cursor: pointer
+        color: #5856cb
+.matchedKeywords
+    display: flex
+    flex-wrap: wrap
+    gap: 3px 3px
+    margin-top: 12px
+    justify-content: center
+    span
+        display: inline-block
+        padding: 4px 10px
+        background: #ffedb4
+        border-radius: 16px
+        font-size: 12px
+        cursor: pointer
+        color: #a29820

@@ -1,0 +1,552 @@
+.banner
+    .banner-wrapper
+        position: relative
+        .img
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                height: 320px
+                background: linear-gradient(to bottom, #00000082, transparent)
+                @include responsive(675px)
+                    height: 250px
+            &::after
+                content: ""
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                background: linear-gradient(to right, #000000db, transparent)
+                @include responsive(675px)
+                    background: var(--black)
+                    opacity: .7
+            img,video
+                width: 100%
+                height: 100vh
+                object-fit: cover
+                @include responsive(1024px)
+                    height: 620px
+                @include responsive(991px)
+                    height: 500px
+                @include responsive(675px)
+                    height: 420px
+    &.home-banner
+        .banner-wrapper
+            .img
+                &::after,&::before
+                    display: none
+    .item
+        position: relative
+        .item-content
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            display: flex
+            flex-direction: column
+            justify-content: center
+            @include responsive(675px)
+                justify-content: flex-end
+                padding-bottom: 80px
+            .content
+                max-width: 450px
+                @include responsive(675px)
+                    max-width: 320px
+                    text-align: center
+                    margin: 0 auto
+
+                h1,p
+                    color: var(--white)
+                h1
+                    line-height: 1.2
+                    margin-bottom: 15px
+                    @include responsive(675px)
+                        margin-bottom: 12px
+                        font-size: 30px
+
+                p
+                    padding-right: 59px
+                    @include responsive(991px)
+                        padding-right: 0
+            .linkBtn
+                margin-top: 25px
+                max-width: 200px
+                a
+                    span
+                        color: var(--white)
+                    img
+                        width: 19px
+                        filter: invert(1) brightness(11)
+    .bannerHomeSlide
+        .owl-dots
+            position: absolute
+            bottom: 50px
+            left: 0
+            right: 0
+            display: flex
+            gap: 0 8px
+            align-items: center
+            justify-content: center
+            @include responsive(675px)
+                bottom: 20px
+            .owl-dot
+                width: 15px
+                height: 15px
+                border: 0
+                cursor: pointer
+                background: var(--white)
+                border-radius: 18px
+                transition: .5s ease
+                @include responsive(675px)
+                    width: 10px
+                    height: 10px
+                &.active
+                    width: 38px
+                    background: var(--gradient)
+                    @include responsive(675px)
+                        width: 20px
+
+.VepoHomeSecA
+    padding: 80px 0
+    background: var(--white)
+    @include responsive(991px)
+        padding-bottom: 0
+    .flex
+        align-items: center
+    .colA
+        width: 50%
+        @include responsive(991px)
+            width: 100%
+    .colB
+        width: 50%
+        @include responsive(991px)
+            width: 100%
+    .img
+        background: url('../images/img1bg.png')
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        display: block
+        margin: 0 auto
+        @include responsive(1024px)
+            padding-right: 45px
+        @include responsive(991px)
+            padding: 0
+        img
+            @include responsive(991px)
+                max-width: 350px
+                display: block
+                margin: 0 auto
+    .content
+        max-width: 550px
+        margin: 0 auto
+        @include responsive(991px)
+            max-width: 90%
+            text-align: center
+            margin-top: 45px
+        h2
+            color: var(--black)
+        h6
+            font-size: 16px
+            margin-top: 8px
+            margin-bottom: 20px
+        p
+            text-align: justify
+            margin-bottom: 12px
+            @include responsive(991px)
+                text-align: center
+
+        .link_btn
+            text-align: left
+            margin-top: 30px
+            a
+                display: flex
+                width: 200px
+                color: var(--grey-dark)
+                border: 1px solid var(--grey)
+                img
+                    width: 22px
+.tabStrip
+    text-align: center
+    .wrap
+        display: inline-block
+        padding: 6px 18px
+        border: 1px solid var(--grey-light)
+        border-radius: 50px
+        .tab
+            display: inline-block
+            padding: 8px 20px
+            cursor: pointer
+            color: var(--grey-dark)
+            &.active
+                color: var(--primaryDark)
+.VepoHomeSecB
+    padding: 80px 0
+    background: var(--white)
+    @include responsive(991px)
+        padding-bottom: 0
+    .tabStrip
+        margin-bottom: 55px
+    .center
+        margin-top: 45px
+.servicecard
+    .flex
+        .col
+            flex: 0 1 33.33%
+            max-width: 33.33%
+            width: 100%
+            padding: 8px
+            @include responsive(991px)
+                padding: 4px
+            @include responsive(767px)
+                flex: 0 1 50%
+                max-width: 50%
+            @include responsive(520px)
+                flex: 0 1 100%
+                max-width: 100%
+    .card
+        position: relative
+        a
+            display: block
+            position: relative
+            overflow: hidden
+            border-radius: 8px
+            .img
+                position: relative
+                overflow: hidden
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    height: 180px
+                    left: 0
+                    right: 0
+                    background: linear-gradient(to top, var(--black), transparent)
+                    opacity: .8
+                img
+                    width: 100%
+                    display: block
+                    transform: scale(1)
+                    transition: 2s ease
+            .content
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                padding: 15px 20px
+                padding-bottom: 22px
+                @include responsive(991px)
+                    padding: 10px
+                    padding-bottom: 15px
+                @include responsive(520px)
+                    padding: 20px
+                    text-align: center
+                h4,p
+                    color: var(--white)
+                h4
+                    font-size: 20px
+                    font-weight: 500
+                    margin-bottom: 8px
+                p
+                    line-height: 1.2
+                    font-size: 14px
+            &:hover
+                .img
+                    img
+                        transform: scale(1.2)
+    .tabContent
+        .item
+            &:not(:first-child)
+                display: none
+
+.VepoHomeSecC
+    padding: 80px 0
+    background: var(--white)
+    position: relative
+    .sh
+        position: absolute
+        right: 0
+        top: 0
+    .col
+        flex: 0 1 33.33%
+        max-width: 33.33%
+        width: 100%
+        padding: 15px
+        @include responsive(991px)
+            padding: 6px
+        @include responsive(767px)
+            flex: 0 1 50%
+            max-width: 50%
+        @include responsive(520px)
+            flex: 0 1 100%
+            max-width: 100%
+    .card
+        position: relative
+        overflow: hidden
+        border-radius: 8px
+        height: 100%
+        padding: 18px
+        border: 1px solid var(--grey-light)
+        background: var(--white)
+        @include responsive(520px)
+            text-align: center
+        .icon,h6,p
+            position: relative
+            z-index: 1
+            transition: .5s ease
+        .icon
+            margin-bottom: 12px
+            img
+                width: auto
+                height: 30px
+                transition: .5s ease
+        h6
+            font-weight: 600
+            color: var(--black)
+        p
+            line-height: 1.3
+        &::before
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            bottom: 0
+            width: 0%
+            // background: linear-gradient(to right, var(--primaryDark), var(--secondaryDark))
+            background: var(--gradient)
+            transition: .5s ease
+        &:hover
+            &::before
+                width: 100%
+            .icon
+                img
+                    filter: brightness(0) invert(1)
+            h6,p
+                color: var(--white)
+
+.VepoHomeSecD
+    padding-bottom: 60px
+    .heading
+        margin-bottom: 90px
+        @include responsive(767px)
+            margin-bottom: 40px
+    .col1
+        flex: 0 1 40%
+        width: 40%
+        @include responsive(767px)
+            flex: 0 1 100%
+            max-width: 100%
+    .col2
+        flex: 0 1 60%
+        width: 60%
+        @include responsive(767px)
+            flex: 0 1 100%
+            max-width: 100%
+    .whyTabLef
+        padding-right: 50px
+        @include responsive(1024px)
+            padding-right: 0px
+        .item
+            margin: 0 0 15px
+            padding: 15px
+            cursor: pointer
+            position: relative
+            overflow: hidden
+            border-radius: 0px
+            @include responsive(767px)
+                text-align: center
+                background: #f1f1f1
+                border-radius: 6px
+                min-height: 116px
+            @include responsive(767px)
+                filter: blur(1.2px)
+                transition: .5s ease
+            &::before
+                content: ""
+                position: absolute
+                left: 0
+                top: 0
+                bottom: 0
+                width: 0%
+                // background: linear-gradient(to right, var(--primaryDark), var(--secondaryDark))
+                background: var(--gradient)
+                transition: .5s ease
+            h6
+                color: #282525
+                font-weight: 600
+                margin-bottom: 8px
+            p
+                color: var(--grey-dark)
+                line-height: 1.3
+            &:not(:last-child)
+                border-bottom: 1px solid var(--grey)
+            &:hover,&.active
+                border-radius: 6px
+                &::before
+                    width: 100%
+                h6,p
+                    color: var(--white)
+                    position: relative
+
+        .center
+            .item
+                @include responsive(767px)
+                    filter: blur(0)
+        &.owl-carousel
+            .owl-nav
+                @include responsive(520px)
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    gap: 25px 10px
+                    margin-bottom: 25px
+                button
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 40px
+                    height: 40px
+                    border-radius: 40px
+                    background: var(--gradient)
+                    @include responsive(520px)
+                        position: static
+                        transform: none
+                    &.owl-next
+                        right: 12px
+                        @include responsive(520px)
+                            right: 0
+                    &.owl-prev
+                        left: 12px
+                        @include responsive(520px)
+                            left: 0
+    .whyTabRight
+        padding-left: 50px
+        @include responsive(991px)
+            padding-left: 20px
+        @include responsive(767px)
+            padding-left: 0px
+        .item
+            .img
+                border-radius: 8px
+                overflow: hidden
+                border: 1px solid #ebeff3
+                img
+                    width: 100%
+            .text
+                padding: 30px
+                text-align: center
+                @include responsive(767px)
+                    padding-bottom: 0
+                @include responsive(675px)
+                    padding: 20px 0 0
+            p
+                font-weight: 500
+                color: var(--grey-dark)
+                margin-bottom: 20px
+            &:not(:first-child)
+                display: none
+
+    .link_btn
+        text-align: center
+        margin-top: 30px
+        a
+            margin: 0 auto
+            display: flex
+            width: 240px
+            color: var(--grey-dark)
+            border: 1px solid var(--grey)
+            img
+                width: 22px
+
+.VepoHomeSecE
+    padding: 50px 0 80px
+    background: #f9f9f9
+    @include responsive(767px)
+        padding: 50px 0
+    .heading
+        @include responsive(767px)
+            margin-bottom: 40px
+    .tabContent
+        margin-top: 20px
+        padding-top: 20px
+        margin-bottom: 35px
+        @include responsive(767px)
+            margin-top: 10px
+        @include responsive(520px)
+            margin-top: 0px
+
+        .col
+            flex: 0 1 20%
+            padding: 8px
+            @include responsive(675px)
+                flex: 0 1 33.33%
+                padding: 5px
+
+        .img
+            background: var(--white)
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+            padding: 15px 8px
+            img
+                display: block
+                margin: 0 auto
+                object-fit: contain
+                width: auto
+                height: 30px
+        .item
+            &:not(:first-child)
+                display: none
+.VepoHomeSecF
+    position: relative
+    background: var(--gradient)
+    background: url('../images/bg.png')
+    background-size: cover
+    .container
+        padding: 85px 15px
+        position: relative
+        @include responsive(991px)
+            padding: 55px 15px
+        .img
+            position: absolute
+            right: 0
+            top: 0
+            max-width: 320px
+            bottom: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            @include responsive(675px)
+                display: none
+            img
+                @include responsive(991px)
+                    max-width: 300px
+    .content
+        max-width: 360px
+        @include responsive(675px)
+            max-width: 320px
+            margin: 0 auto
+            text-align: center
+        h2,p
+            color: var(--white)
+        h2
+            line-height: 1.1
+        p
+            margin: 10px 0 30px
+            @include responsive(520px)
+                margin-bottom: 20px
+    .linkBtn
+        a
+            color: #fff
+            border-color: var(--white)
+            img
+                width: 19px
+                filter: invert(1) brightness(11)

@@ -1,0 +1,141 @@
+[
+    {
+        "name": "OPTICS-1000",
+        "brand": "Advance Analytik",
+        "meta": [
+            "Advance Analytik",
+            "OPTICS-1000"
+        ],
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "img": "assets/dummy/advance.png"
+    },
+    {
+        "name": "VizSens-PH(Analog)",
+        "brand": "Advance Analytik",
+        "meta": [
+            "Advance Analytik",
+            "OPTICS-1000",
+            "VizSens-PH(Analog)"
+        ],
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "img": "assets/dummy/vizsens-ph-analog.png"
+    },
+    {
+        "name": "VizSens-PH(Digital)",
+        "brand": "Advance Analytik",
+        "meta": [
+            "Advance Analytik",
+            "OPTICS-1000",
+            "VizSens-PH(Digital)"
+        ],
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "img": "assets/dummy/VizSens-PH(Digital).png"
+    },
+    {
+        "name": "VizSens-UV",
+        "brand": "Advance Analytik",
+        "meta": [
+            "Advance Analytik",
+            "OPTICS-1000",
+            "VizSens-UV"
+        ],
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+        "img": "assets/dummy/ad_p2.png"
+    },
+    {
+        "name": "Online Water analyzer",
+        "brand": "Horiba",
+        "meta": [
+            "Horiba",
+            "COD",
+            "BOD",
+            "TSS"
+        ],
+        "description": "The UV300 is a cost effective water analyser for applications focused on one or two parameters.",
+        "img": "assets/dummy/p1.jpg"
+    }
+]
+
+
+
+[
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "OPTICS-1000",
+        "parameters": [
+            "BOD",
+            "COD",
+            "TSS",
+            "TOC"
+        ],
+        "img": "assets/dummy/advance.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters"
+    },
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "Viz Eco Solo",
+        "parameters": [
+            ""
+        ],
+        "img": "assets/dummy/viz-eco-solo.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters"
+    },
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "Viz Eco Duo",
+        "parameters": [
+            "OIW",
+            "NO3",
+            "NO2",
+            "TN",
+            "NH4",
+            "S2",
+            "SO3 2-",
+            "TS",
+            "CI2",
+            "CIO2",
+            "TS",
+            "CI2",
+            "TC",
+            "O3",
+            "TSS",
+            "TOC"
+        ],
+        "img": "assets/dummy/viz-eco-duo.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters"
+    },
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "VizSens-PH(Analog)",
+        "parameters": [
+            "pH"
+        ],
+        "img": "assets/dummy/vizsens-ph-analog.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters"
+    },
+    {
+        "application": "effluent",
+        "brands": "Advance Analytik",
+        "name": "VizSens-PH(Digital)",
+        "parameters": [
+            "pH"
+        ],
+        "img": "assets/dummy/VizSens-PH(Digital).png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters"
+    },
+    {
+        "application": "Emission",
+        "brands": "Uniphos",
+        "name": "Continuous Emission Monitoring System (CEMS",
+        "parameters": [
+            "NOx",
+            "SO2"
+        ],
+        "img": "assets/dummy/emission.png",
+        "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters"
+    }
+]

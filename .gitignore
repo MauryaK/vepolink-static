@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+
+# Backup/Duplicate folders
+find/
+find/*.html
+html/
+html/*
+New folder/
+New folder/*
+assets/dummy
+assets/dummy/*
+assets/video
+assets/video/*
+assets/doc
+assets/doc/*
