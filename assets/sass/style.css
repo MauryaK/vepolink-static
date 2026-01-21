@@ -2080,6 +2080,7 @@ header.no-banner .logo {
   background: var(--gradient);
   background: url("../images/bg.png");
   background-size: cover;
+  overflow: hidden;
 }
 .VepoHomeSecF .container {
   padding: 85px 15px;
