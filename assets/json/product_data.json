@@ -387,7 +387,7 @@
             },
             {
                 "id": 75,
-                "name": "ORP(Analog)",
+                "name": "Oxidation-Reduction Potential (Analog)",
                 "category": "water"
             },
             {
@@ -877,7 +877,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Viz Pro Solo (single channel transmitter)",
+                "name": "Single channel transmitter",
                 "parameters": [
                     "pH – Analog",
                     "pH – Digital",
@@ -931,66 +931,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Viz Pro Duo(Dual channel transmitter)",
-                "parameters": [
-                    "pH – Analog",
-                    "pH – Digital",
-                    "ORP – Analog",
-                    "ORP – Digital",
-                    "Chlorine Sensor – Potentiometric",
-                    "Conductivity/Total Dissolved solids – Analog/Digital",
-                    "Conductivity",
-                    "Total Dissolved solids – Analog",
-                    "Digital",
-                    "Dissolved Oxygen – Polarographic/Optical",
-                    "turbidity – Digital",
-                    "Sludge Level – Optical/Digital",
-                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
-                    "COD",
-                    "BOD",
-                    "TOC",
-                    "TSS",
-                    "Color",
-                    "UV 254",
-                    "Total Suspended solids – IR Based",
-                    "Ion Selective Electrode – Analog/4 to 20 mA",
-                    "Temperature – PT100,PT1000, RTD, Thermocouple"
-                ],
-                "img": "assets/dummy/viz-pro-solo.png",
-                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
-                "meta": [
-                    "water",
-                    "effluent",
-                    "Advance Analytik",
-                    "pH – Analog",
-                    "pH – Digital",
-                    "ORP – Analog",
-                    "ORP – Digital",
-                    "Chlorine Sensor – Potentiometric",
-                    "Conductivity/Total Dissolved solids – Analog/Digital",
-                    "Conductivity",
-                    "Total Dissolved solids – Analog",
-                    "Digital",
-                    "Dissolved Oxygen – Polarographic/Optical",
-                    "turbidity – Digital",
-                    "Sludge Level – Optical/Digital",
-                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
-                    "COD",
-                    "BOD",
-                    "TOC",
-                    "TSS",
-                    "Color",
-                    "UV 254",
-                    "Total Suspended solids – IR Based",
-                    "Ion Selective Electrode – Analog/4 to 20 mA",
-                    "Temperature – PT100,PT1000, RTD, Thermocouple"
-                ]
-            },
-            {
-                "category": "water",
-                "application": "effluent",
-                "brands": "Advance Analytik",
-                "name": "Viz Pro Duo ( multi channel transmitter)",
+                "name": "Dual channel transmitter",
                 "parameters": [
                     "pH – Analog",
                     "pH – Digital",
@@ -1049,7 +990,66 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Viz Eco Solo ( single channel transmitter)",
+                "name": "Multi channel transmitter",
+                "parameters": [
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Conductivity",
+                    "Total Dissolved solids – Analog",
+                    "Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ],
+                "img": "assets/dummy/viz-pro-solo.png",
+                "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
+                "meta": [
+                    "water",
+                    "effluent",
+                    "Advance Analytik",
+                    "pH – Analog",
+                    "pH – Digital",
+                    "ORP – Analog",
+                    "ORP – Digital",
+                    "Chlorine Sensor – Potentiometric",
+                    "Conductivity/Total Dissolved solids – Analog/Digital",
+                    "Conductivity",
+                    "Total Dissolved solids – Analog",
+                    "Digital",
+                    "Dissolved Oxygen – Polarographic/Optical",
+                    "turbidity – Digital",
+                    "Sludge Level – Optical/Digital",
+                    "UV-VIS Sensor – (COD,BOD,TOC,TSS,Color,UV 254)",
+                    "COD",
+                    "BOD",
+                    "TOC",
+                    "TSS",
+                    "Color",
+                    "UV 254",
+                    "Total Suspended solids – IR Based",
+                    "Ion Selective Electrode – Analog/4 to 20 mA",
+                    "Temperature – PT100,PT1000, RTD, Thermocouple"
+                ]
+            },
+            {
+                "category": "water",
+                "application": "effluent",
+                "brands": "Advance Analytik",
+                "name": "Single channel transmitter",
                 "parameters": [
                     "pH",
                     "Conductivity",
@@ -1123,7 +1123,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Viz Eco Duo (multi channel transmitter)",
+                "name": "Multi channel transmitter",
                 "parameters": [
                     "pH",
                     "Conductivity",
@@ -1196,7 +1196,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Viz Eco Multi ( multi channel transmitter)",
+                "name": "Multi channel transmitter",
                 "parameters": [
                     "pH",
                     "Conductivity",
@@ -1269,7 +1269,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-PH(Analog)",
+                "name": "PH(Analog)",
                 "parameters": [
                     "PH(Analog)"
                 ],
@@ -1286,7 +1286,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-ORP(Analog)",
+                "name": "Oxidation-Reduction Potential (Analog)",
                 "parameters": [
                     "ORP(Analog)"
                 ],
@@ -1296,14 +1296,14 @@
                     "water",
                     "effluent",
                     "Advance Analytik",
-                    "ORP(Analog)"
+                    "Oxidation-Reduction Potential (Analog)"
                 ]
             },
             {
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-EC(Analog)",
+                "name": "Electronics & Communication (Analog)",
                 "parameters": [
                     "Conductivity Sensor(Analog)"
                 ],
@@ -1320,7 +1320,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-PH(Digital)",
+                "name": "PH(Digital)",
                 "parameters": [
                     "pH (Digital)"
                 ],
@@ -1337,7 +1337,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-ODO",
+                "name": "Optical Dissolved Oxygen Sensor",
                 "parameters": [
                     "Optical Dissolved Oxygen"
                 ],
@@ -1354,7 +1354,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-RCL",
+                "name": "Digital Residual Chlorine Online sensor",
                 "parameters": [
                     "residual chlorine",
                     "chlorine dioxide"
@@ -1373,7 +1373,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-UV",
+                "name": "UV Sensor",
                 "parameters": [
                     "COD",
                     "BOD",
@@ -1396,7 +1396,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-SS",
+                "name": "Suspended Solids/Sludge Sensor",
                 "parameters": [
                     "COD",
                     "BOD",
@@ -1421,7 +1421,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-Turb",
+                "name": "Turbidity Sensor",
                 "parameters": [
                     "turbidity"
                 ],
@@ -1438,7 +1438,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-TurbLo",
+                "name": "Low Range Turbidity Sensor",
                 "parameters": [
                     "Low Range turbidity"
                 ],
@@ -1455,9 +1455,9 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-CPHL",
+                "name": "Chlorophyll Sensor",
                 "parameters": [
-                    "LChlorophyll Sensor"
+                    "Chlorophyll Sensor"
                 ],
                 "img": "assets/dummy/VizSens-CPHL.png",
                 "description": "The Optic 1000 Series is a high-performance online water analyser that provides accurate and reliable measurements for a wide range of water quality parameters",
@@ -1465,14 +1465,14 @@
                     "water",
                     "effluent",
                     "Advance Analytik",
-                    "LChlorophyll Sensor"
+                    "Chlorophyll Sensor"
                 ]
             },
             {
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-BGA",
+                "name": "Blue-Green Algae Sensor",
                 "parameters": [
                     "Blue-Green Algae"
                 ],
@@ -1489,7 +1489,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-OIW",
+                "name": "Oil in water Sensor",
                 "parameters": [
                     "Oil in water"
                 ],
@@ -1506,7 +1506,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-NH4N",
+                "name": "Ammonia Nitrogen (NH4-N) Sensor",
                 "parameters": [
                     "Ammonia Nitrogen (NH4-N)"
                 ],
@@ -1523,7 +1523,7 @@
                 "category": "water",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "VizSens-NO3N",
+                "name": "Nitrate nitrogen Sensor (NO3N)",
                 "parameters": [
                     "Nitrate nitrogen"
                 ],
