@@ -195,6 +195,8 @@ $(function () {
     })
     // AOS
     if ($('[data-aos]').length > 0) {
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
     }
 })
