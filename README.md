@@ -86,7 +86,7 @@ The website uses custom SASS mixins for responsive design:
 - **Homepage** (`index.html`): Overview of solutions and features
 - **About** (`about.html`): Company information and mission
 - **Analytics** (`analytics.html`): Platform capabilities
-- **Find Product** (`find-product.html`): Product search interface
+- **Search Product** (`search-product.html`): Product search interface
 - **Contact Us** (`contact-us.html`): Contact form and information
 - **Clients** (`clients.html`): Client testimonials and partnerships
 - **Gallery** (`gallery.html`): Project images and installations
@@ -103,6 +103,7 @@ The website uses custom SASS mixins for responsive design:
 ### Legal Pages
 - **Privacy Policy** (`privacy-policy.html`)
 - **Terms & Conditions** (`terms-and-conditions.html`)
+- **White List Policy** (`white-list-policy.html`)
 
 ## 🚀 Getting Started
 

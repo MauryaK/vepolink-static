@@ -1,0 +1,297 @@
+.heroSect
+    // background: url(../images/new_prod_list.jpg) no-repeat center
+    // background-size: cover
+    // height: 400px
+    // display: flex
+    // align-items: center
+    // justify-content: center
+    // backdrop-filter: 12px
+    position: relative
+    // .bg
+    //     position: absolute
+    //     top: 0
+    //     bottom: 0
+    //     left: 0
+    //     right: 0
+    //     background: #ffffff30
+    .container
+        position: relative
+        z-index: 2
+    .content
+        max-width: 460px
+        h1
+            color: var(--black)
+            line-height: 1
+            margin-bottom: .5em
+        p
+            font-weight: 500
+            color: var(--blacklight)
+            font-size: var(--font-siz-17)
+.new_prodSecA
+    padding: 6em 0 4em 0
+    .heading_
+        position: relative
+        margin-bottom: 3em
+        h2
+            font-size: var(--h2)
+            color: var(--blacklight)
+    ._new-search
+        position: absolute
+        right: 0
+        top: 0
+        max-width: 450px
+        width: auto
+        .input
+            position: relative
+            input
+                width: 100%
+                width: 100%
+                display: block
+                padding: 15px 15px
+                border: 1px solid var(--grey)
+                background: var(--white)
+                outline: none
+                border-radius: 5px
+                height: 42.6px
+                transition: .5s ease
+                &:focus
+                    border-color: var(--black)
+            img
+                position: absolute
+                right: 8px
+                top: 10px
+                width: 22px
+                filter: invert(0.5)
+.new_product
+    .col
+        flex: 0 1 25%
+        max-width: 25%
+        width: 100%
+        padding: 8px
+    ._card
+        a
+            padding: 8px
+            display: block
+            border: 1px solid var(--grey)
+            border-radius: 5px
+            ._card-img
+                overflow: hidden
+                img
+                    scale: 1
+                    max-width: 100%
+                    transition: .5s ease
+            ._card-content
+                padding: 8px
+                padding-top: 1em
+                .title
+                    font-size: var(--h5)
+                    color: var(--black)
+                    font-weight: 600
+                    white-space: nowrap
+                .brand
+                    font-size: var(--font-siz-16)
+                    color: var(--blacklight)
+                .link
+                    margin-top: 1em
+                    display: block
+                    padding: 8px
+                    border: 1px solid var(--grey)
+                    border-radius: 20px
+                    text-align: center
+                    color: var(--blacklight)
+                    background: transparent
+                    position: relative
+                    overflow: hidden
+                    span
+                        position: relative
+                        z-index: 1
+                        color: inherit
+                        transition: .5s ease
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: 0
+                        bottom: 0
+                        left: 0
+                        width: 0%
+                        background: var(--gradient)
+                        transition: .5s ease
+            &:hover
+                ._card-img
+                    img
+                        scale: 1.1
+                ._card-content
+                    .link
+                        &::before
+                            width: 100%
+                        span
+                            color: var(--white)
+.analysis_secA
+    &._new-page-detail
+        padding: 7em 0
+        .analGridA
+            .flex
+                align-items: unset
+            .colA
+                position: sticky
+                height: 100%
+                top: 10%
+            .content
+                p
+                    font-weight: 500
+                    text-align: justify
+            ul
+                padding-left: 20px
+                li
+                    margin-bottom: .5em
+                    position: relative
+                    padding-left: 18px
+                    &::before
+                        content: ""
+                        position: absolute
+                        left: 0
+                        top: 8px
+                        width: 8px
+                        height: 8px
+                        background: var(--blue)
+                        border-radius: 30px
+._new-pagec-secB
+    padding-bottom: 2em
+    .specroSecA
+        .flex
+            justify-content: center
+            .col
+                flex: 0 1 25%
+                max-width: 25%
+        .card
+            .img
+                min-height: 200px
+                display: flex
+                align-items: center
+                justify-content: center
+._new-pagec-secC
+    padding: 4em 0
+    .grid-box
+        .flex
+            .col
+                flex: 0 1 33.33%
+                max-width: 33.33%
+                width: 100%
+                padding: 8px
+        a
+            display: block
+            border: 1px solid var(--grey-light)
+            padding: 8px
+            border-radius: 8px
+            .img
+                img
+                    display: block
+                    max-width: 100%
+                    margin: 0 auto .5em
+                    max-height: 110px
+            .title
+                color: var(--black)
+                font-size: 18px
+                text-align: center
+                font-weight: 600
+    &.communication_sec
+        padding: 5em 0 2em
+        background: #f9f9f9
+        .heading
+            margin-bottom: 1.1em
+        .col_grid
+            .col
+                flex: 0 1 50%
+                max-width: 100%
+            .content
+                padding: 0 15px
+                text-align: center
+            img
+                mix-blend-mode: multiply
+._new-pagec-secD
+    padding: 4em 0
+    background: var(--white)
+    .col
+        flex: 0 1 50%
+        max-width: 50%
+        width: 100%
+        padding: 8px
+    .card
+        border: 1px solid var(--grey-light)
+        border-radius: 8px
+        padding: 1em
+        height: 100%
+        h4
+            color: var(--black)
+            font-size: var(--h4)
+            margin-bottom: .3em
+        h5
+            color: var(--black)
+            font-size: var(--h5)
+            margin-bottom: .3em
+        p
+            margin-bottom: 1.2em
+            text-align: justify
+        .img
+            margin: 1em 0
+            img
+                // max-width: 80%
+                margin: 0 auto
+                display: block
+._new-page-secE
+    padding: 4em 0
+    .img
+        img
+            display: block
+            max-width: 620px
+            width: 100%
+            margin: 0 auto
+
+.saech-tab-button
+    margin-bottom: 2em
+    display: flex
+    // justify-content: center
+    // gap: 1em
+    button
+        padding: 10px 20px
+        // border: 1px solid var(--grey)
+        background: var(--grey-light)
+        color: var(--black)
+        // border-radius: 5px
+        transition: .5s ease
+        &:hover
+            background: var(--black)
+            color: var(--white)
+        &.active
+            background: var(--black)
+            color: var(--white)
+
+.list_filter_data
+    margin-bottom: 3.5em
+    .data
+        gap: .4em
+        a
+            display: block
+            padding: 10px 12px
+            border: 1px solid var(--grey)
+            border-radius: 5px
+            color: var(--black)
+            font-size: var(--font-siz-14)
+            background: transparent
+            transition: .5s ease
+            &:hover
+                background: var(--black)
+                color: var(--white)
+
+
+
+.noprodfound
+    text-align: center
+    padding: 4em 0
+    width: 100%
+    img
+        max-width: 200px
+        margin-bottom: 1em
+    p
+        font-size: var(--font-siz-18)
+        color: var(--blacklight)

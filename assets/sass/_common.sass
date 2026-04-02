@@ -307,23 +307,23 @@ button, input[type="button"],input[type="submit"]
 
 +keyframes(pulse-border)
     0%
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
-        opacity: 0.5
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+    opacity: 0.5
     100%
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5)
-        opacity: 0
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5)
+    opacity: 0
 +keyframes(dots_Ani)
     0%
-        transform: translateY(0)
-        opacity: 1
-        height: 8px
+    transform: translateY(0)
+    opacity: 1
+    height: 8px
     50%
-        transform: translateY(32px)
-        opacity: 0
-        height: 16px
+    transform: translateY(32px)
+    opacity: 0
+    height: 16px
     100%
-        opacity: 0
-        transform: translateY(-30px)
+    opacity: 0
+    transform: translateY(-30px)
 
 .link_btn
     a
@@ -527,6 +527,9 @@ button, input[type="button"],input[type="submit"]
         border-right: 1px solid #e6e6e6
         @include responsive(991px)
             table-layout: auto !important
+        &.text-center
+            td,th
+                text-align: center
         p
             margin: 12px 0
             &:last-child
@@ -592,6 +595,10 @@ button, input[type="button"],input[type="submit"]
 
 .table_overfl
     width: 100%
+    margin-bottom: 1.2em
+    @include responsive(991px)
+        margin-bottom: 0em
+
     @include responsive(1230px)
         overflow-x: scroll
         &::-webkit-scrollbar
@@ -671,4 +678,21 @@ button, input[type="button"],input[type="submit"]
             width: 8px
             height: 8px
             background: var(--blue)
-            border-radius: 10px   
+            border-radius: 10px
+
+.tblList
+    padding-left: 5px
+    li
+        display: block
+        position: relative
+        margin-bottom: 10px
+        padding-left: 20px
+        &::before
+            content: ""
+            position: absolute
+            left: 0
+            top: 1px
+            width: 12px
+            height: 18px
+            background: url('../icons/nextServ.png') no-repeat center center
+            background-size: 8px
