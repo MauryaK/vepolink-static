@@ -15,7 +15,33 @@
 
     <!-- jQuery v3.7.1 -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <style>
+        .Dropdown-flex {
+            gap: 5px;
+        }
 
+        .Dropdown-flex .selcCOl {
+            max-width: 200px;
+            width: 100%;
+            position: relative;
+        }
+
+        .Dropdown-flex select {
+            max-width: 200px;
+            width: 100%;
+            height: 42px;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+        }
+
+        .Dropdown-flex .selcCOl img {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -62,7 +88,7 @@
 
             <div class="list_filter_data">
                 <div class="container">
-                    <div class="saech-tab-button">
+                    <div class="saech-tab-button" style="display: none;">
                         <button type="button" onclick="filterProductsByParameter('parameters')" class="active"
                             data-btn="parameters">Search by Parameters</button>
                         <button type="button" onclick="filterProductsByParameter('brands')" data-btn="brands">Search by
@@ -71,10 +97,38 @@
                             by
                             Name</button>
                     </div>
-                    <div class="data flex"></div>
+                    <div class="Dropdown-flex flex">
+                        <div class="selcCOl">
+                            <select id="parameterDropdown">
+                                <option value="">Select Parameter</option>
+                            </select>
+                            <img src="assets/icons/servIcon.png" alt="">
+                        </div>
+                        <div class="selcCOl">
+                            <select id="brandDropdown" disabled>
+                                <option value="">Select Brand</option>
+
+                            </select>
+                            <img src="assets/icons/servIcon.png" alt="">
+                        </div>
+                        <div class="selcCOl">
+                            <select id="nameDropdown" disabled>
+                                <option value="">Select Product</option>
+                            </select>
+                            <img src="assets/icons/servIcon.png" alt="">
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="data flex"></div> -->
                 </div>
             </div>
-        </div>
+            <div class="new_product">
+                <div class="container">
+                    <div class="flex">
+                    </div>
+                </div>
+            </div>
     </main>
 
     <!-- Footer -->
@@ -417,20 +471,22 @@
 
     <script>
         let allData = {};
-        let allParameters = [];
+        let parameters = [];
+        let products = [];
 
-        const container = document.querySelector('.list_filter_data .data');
-        const buttons = document.querySelectorAll('.saech-tab-button button');
+        const container = document.querySelector('.new_product .flex');
 
+        const parameterDropdown = document.getElementById('parameterDropdown');
+        const brandDropdown = document.getElementById('brandDropdown');
+        const nameDropdown = document.getElementById('nameDropdown');
         const slugify = (text) =>
             text
                 .toString()
                 .toLowerCase()
                 .trim()
-                .replace(/[\s\/\\]+/g, '-')
-                .replace(/[^\w\-]+/g, '')
-                .replace(/\-\-+/g, '-');
-
+                .replace(/[\s\/\\]+/g, "-")
+                .replace(/[^\w\-]+/g, "")
+                .replace(/\-\-+/g, "-");
         async function GetDataFromJson() {
             try {
                 const response = await fetch('/assets/json/product_data.json');
@@ -438,55 +494,129 @@
 
                 allData = Object.assign({}, ...data);
 
-                allParameters = allData.parameters || [];
+                parameters = allData.parameters || [];
+                products = allData.products || [];
 
-                renderProducts([...allParameters].sort((a, b) =>
-                    a.name.localeCompare(b.name)
-                ));
+                populateParameters();
+                displayProducts(products);
+
             } catch (err) {
                 console.error("Fetch error:", err);
             }
         }
+        GetDataFromJson()
+        function populateParameters() {
+            parameterDropdown.innerHTML = `<option value="">Select Parameter</option>`;
 
-        function renderProducts(products = []) {
-            container.innerHTML = "";
+            // remove duplicates
+            const uniqueParams = [...new Set(parameters.map(p => p.name))];
 
-            if (!products.length) {
-                container.innerHTML = `
-                <div class='no-data'>
-                    <img src='/assets/dummy/404.png' />
-                    <p>No products found matching your criteria.</p>
-                </div>`;
+            uniqueParams.sort().forEach(name => {
+                const option = document.createElement('option');
+                option.value = name;
+                option.textContent = name;
+                parameterDropdown.appendChild(option);
+            });
+
+        }
+        parameterDropdown.addEventListener('change', () => {
+            const selectedParam = parameterDropdown.value;
+
+            brandDropdown.innerHTML = `<option value="">Select Brand</option>`;
+            nameDropdown.innerHTML = `<option value="">Select Product</option>`;
+            nameDropdown.disabled = true;
+
+            if (!selectedParam) {
+                brandDropdown.disabled = true;
+                displayProducts([]);
                 return;
             }
 
-            const fragment = document.createDocumentFragment();
+            // filter products containing selected parameter
+            const filteredProducts = products.filter(p =>
+                p.parameters.includes(selectedParam)
+            );
 
-            products.forEach(({ name }) => {
-                const card = document.createElement('a');
-                card.className = 'list-card';
-                card.href = `new_product_listing.html?${slugify(name)}`;
-                card.textContent = name;
-                fragment.appendChild(card);
+            // extract unique brands
+            const uniqueBrands = [...new Set(filteredProducts.map(p => p.brands))];
+
+            uniqueBrands.forEach(brand => {
+                const option = document.createElement('option');
+                option.value = brand;
+                option.textContent = brand;
+                brandDropdown.appendChild(option);
             });
 
-            container.appendChild(fragment);
-        }
+            brandDropdown.disabled = false;
 
-        function filterProductsByParameter(parameter) {
-            const filtered = allData[parameter] || [];
+            // optional: show products directly
+            displayProducts(filteredProducts);
+        });
+        brandDropdown.addEventListener('change', () => {
+            const selectedParam = parameterDropdown.value;
+            const selectedBrand = brandDropdown.value;
 
-            renderProducts(filtered);
+            nameDropdown.innerHTML = `<option value="">Select Product</option>`;
 
-            buttons.forEach(btn =>
-                btn.classList.toggle(
-                    'active',
-                    btn.dataset.btn === parameter
-                )
+            if (!selectedBrand) {
+                nameDropdown.disabled = true;
+                return;
+            }
+
+            const filteredProducts = products.filter(p =>
+                p.parameters.includes(selectedParam) &&
+                p.brands === selectedBrand
             );
-        }
 
-        GetDataFromJson();
+            filteredProducts.forEach(product => {
+                const option = document.createElement('option');
+                option.value = product.name;
+                option.textContent = product.name;
+                nameDropdown.appendChild(option);
+            });
+
+            nameDropdown.disabled = false;
+
+            displayProducts(filteredProducts);
+        });
+        nameDropdown.addEventListener('change', () => {
+            const selectedName = nameDropdown.value;
+
+            const filtered = products.filter(p => p.name === selectedName);
+
+            displayProducts(filtered);
+        });
+        function displayProducts(products) {
+            // const container = document.querySelector(".new_product .flex");
+            container.innerHTML = "";
+            if (products.length === 0) {
+                container.innerHTML = `
+            <div class='no-data noprodfound'>
+                <img src='/assets/dummy/404.png' />
+                <p>No products found matching your criteria.</p>
+            </div>`;
+                return;
+            }
+
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'col';
+                card.innerHTML = `
+            <div class="_card">
+                <a href="new_product_detail.html?${slugify(product.name)}">
+                    <div class="_card-img"><img src="${product.img}" alt="${product.name}"></div>
+                    <div class="_card-content">
+                        <div class="title">${product.name}</div>
+                        <div class="brand">${product.brands
+                    }</div>
+                        <div class="link"><span>View Details</span></div>
+                    </div>
+                </a>
+            </div>
+        `;
+                container.appendChild(card);
+            });
+        }
     </script>
 </body>
 
