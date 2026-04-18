@@ -20,7 +20,7 @@ formControls.on(
     throttle(function () {
         const $parent = $(this).parent(".form-group");
         $parent.toggleClass("valid", this.value !== "");
-    })
+    }, 100)
 );
 function throttle(callback, delay = 250) {
     let isThrottled = false;

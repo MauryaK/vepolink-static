@@ -241,3 +241,6 @@ $body.on("click", "a.downpdf", function (e) {
 if ($("[data-aos]").length) {
     AOS.init({ once: true });
 }
+
+
+

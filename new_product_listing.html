@@ -499,14 +499,12 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="assets/js/test.js"></script>
     <script>
 
         const query = window.location.search.split("?")[1];
-
         let allData = {};
         let allParameters = [];
-
         const slugify = (text) =>
             text
                 .toString()
@@ -534,14 +532,13 @@
 
                 const filtered = filterProducts(products);
                 displayProducts([...filtered].sort((a, b) =>
-                    a.name.localeCompare(b.name)
+                    a.name.localeCompare(b.brands)
                 ));
 
             } catch (error) {
                 console.error("Fetch error:", error);
             }
         }
-
         function filterProducts(products) {
             if (!query) {
                 console.warn("Query parameter missing");
@@ -556,8 +553,6 @@
             return filteredProducts;
         }
         GetDataFromJson();
-
-
         function displayProducts(products) {
             const container = document.querySelector(".new_product .flex");
             container.innerHTML = "";

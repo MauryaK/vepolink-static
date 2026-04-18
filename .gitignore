@@ -7,7 +7,7 @@ Thumbs.db
 
 # Editor directories
 .vscode/
-
+test.js
 # Backup/Duplicate folders
 find/
 find/*.html
@@ -15,7 +15,9 @@ html/
 html/*
 New folder/
 New folder/*
-
-
+main.js
+main1.js
 assets/doc
 assets/doc/*
+js/
+js/*
