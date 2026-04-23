@@ -88,39 +88,82 @@
 
             <div class="list_filter_data">
                 <div class="container">
-                    <div class="saech-tab-button" style="display: none;">
-                        <button type="button" onclick="filterProductsByParameter('parameters')" class="active"
-                            data-btn="parameters">Search by Parameters</button>
-                        <button type="button" onclick="filterProductsByParameter('brands')" data-btn="brands">Search by
-                            Brands</button>
-                        <button type="button" onclick="filterProductsByParameter('products')" data-btn="products">Search
-                            by
-                            Name</button>
+                    <div class="SearchInDropdown flex">
+                        <div class="SearchInDropdownWrap flex">
+                            <div class="select_box parameter">
+                                <div class="label">Parameter</div>
+                                <div class="select">
+                                    <div class="icon">
+                                        <svg width="11" height="17" viewBox="0 0 11 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.92546 6L5.68538 1L1.44531 6" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M1.44564 11L5.68571 16L9.92578 11" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="optionSelected">Select Parameter</div>
+                                    <div class="dropdown">
+                                        <div class="listSe"><input type="text" name="" id=""
+                                                placeholder="Search here..."><span class="clear-btn">&times;</span>
+                                        </div>
+                                        <div class="list" id="parameterDropdown">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_box brand">
+                                <div class="label">Brands</div>
+                                <div class="select">
+                                    <div class="icon">
+                                        <svg width="11" height="17" viewBox="0 0 11 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.92546 6L5.68538 1L1.44531 6" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M1.44564 11L5.68571 16L9.92578 11" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="optionSelected">Select Brand</div>
+                                    <div class="dropdown">
+                                        <div class="listSe"><input type="text" name="" id=""
+                                                placeholder="Search here..."><span class="clear-btn">&times;</span>
+                                        </div>
+                                        <div class="list" id="brandDropdown">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_box model">
+                                <div class="label">Model</div>
+                                <div class="select">
+                                    <div class="icon">
+                                        <svg width="11" height="17" viewBox="0 0 11 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.92546 6L5.68538 1L1.44531 6" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M1.44564 11L5.68571 16L9.92578 11" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="optionSelected">Select Model</div>
+                                    <div class="dropdown">
+                                        <div class="listSe"><input type="text" name="" id=""
+                                                placeholder="Search here..."><span class="clear-btn">&times;</span>
+                                        </div>
+                                        <div class="list" id="nameDropdown">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="Dropdown-flex flex">
-                        <div class="selcCOl">
-                            <select id="parameterDropdown">
-                                <option value="">Select Parameter</option>
-                            </select>
-                            <img src="assets/icons/servIcon.png" alt="">
-                        </div>
-                        <div class="selcCOl">
-                            <select id="brandDropdown" disabled>
-                                <option value="">Select Brand</option>
-
-                            </select>
-                            <img src="assets/icons/servIcon.png" alt="">
-                        </div>
-                        <div class="selcCOl">
-                            <select id="nameDropdown" disabled>
-                                <option value="">Select Product</option>
-                            </select>
-                            <img src="assets/icons/servIcon.png" alt="">
-                        </div>
-
-
-                    </div>
-                    <!-- <div class="data flex"></div> -->
                 </div>
             </div>
             <div class="new_product">
@@ -467,9 +510,328 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
-
-
     <script>
+        /* ================= DROPDOWN OPEN / CLOSE ================= */
+
+        const selects = document.querySelectorAll(".select_box .select");
+
+        selects.forEach(select => {
+            select.addEventListener("click", function (e) {
+                e.stopPropagation();
+
+                // Close others
+                selects.forEach(s => {
+                    if (s !== select) {
+                        s.classList.remove("active");
+                        s.querySelector(".dropdown").style.display = "none";
+                    }
+                });
+
+                // Toggle current
+                const dropdown = select.querySelector(".dropdown");
+                const isOpen = select.classList.contains("active");
+
+                select.classList.toggle("active");
+                dropdown.style.display = isOpen ? "none" : "block";
+
+                // Reset search on open
+                if (!isOpen) {
+                    const input = select.querySelector(".listSe input");
+                    if (input) {
+                        input.value = "";
+                        const options = select.querySelectorAll(".options");
+                        options.forEach(opt => opt.style.display = "block");
+                    }
+                }
+            });
+        });
+
+        // Prevent closing when clicking inside dropdown
+        document.querySelectorAll(".select_box .dropdown").forEach(drop => {
+            drop.addEventListener("click", function (e) {
+                e.stopPropagation();
+            });
+        });
+
+        // Close all when clicking outside
+        document.addEventListener("click", function () {
+            selects.forEach(select => {
+                select.classList.remove("active");
+                select.querySelector(".dropdown").style.display = "none";
+            });
+        });
+
+
+        /* ================= SEARCH FILTER ================= */
+
+        document.querySelectorAll(".select_box .listSe").forEach(wrapper => {
+            const input = wrapper.querySelector("input");
+            const clearBtn = wrapper.querySelector(".clear-btn");
+
+            input.addEventListener("keyup", function () {
+                const searchValue = this.value.toLowerCase();
+                const dropdown = this.closest(".dropdown");
+                const options = dropdown.querySelectorAll(".options");
+
+                let visible = 0;
+
+                // Show/hide clear button
+                clearBtn.style.display = searchValue ? "block" : "none";
+
+                options.forEach(option => {
+                    const originalText = option.getAttribute("data-original") || option.textContent;
+
+                    if (!option.getAttribute("data-original")) {
+                        option.setAttribute("data-original", originalText);
+                    }
+
+                    const lowerText = originalText.toLowerCase();
+                    const index = lowerText.indexOf(searchValue);
+
+                    if (searchValue && index !== -1) {
+                        const before = originalText.substring(0, index);
+                        const match = originalText.substring(index, index + searchValue.length);
+                        const after = originalText.substring(index + searchValue.length);
+
+                        option.innerHTML = `${before}<mark>${match}</mark>${after}`;
+                        option.style.display = "block";
+                        visible++;
+                    } else if (!searchValue) {
+                        option.innerHTML = originalText;
+                        option.style.display = "block";
+                        visible++;
+                    } else {
+                        option.style.display = "none";
+                    }
+                });
+
+                // No result message
+                let noData = dropdown.querySelector(".no-result");
+
+                if (!visible) {
+                    if (!noData) {
+                        noData = document.createElement("div");
+                        noData.className = "no-result";
+                        noData.textContent = "No results found";
+                        dropdown.appendChild(noData);
+                    }
+                } else if (noData) {
+                    noData.remove();
+                }
+            });
+
+            // ✅ Clear button click
+            clearBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+
+                input.value = "";
+                input.dispatchEvent(new Event("keyup")); // trigger filter reset
+                clearBtn.style.display = "none";
+
+                input.focus();
+            });
+        });
+
+
+        /* ================= DATA + FILTER LOGIC ================= */
+
+        let allData = {};
+        let parameters = [];
+        let products = [];
+
+        let selectedParam = "";
+        let selectedBrand = "";
+        let selectedName = "";
+
+        const container = document.querySelector('.new_product .flex');
+
+        const parameterDropdown = document.getElementById('parameterDropdown');
+        const brandDropdown = document.getElementById('brandDropdown');
+        const nameDropdown = document.getElementById('nameDropdown');
+
+        const slugify = (text) =>
+            text.toLowerCase().trim()
+                .replace(/[\s\/\\]+/g, "-")
+                .replace(/[^\w\-]+/g, "")
+                .replace(/\-\-+/g, "-");
+
+
+        async function GetDataFromJson() {
+            try {
+                const response = await fetch('/assets/json/product_data.json');
+                const data = await response.json();
+
+                allData = Object.assign({}, ...data);
+                parameters = allData.parameters || [];
+                products = allData.products || [];
+
+                populateParameters();
+                displayProducts(products);
+
+            } catch (err) {
+                console.error("Fetch error:", err);
+            }
+        }
+        GetDataFromJson();
+
+
+        function clearDropdown(dropdown) {
+            dropdown.innerHTML = "";
+        }
+
+
+        // ✅ Set selected value + close dropdown
+        function setSelectedValue(optionEl) {
+            const selectBox = optionEl.closest(".select_box");
+            const select = selectBox.querySelector(".select");
+            const selectedText = selectBox.querySelector(".optionSelected");
+
+            selectedText.textContent = optionEl.textContent;
+
+            select.classList.remove("active");
+            select.querySelector(".dropdown").style.display = "none";
+        }
+
+
+        // ================= PARAMETERS =================
+
+        function populateParameters() {
+            clearDropdown(parameterDropdown);
+
+            const uniqueParams = [...new Set(parameters.map(p => p.name))];
+
+            uniqueParams.sort().forEach(name => {
+                const option = document.createElement('div');
+                option.className = 'options';
+                option.textContent = name;
+
+                option.addEventListener('click', () => {
+                    selectedParam = name;
+                    selectedBrand = "";
+                    selectedName = "";
+
+                    setSelectedValue(option);
+
+                    // Reset next dropdown UI
+                    document.querySelector(".select_box.brand .optionSelected").textContent = "Select Brand";
+                    document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
+
+                    populateBrands();
+                });
+
+                parameterDropdown.appendChild(option);
+            });
+        }
+
+
+        // ================= BRANDS =================
+
+        function populateBrands() {
+            clearDropdown(brandDropdown);
+            clearDropdown(nameDropdown);
+
+            if (!selectedParam) return;
+
+            const filtered = products.filter(p =>
+                p.parameters.includes(selectedParam)
+            );
+
+            const uniqueBrands = [...new Set(filtered.map(p => p.brands))];
+
+            uniqueBrands.forEach(brand => {
+                const option = document.createElement('div');
+                option.className = 'options';
+                option.textContent = brand;
+
+                option.addEventListener('click', () => {
+                    selectedBrand = brand;
+                    selectedName = "";
+
+                    setSelectedValue(option);
+
+                    document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
+
+                    populateNames();
+                });
+
+                brandDropdown.appendChild(option);
+            });
+
+            displayProducts(filtered);
+        }
+
+
+        // ================= MODELS =================
+
+        function populateNames() {
+            clearDropdown(nameDropdown);
+
+            if (!selectedBrand) return;
+
+            const filtered = products.filter(p =>
+                p.parameters.includes(selectedParam) &&
+                p.brands === selectedBrand
+            );
+
+            filtered.forEach(product => {
+                const option = document.createElement('div');
+                option.className = 'options';
+                option.textContent = product.name;
+
+                option.addEventListener('click', () => {
+                    selectedName = product.name;
+
+                    setSelectedValue(option);
+
+                    displayProducts([product]);
+                });
+
+                nameDropdown.appendChild(option);
+            });
+
+            displayProducts(filtered);
+        }
+
+
+        // ================= DISPLAY =================
+
+        function displayProducts(list) {
+            container.innerHTML = "";
+
+            if (!list.length) {
+                container.innerHTML = `
+        <div class='no-data noprodfound'>
+            <img src='/assets/dummy/404.png' />
+            <p>No products found matching your criteria.</p>
+        </div>`;
+                return;
+            }
+
+            list.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'col';
+
+                card.innerHTML = `
+        <div class="_card">
+            <a href="new_product_detail.html?${slugify(product.name)}">
+                <div class="_card-img">
+                    <img src="${product.img}" alt="${product.name}">
+                </div>
+                <div class="_card-content">
+                    <div class="title">${product.name}</div>
+                    <div class="brand">${product.brands}</div>
+                    <div class="link"><span>View Details</span></div>
+                </div>
+            </a>
+        </div>
+        `;
+
+                container.appendChild(card);
+            });
+        }
+    </script>
+
+    <!-- <script>
         let allData = {};
         let parameters = [];
         let products = [];
@@ -506,14 +868,15 @@
         }
         GetDataFromJson()
         function populateParameters() {
-            parameterDropdown.innerHTML = `<option value="">Select Parameter</option>`;
+            // parameterDropdown.innerHTML = `<div class="option">Select Parameter</div>`;
 
             // remove duplicates
             const uniqueParams = [...new Set(parameters.map(p => p.name))];
 
             uniqueParams.sort().forEach(name => {
-                const option = document.createElement('option');
-                option.value = name;
+                const option = document.createElement('div');
+                option.className = 'options';
+                option.setAttribute('data-value', name);
                 option.textContent = name;
                 parameterDropdown.appendChild(option);
             });
@@ -522,8 +885,8 @@
         parameterDropdown.addEventListener('change', () => {
             const selectedParam = parameterDropdown.value;
 
-            brandDropdown.innerHTML = `<option value="">Select Brand</option>`;
-            nameDropdown.innerHTML = `<option value="">Select Product</option>`;
+            // brandDropdown.innerHTML = `<option value="">Select Brand</option>`;
+            // nameDropdown.innerHTML = `<option value="">Select Product</option>`;
             nameDropdown.disabled = true;
 
             if (!selectedParam) {
@@ -569,9 +932,14 @@
             );
 
             filteredProducts.forEach(product => {
-                const option = document.createElement('option');
-                option.value = product.name;
+                const option = document.createElement('div');
+                option.className = 'options';
+                option.setAttribute('data-value', product.name);
                 option.textContent = product.name;
+
+                // const option = document.createElement('option');
+                // option.value = product.name;
+                // option.textContent = product.name;
                 nameDropdown.appendChild(option);
             });
 
@@ -617,7 +985,7 @@
                 container.appendChild(card);
             });
         }
-    </script>
+    </script> -->
 </body>
 
 </html>

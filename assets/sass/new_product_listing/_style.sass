@@ -268,6 +268,8 @@
 
 .list_filter_data
     margin-bottom: 3.5em
+    position: relative
+    z-index: 1
     .data
         gap: .4em
         a
@@ -283,8 +285,6 @@
                 background: var(--black)
                 color: var(--white)
 
-
-
 .noprodfound
     text-align: center
     padding: 4em 0
@@ -295,3 +295,91 @@
     p
         font-size: var(--font-siz-18)
         color: var(--blacklight)
+
+// 23-04-2026 Search Page Dropdown
+.SearchInDropdown
+    position: relative
+    align-items: center
+    justify-content: center
+    .SearchInDropdownWrap
+        gap: .3em
+    .select_box
+        position: relative
+        width: 200px
+        .label
+            font-weight: 500
+            color: #1e2939
+            margin-bottom: .2em
+        .icon
+            position: absolute
+            right: 5px
+            top: 46%
+            transform: translateY(-50%)
+            width: 16px
+            pointer-events: none
+    .select
+        position: relative
+        display: block
+        width: 100%
+        border: 1px solid var(--grey)
+        border-radius: 5px
+        background: var(--white)
+        color: var(--black)
+        outline: none
+        appearance: none
+        cursor: pointer
+        height: 41.6px
+        transition: .5s ease
+        .optionSelected
+            padding: 10px 15px
+            font-weight: 500
+            color: #747474
+            font-size: var(--font-siz-14)
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            &.placeholder
+                color: var(--blacklight)
+        .dropdown
+            height: 320px
+            overflow: hidden
+            background: #fff
+            border: 1px solid var(--grey)
+            border-radius: 5px
+            display: none
+            margin-top: 5px
+            .listSe
+                padding: 5px
+                position: relative
+                input
+                    width: 100%
+                    border: 1px solid var(--grey)
+                    padding: 5px
+                    border-radius: 5px
+                    font-size: var(--font-siz-14)
+                    outline: none
+                    &:focus
+                        border-color: var(--blue)
+                span.clear-btn
+                    position: absolute
+                    right: 13px
+                    top: 10px
+                    display: none
+
+            .list
+                height: 100%
+                overflow-y: auto
+
+            .options
+                font-size: 14px
+                color: #747474
+                padding: 6px 10px
+                cursor: pointer
+                transition: .3s ease
+                mark
+                    background: #ffe58a
+                    padding: 0 2px
+                    border-radius: 2px
+
+                &:hover
+                    background: var(--grey-light)
