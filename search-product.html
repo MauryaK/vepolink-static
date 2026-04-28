@@ -114,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="select_box brand">
+                            <div class="select_box brand" aria-disabled="true">
                                 <div class="label">Brands</div>
                                 <div class="select">
                                     <div class="icon">
@@ -138,7 +138,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="select_box model">
+                            <div class="select_box model" aria-disabled="true">
                                 <div class="label">Model</div>
                                 <div class="select">
                                     <div class="icon">
@@ -730,7 +730,11 @@
             clearDropdown(brandDropdown);
             clearDropdown(nameDropdown);
 
-            if (!selectedParam) return;
+            if (!selectedParam) {
+                document.querySelector(".select_box.brand").setAttribute("aria-disabled", "true");
+                return
+            };
+            document.querySelector(".select_box.brand").setAttribute("aria-disabled", "false");
 
             const filtered = products.filter(p =>
                 p.parameters.includes(selectedParam)
@@ -766,7 +770,12 @@
         function populateNames() {
             clearDropdown(nameDropdown);
 
-            if (!selectedBrand) return;
+            // if (!selectedBrand) return;
+            if (!selectedBrand) {
+                document.querySelector(".select_box.model").setAttribute("aria-disabled", "true");
+                return
+            };
+            document.querySelector(".select_box.model").setAttribute("aria-disabled", "false");
 
             const filtered = products.filter(p =>
                 p.parameters.includes(selectedParam) &&
@@ -831,161 +840,7 @@
         }
     </script>
 
-    <!-- <script>
-        let allData = {};
-        let parameters = [];
-        let products = [];
 
-        const container = document.querySelector('.new_product .flex');
-
-        const parameterDropdown = document.getElementById('parameterDropdown');
-        const brandDropdown = document.getElementById('brandDropdown');
-        const nameDropdown = document.getElementById('nameDropdown');
-        const slugify = (text) =>
-            text
-                .toString()
-                .toLowerCase()
-                .trim()
-                .replace(/[\s\/\\]+/g, "-")
-                .replace(/[^\w\-]+/g, "")
-                .replace(/\-\-+/g, "-");
-        async function GetDataFromJson() {
-            try {
-                const response = await fetch('/assets/json/product_data.json');
-                const data = await response.json();
-
-                allData = Object.assign({}, ...data);
-
-                parameters = allData.parameters || [];
-                products = allData.products || [];
-
-                populateParameters();
-                displayProducts(products);
-
-            } catch (err) {
-                console.error("Fetch error:", err);
-            }
-        }
-        GetDataFromJson()
-        function populateParameters() {
-            // parameterDropdown.innerHTML = `<div class="option">Select Parameter</div>`;
-
-            // remove duplicates
-            const uniqueParams = [...new Set(parameters.map(p => p.name))];
-
-            uniqueParams.sort().forEach(name => {
-                const option = document.createElement('div');
-                option.className = 'options';
-                option.setAttribute('data-value', name);
-                option.textContent = name;
-                parameterDropdown.appendChild(option);
-            });
-
-        }
-        parameterDropdown.addEventListener('change', () => {
-            const selectedParam = parameterDropdown.value;
-
-            // brandDropdown.innerHTML = `<option value="">Select Brand</option>`;
-            // nameDropdown.innerHTML = `<option value="">Select Product</option>`;
-            nameDropdown.disabled = true;
-
-            if (!selectedParam) {
-                brandDropdown.disabled = true;
-                displayProducts([]);
-                return;
-            }
-
-            // filter products containing selected parameter
-            const filteredProducts = products.filter(p =>
-                p.parameters.includes(selectedParam)
-            );
-
-            // extract unique brands
-            const uniqueBrands = [...new Set(filteredProducts.map(p => p.brands))];
-
-            uniqueBrands.forEach(brand => {
-                const option = document.createElement('option');
-                option.value = brand;
-                option.textContent = brand;
-                brandDropdown.appendChild(option);
-            });
-
-            brandDropdown.disabled = false;
-
-            // optional: show products directly
-            displayProducts(filteredProducts);
-        });
-        brandDropdown.addEventListener('change', () => {
-            const selectedParam = parameterDropdown.value;
-            const selectedBrand = brandDropdown.value;
-
-            nameDropdown.innerHTML = `<option value="">Select Product</option>`;
-
-            if (!selectedBrand) {
-                nameDropdown.disabled = true;
-                return;
-            }
-
-            const filteredProducts = products.filter(p =>
-                p.parameters.includes(selectedParam) &&
-                p.brands === selectedBrand
-            );
-
-            filteredProducts.forEach(product => {
-                const option = document.createElement('div');
-                option.className = 'options';
-                option.setAttribute('data-value', product.name);
-                option.textContent = product.name;
-
-                // const option = document.createElement('option');
-                // option.value = product.name;
-                // option.textContent = product.name;
-                nameDropdown.appendChild(option);
-            });
-
-            nameDropdown.disabled = false;
-
-            displayProducts(filteredProducts);
-        });
-        nameDropdown.addEventListener('change', () => {
-            const selectedName = nameDropdown.value;
-
-            const filtered = products.filter(p => p.name === selectedName);
-
-            displayProducts(filtered);
-        });
-        function displayProducts(products) {
-            // const container = document.querySelector(".new_product .flex");
-            container.innerHTML = "";
-            if (products.length === 0) {
-                container.innerHTML = `
-            <div class='no-data noprodfound'>
-                <img src='/assets/dummy/404.png' />
-                <p>No products found matching your criteria.</p>
-            </div>`;
-                return;
-            }
-
-            products.forEach(product => {
-                const card = document.createElement('div');
-                card.className = 'col';
-                card.innerHTML = `
-            <div class="_card">
-                <a href="new_product_detail.html?${slugify(product.name)}">
-                    <div class="_card-img"><img src="${product.img}" alt="${product.name}"></div>
-                    <div class="_card-content">
-                        <div class="title">${product.name}</div>
-                        <div class="brand">${product.brands
-                    }</div>
-                        <div class="link"><span>View Details</span></div>
-                    </div>
-                </a>
-            </div>
-        `;
-                container.appendChild(card);
-            });
-        }
-    </script> -->
 </body>
 
 </html>

@@ -6964,6 +6964,16 @@ header.no-banner .logo {
   position: relative;
   width: 200px;
 }
+.SearchInDropdown .select_box[aria-disabled=true] {
+  cursor: not-allowed;
+}
+.SearchInDropdown .select_box[aria-disabled=true] .select {
+  pointer-events: none;
+  background: var(--grey-light);
+}
+.SearchInDropdown .select_box[aria-disabled=false] {
+  cursor: pointer;
+}
 .SearchInDropdown .select_box .label {
   font-weight: 500;
   color: #1e2939;

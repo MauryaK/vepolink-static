@@ -306,6 +306,14 @@
     .select_box
         position: relative
         width: 200px
+        &[aria-disabled="true"]
+            cursor: not-allowed
+            .select
+                pointer-events: none
+                background: var(--grey-light)
+        &[aria-disabled="false"]
+            cursor: pointer
+
         .label
             font-weight: 500
             color: #1e2939
@@ -330,6 +338,7 @@
         cursor: pointer
         height: 41.6px
         transition: .5s ease
+
         .optionSelected
             padding: 10px 15px
             font-weight: 500
