@@ -6709,6 +6709,12 @@ header.no-banner .logo {
   font-weight: 600;
   white-space: nowrap;
 }
+.new_product ._card a ._card-content .title small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+}
 .new_product ._card a ._card-content .brand {
   font-size: var(--font-siz-16);
   color: var(--blacklight);

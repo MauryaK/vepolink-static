@@ -504,6 +504,11 @@
                 "id": 95,
                 "name": "PM 1",
                 "category": "air"
+            },
+            {
+                "id": 100,
+                "name": "Acetylene",
+                "category": "air"
             }
         ]
     },
@@ -562,7 +567,7 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "OPTICS-1000",
+                "name": "OPTICS-1000 Multi",
                 "parameters": [
                     "Ammonium",
                     "Nitrates",
@@ -649,7 +654,7 @@
                     "pH (alkalinity)"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Alkalinity Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -667,7 +672,7 @@
                     "Chromium VI"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Chromium VI Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -685,7 +690,7 @@
                     "Cyanide"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Cyanide Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -703,7 +708,7 @@
                     "Hydrazine"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Hydrazine Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -721,7 +726,7 @@
                     "IRON"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 IRON Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -739,7 +744,7 @@
                     "Nickel"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Nickel Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -757,7 +762,7 @@
                     "Phenol"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Phenol Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -775,7 +780,7 @@
                     "Phosphate-Hr"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Phosphate-Hr Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -793,7 +798,7 @@
                     "Phosphate-Lr"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Phosphate-Lr Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -811,7 +816,7 @@
                     "silica-Hr"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 silica-Hr Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -829,7 +834,7 @@
                     "silica-Lr"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 silica-Lr Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -847,7 +852,7 @@
                     "Total Chromium"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Total Chromium Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -865,7 +870,7 @@
                     "Total Hardness"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Total Hardness Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -883,7 +888,7 @@
                     "Zinc"
                 ],
                 "img": "assets/dummy/advance.png",
-                "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
+                "description": "The Optic 1000 Zinc Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
                     "liquid",
                     "effluent",
@@ -896,7 +901,7 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Single channel transmitter",
+                "name": "Viz Pro Solo <small>Single channel transmitter</small>",
                 "parameters": [
                     "pH - Analog",
                     "pH - Digital",
@@ -941,6 +946,7 @@
                     "TSS",
                     "Color",
                     "Single channel transmitter",
+                    "Viz Pro Solo",
                     "UV 254",
                     "Total Suspended solids - IR Based",
                     "Ion Selective Electrode - Analog/4 to 20 mA",
@@ -951,7 +957,7 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Dual channel transmitter",
+                "name": "Viz Pro Duo <small>Dual channel transmitter</small>",
                 "parameters": [
                     "pH - Analog",
                     "pH - Digital",
@@ -961,7 +967,6 @@
                     "Conductivity/Total Dissolved solids - Analog/Digital",
                     "Conductivity",
                     "Total Dissolved solids - Analog",
-                    "Digital",
                     "Dissolved Oxygen - Polarographic/Optical",
                     "turbidity - Digital",
                     "Sludge Level - Optical/Digital",
@@ -1004,14 +1009,15 @@
                     "UV 254",
                     "Total Suspended solids - IR Based",
                     "Ion Selective Electrode - Analog/4 to 20 mA",
-                    "Temperature - PT100, PT1000, RTD, Thermocouple"
+                    "Temperature - PT100, PT1000, RTD, Thermocouple",
+                    "Viz Pro Duo"
                 ]
             },
             {
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Multi channel transmitter",
+                "name": "Viz Pro Multi <small>Multi channel transmitter</small>",
                 "parameters": [
                     "pH - Analog",
                     "pH - Digital",
@@ -1071,7 +1077,7 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Single channel transmitter",
+                "name": "Viz Eco Solo <small>Single channel transmitter</small>",
                 "parameters": [
                     "pH",
                     "Conductivity",
@@ -1079,11 +1085,12 @@
                     "Dissolved Oxygen",
                     "TDS",
                     "turbidity",
+                    "Suspended Solids/Sludge",
                     "Suspended Solids",
                     "Sludge",
                     "Chlorophyll",
                     "Blue Green Algae",
-                    "Oil in liquid",
+                    "Oil in Water",
                     "Ammonia Nitrogen (NH4N)",
                     "Nitrate Nitrogen (NO3N)",
                     "residual chlorine",
@@ -1101,7 +1108,7 @@
                     "Fluoride (F-)",
                     "Sodium (Na+)",
                     "Chloride (Cl-)",
-                    "liquid Hardness",
+                    "water Hardness",
                     "(Other ISE available on request)"
                 ],
                 "img": "assets/dummy/viz-eco-solo.png",
@@ -1129,7 +1136,6 @@
                     "BOD",
                     "TSS",
                     "TOC",
-                    "(Other parameters available on request)",
                     "Temperature",
                     "ISE",
                     "Ammonia (NH3)",
@@ -1138,15 +1144,15 @@
                     "Sodium (Na+)",
                     "Chloride (Cl-)",
                     "Single channel transmitter",
-                    "liquid Hardness",
-                    "(Other ISE available on request)"
+                    "Viz Eco Solo",
+                    "liquid Hardness"
                 ]
             },
             {
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Multi channel transmitter",
+                "name": "Viz Eco Duo <small>Duo channel transmitter</small>",
                 "parameters": [
                     "pH",
                     "Conductivity",
@@ -1154,11 +1160,12 @@
                     "Dissolved Oxygen",
                     "TDS",
                     "turbidity",
+                    "Suspended Solids/Sludge",
                     "Suspended Solids",
                     "Sludge",
                     "Chlorophyll",
                     "Blue Green Algae",
-                    "Oil in liquid",
+                    "Oil in water",
                     "Ammonia Nitrogen (NH4N)",
                     "Nitrate Nitrogen (NO3N)",
                     "residual chlorine",
@@ -1167,7 +1174,6 @@
                     "BOD",
                     "TSS",
                     "TOC",
-                    "(Other parameters available on request)",
                     "Temperature",
                     "ISE",
                     "Ammonia (NH3)",
@@ -1175,8 +1181,7 @@
                     "Fluoride (F-)",
                     "Sodium (Na+)",
                     "Chloride (Cl-)",
-                    "liquid Hardness",
-                    "(Other ISE available on request)"
+                    "water Hardness"
                 ],
                 "img": "assets/dummy/viz-eco-duo.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
@@ -1203,24 +1208,24 @@
                     "BOD",
                     "TSS",
                     "TOC",
-                    "(Other parameters available on request)",
                     "Temperature",
                     "ISE",
                     "Multi channel transmitter",
+                    "Viz Eco Duo",
                     "Ammonia (NH3)",
                     "Cyanide (CN-)",
                     "Fluoride (F-)",
                     "Sodium (Na+)",
                     "Chloride (Cl-)",
                     "liquid Hardness",
-                    "(Other ISE available on request)"
+                    "water Hardness"
                 ]
             },
             {
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Multi channel transmitter",
+                "name": "Viz Eco Multi <small>Multi channel transmitter</small>",
                 "parameters": [
                     "pH",
                     "Conductivity",
@@ -1228,20 +1233,20 @@
                     "Dissolved Oxygen",
                     "TDS",
                     "turbidity",
+                    "Suspended Solids/Sludge",
                     "Suspended Solids",
                     "Sludge",
                     "Chlorophyll",
                     "Blue Green Algae",
                     "Oil in liquid",
+                    "Oil in water",
                     "Ammonia Nitrogen (NH4N)",
                     "Nitrate Nitrogen (NO3N)",
                     "residual chlorine",
-                    "UV Visible Measurement",
                     "COD",
                     "BOD",
                     "TSS",
                     "TOC",
-                    "(Other parameters available on request)",
                     "Temperature",
                     "ISE",
                     "Ammonia (NH3)",
@@ -1249,8 +1254,7 @@
                     "Fluoride (F-)",
                     "Sodium (Na+)",
                     "Chloride (Cl-)",
-                    "liquid Hardness",
-                    "(Other ISE available on request)"
+                    "liquid Hardness"
                 ],
                 "img": "assets/dummy/viz-eco-multi.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
@@ -1269,16 +1273,16 @@
                     "Chlorophyll",
                     "Blue Green Algae",
                     "Oil in liquid",
+                    "Oil in water",
                     "Ammonia Nitrogen (NH4N)",
                     "Nitrate Nitrogen (NO3N)",
                     "residual chlorine",
-                    "UV Visible Measurement",
                     "Multi channel transmitter",
+                    "Viz Eco Multi",
                     "COD",
                     "BOD",
                     "TSS",
                     "TOC",
-                    "(Other parameters available on request)",
                     "Temperature",
                     "ISE",
                     "Ammonia (NH3)",
@@ -1286,8 +1290,7 @@
                     "Fluoride (F-)",
                     "Sodium (Na+)",
                     "Chloride (Cl-)",
-                    "liquid Hardness",
-                    "(Other ISE available on request)"
+                    "liquid Hardness"
                 ]
             },
             {
@@ -1301,6 +1304,7 @@
                 "img": "assets/dummy/vizsens-ph-analog.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
@@ -1311,13 +1315,14 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Oxidation-Reduction Potential (Analog)",
+                "name": "ORP(Analog)",
                 "parameters": [
                     "ORP(Analog)"
                 ],
                 "img": "assets/dummy/vizsens-ph-analog.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
@@ -1329,18 +1334,20 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Electronics & Communication (Analog)",
+                "name": "EC(Analog)",
                 "parameters": [
                     "Conductivity Sensor(Analog)"
                 ],
                 "img": "assets/dummy/vizsens-ph-analog.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
                     "Conductivity Sensor(Analog)",
-                    "Electronics & Communication (Analog)"
+                    "Electronics & Communication (Analog)",
+                    "VizSens-EC(Analog)"
                 ]
             },
             {
@@ -1354,6 +1361,7 @@
                 "img": "assets/dummy/VizSens-PH(Digital).png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
@@ -1364,25 +1372,27 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Optical Dissolved Oxygen Sensor",
+                "name": "ODO <small>Optical Dissolved Oxygen</small>",
                 "parameters": [
                     "Optical Dissolved Oxygen"
                 ],
                 "img": "assets/dummy/VizSens-ODO.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
-                    "Optical Dissolved Oxygen Sensor",
                     "Advance Analytik",
-                    "Optical Dissolved Oxygen"
+                    "Optical Dissolved Oxygen Sensor",
+                    "Optical Dissolved Oxygen",
+                    "VizSens-ODO"
                 ]
             },
             {
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Digital Residual Chlorine Online sensor",
+                "name": "RCL",
                 "parameters": [
                     "residual chlorine",
                     "chlorine dioxide"
@@ -1390,6 +1400,7 @@
                 "img": "assets/dummy/VizSens-RCL.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
@@ -1412,10 +1423,11 @@
                 "img": "assets/dummy/vizsens-uvcod.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
-                    "UV Sensor",
                     "Advance Analytik",
+                    "UV Sensor",
                     "COD",
                     "BOD",
                     "TSS",
@@ -1426,7 +1438,7 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Suspended Solids/Sludge Sensor",
+                "name": "SS Sensor <small>Suspended Solids/Sludge</small>",
                 "parameters": [
                     "COD",
                     "BOD",
@@ -1437,13 +1449,10 @@
                 "img": "assets/dummy/VizSens-SS.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
-                    "COD",
-                    "BOD",
-                    "TSS",
-                    "TOC",
                     "Suspended Solids/Sludge"
                 ]
             },
@@ -1458,6 +1467,7 @@
                 "img": "assets/dummy/VizSens-SS.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
@@ -1469,17 +1479,18 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Low Range Turbidity Sensor",
+                "name": "TurbLo Sensor <small>Low Range Turbidity</small>",
                 "parameters": [
                     "Low Range turbidity"
                 ],
                 "img": "assets/dummy/VizSens-TurbLo.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
-                    "Low Range Turbidity Sensor",
                     "Advance Analytik",
+                    "Low Range Turbidity Sensor",
                     "Low Range turbidity"
                 ]
             },
@@ -1487,16 +1498,18 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Chlorophyll Sensor",
+                "name": "CPHL Sensor <small>Chlorophyll Sensor</small>",
                 "parameters": [
                     "Chlorophyll Sensor"
                 ],
                 "img": "assets/dummy/VizSens-CPHL.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
+                    "CPHL Sensor",
                     "Chlorophyll Sensor"
                 ]
             },
@@ -1504,67 +1517,74 @@
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Blue-Green Algae Sensor",
+                "name": "BGA Sensor <small>Blue-Green Algae</small>",
                 "parameters": [
                     "Blue-Green Algae"
                 ],
                 "img": "assets/dummy/VizSens-CPHL.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
                     "Blue-Green Algae Sensor",
-                    "Blue-Green Algae"
+                    "Blue-Green Algae",
+                    "BGA Sensor"
                 ]
             },
             {
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Oil in liquid Sensor",
+                "name": "OIW Sensor <small>Oil in liquid</small>",
                 "parameters": [
                     "Oil in liquid"
                 ],
                 "img": "assets/dummy/VizSens-OIW.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
                     "Oil in liquid Sensor",
-                    "Oil in liquid"
+                    "Oil in liquid",
+                    "OIW Sensor"
                 ]
             },
             {
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Ammonia Nitrogen (NH4-N) Sensor",
+                "name": "NH4N Sensor <small>Ammonia Nitrogen (NH4-N)</small>",
                 "parameters": [
                     "Ammonia Nitrogen (NH4-N)"
                 ],
                 "img": "assets/dummy/VizSens-NH4N.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "effluent",
                     "Advance Analytik",
                     "Ammonia Nitrogen (NH4-N) Sensor",
-                    "Ammonia Nitrogen (NH4-N)"
+                    "Ammonia Nitrogen (NH4-N)",
+                    "NH4N Sensor"
                 ]
             },
             {
                 "category": "liquid",
                 "application": "effluent",
                 "brands": "Advance Analytik",
-                "name": "Nitrate nitrogen Sensor (NO3N)",
+                "name": "NO3N Sensor <small>Nitrate nitrogen</small>",
                 "parameters": [
                     "Nitrate nitrogen"
                 ],
                 "img": "assets/dummy/VizSens-NO3N.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
                 "meta": [
+                    "water",
                     "liquid",
                     "Nitrate nitrogen Sensor (NO3N)",
                     "effluent",
@@ -1578,6 +1598,9 @@
                 "brands": "Horiba",
                 "name": "UV 300",
                 "parameters": [
+                    "Color",
+                    "PAH",
+                    "Oil in Water",
                     "pH",
                     "ORP",
                     "BOD",
@@ -1608,11 +1631,13 @@
                     "effluent",
                     "Horiba",
                     "Horiba Advanced Techno Systems",
+                    "Color",
+                    "PAH",
+                    "Oil in Water",
                     "pH",
-                    "UV 300",
                     "ORP",
-                    "COD",
                     "BOD",
+                    "COD",
                     "TDS",
                     "TSS",
                     "Nitrate (NO3-)",
@@ -1687,20 +1712,20 @@
                     "Nitrate (NO3-)",
                     "Chlorophyll A",
                     "Ammonia (NH3)",
+                    "Hexavalent Chrome (Cr6+)",
+                    "Nitrite (NO2-)",
+                    "Phosphates",
+                    "Silica (SiO2)",
+                    "Ammonium (NH4+)",
                     "Hydrogen Sulphide (H2S)",
                     "Total Nitrogen",
                     "pH",
                     "ORP",
                     "TDS",
-                    "Silica (SiO2)",
                     "Conductivity",
                     "Chlorine",
                     "Dissolved Oxygen",
-                    "turbidity",
-                    "Hexavalent Chrome (Cr6+)",
-                    "Nitrite (NO2-)",
-                    "Phosphates",
-                    "Ammonium (NH4+)"
+                    "turbidity"
                 ],
                 "img": "assets/dummy/p1.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
@@ -1710,14 +1735,16 @@
                     "Horiba",
                     "Horiba Advanced Techno Systems",
                     "BOD",
-                    "UV 500",
                     "TSS",
                     "Nitrate (NO3-)",
                     "Chlorophyll A",
                     "Ammonia (NH3)",
-                    "Silica (SiO2)",
-                    "Hydrogen Sulphide (H2S)",
+                    "Hexavalent Chrome (Cr6+)",
                     "Nitrite (NO2-)",
+                    "Phosphates",
+                    "Silica (SiO2)",
+                    "Ammonium (NH4+)",
+                    "Hydrogen Sulphide (H2S)",
                     "Total Nitrogen",
                     "pH",
                     "ORP",
@@ -1725,10 +1752,7 @@
                     "Conductivity",
                     "Chlorine",
                     "Dissolved Oxygen",
-                    "turbidity",
-                    "Hexavalent Chrome (Cr6+)",
-                    "Phosphates",
-                    "Ammonium (NH4+)"
+                    "turbidity"
                 ]
             },
             {
@@ -1741,14 +1765,7 @@
                     "TSS",
                     "Color",
                     "PAH",
-                    "Ammonium (NH4+)",
-                    "pH",
-                    "ORP",
-                    "TDS",
-                    "Conductivity",
-                    "Chlorine",
-                    "Dissolved Oxygen",
-                    "Oil in liquid"
+                    "Ammonium (NH4+)"
                 ],
                 "img": "assets/dummy/el300.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
@@ -1761,15 +1778,7 @@
                     "TSS",
                     "Color",
                     "PAH",
-                    "Ammonium (NH4+)",
-                    "EL300 with UV – Vis 200 Probe",
-                    "pH",
-                    "ORP",
-                    "TDS",
-                    "Conductivity",
-                    "Chlorine",
-                    "Dissolved Oxygen",
-                    "Oil in liquid"
+                    "Ammonium (NH4+)"
                 ]
             },
             {
@@ -1789,7 +1798,7 @@
                     "Conductivity",
                     "Chlorine",
                     "Dissolved Oxygen",
-                    "Oil in liquid"
+                    "turbidity"
                 ],
                 "img": "assets/dummy/el200.png",
                 "description": "The Optic 1000 Series is a high-performance online liquid analyser that provides accurate and reliable measurements for a wide range of liquid quality parameters",
@@ -1805,18 +1814,17 @@
                     "Ammonium (NH4+)",
                     "pH",
                     "ORP",
-                    "EL200",
                     "TDS",
                     "Conductivity",
                     "Chlorine",
                     "Dissolved Oxygen",
-                    "Oil in liquid"
+                    "turbidity"
                 ]
             },
             {
                 "category": "gas",
                 "application": "emission",
-                "brands": "Uniphos",
+                "brands": "Anodyne",
                 "name": "ADMS 1000",
                 "parameters": [
                     "SPM"
@@ -1825,7 +1833,7 @@
                 "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
                 "meta": [
                     "gas",
-                    "Uniphos",
+                    "Anodyne",
                     "ADMS 1000",
                     "SPM"
                 ]
@@ -1833,7 +1841,7 @@
             {
                 "category": "gas",
                 "application": "emission",
-                "brands": "Uniphos",
+                "brands": "Anodyne",
                 "name": "ADMS 2000",
                 "parameters": [
                     "SPM"
@@ -1842,7 +1850,7 @@
                 "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
                 "meta": [
                     "gas",
-                    "Uniphos",
+                    "Anodyne",
                     "ADMS 2000",
                     "SPM"
                 ]
@@ -1853,7 +1861,9 @@
                 "brands": "Turnkey Instruments UK",
                 "name": "Osiris",
                 "parameters": [
-                    "PM 1"
+                    "PM 1",
+                    "PM 2.5",
+                    "PM 10"
                 ],
                 "img": "assets/dummy/osiris.png",
                 "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
@@ -1861,7 +1871,9 @@
                     "air",
                     "Osiris",
                     "Turnkey Instruments UK",
-                    "PM 1"
+                    "PM 1",
+                    "PM 2.5",
+                    "PM 10"
                 ]
             },
             {
@@ -1870,7 +1882,9 @@
                 "brands": "Turnkey Instruments UK",
                 "name": "TOPAS",
                 "parameters": [
-                    "PM 1"
+                    "PM 1",
+                    "PM 2.5",
+                    "PM 10"
                 ],
                 "img": "assets/dummy/Topas-Front.png",
                 "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
@@ -1879,7 +1893,9 @@
                     "emission",
                     "TOPAS",
                     "Turnkey Instruments UK",
-                    "PM 1"
+                    "PM 1",
+                    "PM 2.5",
+                    "PM 10"
                 ]
             },
             {
@@ -1888,7 +1904,9 @@
                 "brands": "Turnkey Instruments UK",
                 "name": "DUSTMATE",
                 "parameters": [
-                    "PM 1"
+                    "PM 1",
+                    "PM 2.5",
+                    "PM 10"
                 ],
                 "img": "assets/dummy/dustmate.png",
                 "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
@@ -1897,24 +1915,299 @@
                     "emission",
                     "DUSTMATE",
                     "Turnkey Instruments UK",
-                    "PM 1"
+                    "PM 1",
+                    "PM 2.5",
+                    "PM 10"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Anodyne",
+                "name": "ADMS BAM 1000",
+                "parameters": [
+                    "PM 2.5",
+                    "PM 10"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "ADMS BAM 1000",
+                    "Anodyne",
+                    "PM 2.5",
+                    "PM 100"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Anodyne",
+                "name": "ADMS BAM 1100",
+                "parameters": [
+                    "PM 2.5"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "ADMS BAM 1100",
+                    "Anodyne",
+                    "PM 100"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APDA-372",
+                "parameters": [
+                    "PM 1",
+                    "PM 2.5"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APDA-372",
+                    "Horiba",
+                    "PM 1",
+                    "PM 2.5"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APSA-370",
+                "parameters": [
+                    "Sulphur Dioxide (SO2)",
+                    "Hydrogen Sulfide"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APSA-370",
+                    "Horiba",
+                    "Sulphur Dioxide (SO2)",
+                    "Hydrogen Sulfide"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APNA-370",
+                "parameters": [
+                    "Nitrogen Oxides (NOx)",
+                    "Ammonia"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APNA-370",
+                    "Horiba",
+                    "Nitrogen Oxides (NOx)",
+                    "Ammonia"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "AMPA-370",
+                "parameters": [
+                    "Carbon Monoxide",
+                    "Ammonia"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APNA-370",
+                    "Horiba",
+                    "Carbon Monoxide",
+                    "Ammonia"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APCA-370",
+                "parameters": [
+                    "Carbon Dioxide"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APNA-370",
+                    "Horiba",
+                    "Carbon Dioxide"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APOA-370",
+                "parameters": [
+                    "Ozone"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APOA-370",
+                    "Ozone"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APHA-370",
+                "parameters": [
+                    "Hydrocarbon"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APHA-370",
+                    "Hydrocarbon"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "CU-2",
+                "parameters": [
+                    "Ammonia"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "CU-2",
+                    "Ammonia"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "CU-1",
+                "parameters": [
+                    "Hydrogen Sulfide"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "CU-1",
+                    "Hydrogen Sulfide"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APOA-370",
+                "parameters": [
+                    "Ozone"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APOA-370",
+                    "Ozone"
                 ]
             },
             {
                 "category": "air",
                 "application": "emission",
                 "brands": "Turnkey Instruments UK",
-                "name": "DUSTMATE",
+                "name": "iGASair",
                 "parameters": [
-                    "PM 1"
+                    "Sulphur Dioxide (SO2)",
+                    "Nitrogen Oxides (NOx)",
+                    "Carbon Monoxide",
+                    "Carbon Dioxide",
+                    "Ozone",
+                    "Hydrogen Sulfide"
                 ],
                 "img": "assets/dummy/dustmate.png",
-                "description": "The ADMS BAM automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
                 "meta": [
                     "air",
-                    "DUSTMATE",
+                    "emission",
+                    "iGASair",
                     "Turnkey Instruments UK",
-                    "PM 1"
+                    "Sulphur Dioxide (SO2)",
+                    "Nitrogen Oxides (NOx)",
+                    "Carbon Monoxide",
+                    "Carbon Dioxide",
+                    "Ozone",
+                    "Hydrogen Sulfide"
+                ]
+            },
+            {
+                "category": "air",
+                "application": "emission",
+                "brands": "Horiba",
+                "name": "APNA-370",
+                "parameters": [
+                    "Sulphur Oxides (Nox)",
+                    "Ammonia"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Horiba automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "APNA-370",
+                    "Horiba",
+                    "Sulphur Oxides (Nox)",
+                    "Ammonia"
+                ]
+            },
+            {
+                "category": "gas",
+                "application": "emission",
+                "brands": "Uniphos",
+                "name": "Model (500DT) <small>Gas Code 099C</small>",
+                "parameters": [
+                    "Acetylene",
+                    "kam"
+                ],
+                "img": "assets/dummy/dustmate.png",
+                "description": "The Uniphos automatically measures and records airborne particulate concentration and conforms to equivalent USEPA methods.",
+                "meta": [
+                    "air",
+                    "emission",
+                    "Model 500DT",
+                    "Model (500DT) <small>Gas Code 099C</small>",
+                    "Uniphos",
+                    "Acetylene",
+                    "Gas Code 099C"
                 ]
             }
         ]

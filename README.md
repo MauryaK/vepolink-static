@@ -12,7 +12,7 @@ Vepolink provides real-time data acquisition, monitoring, reporting, and analysi
 
 - **Responsive Design**: Fully responsive layout optimized for desktop, tablet, and mobile devices
 - **Video Banner**: Auto-playing video banner with mobile optimization using `playsinline` and `webkit-playsinline`
-- **Interactive Solutions Showcase**: 
+- **Interactive Solutions Showcase**:
   - CAAQMS (Continuous Ambient Air Quality Monitoring System)
   - CEMS (Continuous Emission Monitoring System)
   - Flow & Level Monitoring
@@ -56,7 +56,7 @@ Vepolink HTML/
 
 - **HTML5**: Semantic markup
 - **CSS3/SASS**: Styling with CSS preprocessor
-- **JavaScript**: 
+- **JavaScript**:
   - jQuery v3.7.1 for DOM manipulation
   - Owl Carousel v2.3.4 for image/content carousels
 - **Responsive Design**: Mobile-first approach with custom breakpoints
@@ -83,6 +83,7 @@ The website uses custom SASS mixins for responsive design:
 ## 📄 Key Pages
 
 ### Main Pages
+
 - **Homepage** (`index.html`): Overview of solutions and features
 - **About** (`about.html`): Company information and mission
 - **Analytics** (`analytics.html`): Platform capabilities
@@ -93,6 +94,7 @@ The website uses custom SASS mixins for responsive design:
 - **Career** (`career.html`): Job opportunities
 
 ### Product Pages
+
 - Air Quality: `caaqms.html`, `cems.html`, `adms.html`, `airpointer.html`
 - Gas Detection: `gas-detection.html`, `gas-analyzers.html`, `dust-analyzers.html`
 - Water Monitoring: `rtwqms.html`, `extractive-aqualog.html`, `probes.html`
@@ -101,6 +103,7 @@ The website uses custom SASS mixins for responsive design:
 - Treatment: `sewage-treatment-plants.html`, `moving-bed-bio-reactor.html`
 
 ### Legal Pages
+
 - **Privacy Policy** (`privacy-policy.html`)
 - **Terms & Conditions** (`terms-and-conditions.html`)
 - **White List Policy** (`white-list-policy.html`)
@@ -108,12 +111,14 @@ The website uses custom SASS mixins for responsive design:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - A local web server (optional, for development)
 
 ### Installation
 
 1. **Clone or download the repository**
+
    ```bash
    git clone https://github.com/MauryaK/vepolink-static.git
    cd vepolink-static
@@ -122,13 +127,14 @@ The website uses custom SASS mixins for responsive design:
 2. **Open in browser**
    - Simply open `index.html` in your web browser
    - Or use a local server (recommended for development):
+
      ```bash
      # Using Python
      python -m http.server 8000
-     
+
      # Using Node.js
      npx serve
-     
+
      # Using PHP
      php -S localhost:8000
      ```
@@ -140,6 +146,7 @@ The website uses custom SASS mixins for responsive design:
 ## 🎥 Video Assets
 
 The homepage banner uses a video background (`assets/video/home-banner.mp4`) with the following optimizations:
+
 - `autoplay`: Starts playing automatically
 - `muted`: Required for autoplay in most browsers
 - `loop`: Continuous playback
@@ -154,6 +161,7 @@ The homepage banner uses a video background (`assets/video/home-banner.mp4`) wit
 If you're making changes to SASS files:
 
 1. **Install SASS compiler** (if not already installed)
+
    ```bash
    npm install -g sass
    ```
@@ -166,6 +174,7 @@ If you're making changes to SASS files:
 ### Modifying Styles
 
 Main SASS files are located in `assets/sass/`:
+
 - `style.sass`: Main stylesheet entry point
 - `header/_style.sass`: Header and navigation styles
 - `home/_style.sass`: Homepage-specific styles
@@ -174,18 +183,22 @@ Main SASS files are located in `assets/sass/`:
 ## 🔧 Configuration
 
 ### Header Navigation
+
 Edit the navigation links in each HTML file's header section:
+
 ```html
 <div class="nav">
-    <a href="find-product.html">Find Product</a>
-    <a href="analytics.html">Analytics</a>
-    <a href="complianceguidelines.html">Compliance Guidelines</a>
-    <a href="https://enviro.vepolink.com/" target="_blank">Login</a>
+  <a href="search-product.html">Find Product</a>
+  <a href="analytics.html">Analytics</a>
+  <a href="complianceguidelines.html">Compliance Guidelines</a>
+  <a href="https://enviro.vepolink.com/" target="_blank">Login</a>
 </div>
 ```
 
 ### Contact Information
+
 Update contact details in the footer section of HTML files:
+
 - Phone: +91-981-0416-132
 - Email: techsupport@vepolink.com, sales@vepolink.com
 - WhatsApp: Linked with pre-filled message
@@ -193,6 +206,7 @@ Update contact details in the footer section of HTML files:
 ## 📞 Support
 
 For technical support or inquiries:
+
 - **Email**: techsupport@vepolink.com
 - **Sales**: sales@vepolink.com
 - **Phone**: +91-981-0416-132
