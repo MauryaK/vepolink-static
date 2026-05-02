@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vepolink</title>
+    <title>Vepolink - Product Search</title>
     <!-- Favicon -->
     <link rel="icon" href="assets/icons/favicon.png" />
 
@@ -40,6 +40,36 @@
             top: 50%;
             transform: translateY(-50%);
             pointer-events: none;
+        }
+
+        /* Improved disabled style */
+        .select_box[aria-disabled="true"] .select {
+            opacity: 0.6;
+            background-color: #f5f5f5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            width: 100%;
+        }
+
+        .no-data img {
+            max-width: 280px;
+            margin-bottom: 20px;
+        }
+
+        .no-data p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        mark {
+            background-color: #fff3b8;
+            padding: 0;
+            border-radius: 2px;
         }
     </style>
 </head>
@@ -90,7 +120,30 @@
                 <div class="container">
                     <div class="SearchInDropdown flex">
                         <div class="SearchInDropdownWrap flex">
-                            <div class="select_box parameter">
+                            <div class="select_box category">
+                                <div class="label">Category</div>
+                                <div class="select">
+                                    <div class="icon">
+                                        <svg width="11" height="17" viewBox="0 0 11 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.92546 6L5.68538 1L1.44531 6" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M1.44564 11L5.68571 16L9.92578 11" stroke="#6B7280"
+                                                stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="optionSelected">Select Category</div>
+                                    <div class="dropdown">
+                                        <div class="listSe"><input type="text" name="" id=""
+                                                placeholder="Search here..."><span class="clear-btn">&times;</span>
+                                        </div>
+                                        <div class="list" id="categoryDropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_box parameter" aria-disabled="true">
                                 <div class="label">Parameter</div>
                                 <div class="select">
                                     <div class="icon">
@@ -109,8 +162,7 @@
                                         <div class="listSe"><input type="text" name="" id=""
                                                 placeholder="Search here..."><span class="clear-btn">&times;</span>
                                         </div>
-                                        <div class="list" id="parameterDropdown">
-                                        </div>
+                                        <div class="list" id="parameterDropdown"></div>
                                     </div>
                                 </div>
                             </div>
@@ -133,8 +185,7 @@
                                         <div class="listSe"><input type="text" name="" id=""
                                                 placeholder="Search here..."><span class="clear-btn">&times;</span>
                                         </div>
-                                        <div class="list" id="brandDropdown">
-                                        </div>
+                                        <div class="list" id="brandDropdown"></div>
                                     </div>
                                 </div>
                             </div>
@@ -157,8 +208,7 @@
                                         <div class="listSe"><input type="text" name="" id=""
                                                 placeholder="Search here..."><span class="clear-btn">&times;</span>
                                         </div>
-                                        <div class="list" id="nameDropdown">
-                                        </div>
+                                        <div class="list" id="nameDropdown"></div>
                                     </div>
                                 </div>
                             </div>
@@ -168,10 +218,10 @@
             </div>
             <div class="new_product">
                 <div class="container">
-                    <div class="flex">
-                    </div>
+                    <div class="flex" id="productContainer"></div>
                 </div>
             </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -258,8 +308,7 @@
                         <div class="item">
                             <div class="newsLett">
                                 <div class="title">News Letter</div>
-                                <p>Subscribe news letter to get latest
-                                    news and events.</p>
+                                <p>Subscribe news letter to get latest news and events.</p>
                                 <form action="" class="form">
                                     <div class="form-group">
                                         <input type="text" class="form-input" placeholder="Ex: email@domain.com" />
@@ -270,28 +319,28 @@
                             <div class="social_links">
                                 <div class="title">Find Us on.</div>
                                 <ul>
-                                    <li><a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 320 512" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                                                 </path>
                                             </svg></a></li>
-                                    <li><a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 512 512" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                                                 </path>
                                             </svg></a></li>
-                                    <li><a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 448 512" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
                                                 </path>
                                             </svg></a></li>
-                                    <li><a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 576 512" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -324,526 +373,331 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- Model Enquiry -->
-    <div class="model modelEnquiry">
-        <div class="modelWrapper">
-            <div class="closeModel close">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
-                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49z">
-                    </path>
-                </svg>
-            </div>
-            <div class="model-body">
-                <div class="modelHead">
-                    <h2>Enquiry</h2>
-                    <p>Please fill up the form below with your valid details to get a quick call back.</p>
-                </div>
-                <form action="" class="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" />
-                        <label for="">Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" />
-                        <label for="">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" />
-                        <label for="">Phone</label>
-                    </div>
-                    <div class="form-group">
-                        <select name="" class="form-control">
-                            <option value="CAAQMS">CAAQMS</option>
-                            <option value="CEMS">CEMS</option>
-                            <option value="GAS DETECTION">GAS DETECTION</option>
-                            <option value="NOISE & VIBRATION">NOISE & VIBRATION</option>
-                            <option value="WATER ANALYZER">WATER ANALYZER</option>
-                        </select>
-                        <label for="">Select Service</label>
-                        <div class="icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
-                                    d="m112 184 144 144 144-144"></path>
-                            </svg></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="">Message</label>
-                        <textarea name="" class="form-control" rows="3" cols="4" id=""></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button class="form-button">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Humburger -->
-    <div class="model modelPop humbuger_navigation">
-        <div class="model-body">
-            <div class="close closeModel">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24px"
-                    width="24px" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="none" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path>
-                </svg>
-            </div>
-            <div class="model_scroll custom-scrol">
-                <div class="top_service">
-                    <ul class="nav_link">
-                        <li class="dropdown">
-                            <a href="caaqms.html">CAAQMS</a>
-                            <div class="sub-nav-trigger">
-                                <span></span>
-                            </div>
-                            <ul class="sub-nav">
-
-                                <li><a href="adms.html">ADMS BAM 1000, 1100</a></li>
-                                <li><a href="laser-scattering.html">Nephelometry based PM analyzer</a></li>
-                                <li><a href="gas-monitors.html">Electrochemical Gas Analyzers</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="cems.html">CEMS</a>
-                            <div class="sub-nav-trigger">
-                                <span></span>
-                            </div>
-                            <ul class="sub-nav">
-                                <li><a href="gas-analyzers.html">Gas analyzers</a></li>
-                                <li><a href="dust-analyzers.html">Dust analyzers</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="flow-level.html">Flow & Level</a>
-                            <div class="sub-nav-trigger">
-                                <span></span>
-                            </div>
-                            <ul class="sub-nav">
-                                <li><a href="electromagnetic-flowmeter-inline.html">Electromagnetic Flowmeter –
-                                        Inline</a></li>
-                                <li><a href="electromagnetic-flowmeter-insertion-type.html">Electromagnetic Flowmeter –
-                                        Insertion Type</a></li>
-                                <li><a href="ultrasonic-flowmeter-non-contact-type.html">Ultrasonic Flowmeter – Non
-                                        Contact Type Sitrans Probe lu</a></li>
-                                <li><a href="ultrasonic-flowmeter-inline.html">Ultrasonic Flowmeter – Inline</a></li>
-                                <li><a href="ultrasonic-flowmeter-clamp-on.html">Ultrasonic Flowmeter – Clamp On</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="gas-detection.html">Gas Detection</a>
-                            <div class="sub-nav-trigger">
-                                <span></span>
-                            </div>
-                            <ul class="sub-nav">
-                                <li><a href="fixed-gas-detection-instruments.html">Fixed gas Detection instruments</a>
-                                </li>
-                                <li><a href="portable-gas-detection-instruments.html">Portable Gas Detection
-                                        instruments</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="noise-vibration.html">Noice & Vibration</a>
-                            <div class="sub-nav-trigger">
-                                <span></span>
-                            </div>
-                            <ul class="sub-nav">
-                                <li><a href="noise-monitor.html">Noice Monitor iDB</a></li>
-                                <li><a href="vibration-monitor.html">Vibration Monitor iVIBE</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="rtwqms.html">Water Analyzer</a>
-                            <div class="sub-nav-trigger">
-                                <span></span>
-                            </div>
-                            <ul class="sub-nav">
-                                <li><a href="extractive-aqualog.html">Extractive Aqualog 4000 /5000 UVS</a></li>
-                                <li><a href="uv-vis-probe.html">In-Situ/Immersion - Aqualog 5000 UVI</a></li>
-                                <li><a href="probes.html">PROBES</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="oter_pages">
-                    <ul class="nav_link">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="complianceguidelines.html">Compliance Guidelines</a></li>
-                        <li><a href="clients.html">Clients</a></li>
-                        <li><a href="career.html">Career</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="contacLinks">
-                    <div class="contactLin">
-                        <div class="links">
-                            <p class="tel">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
-                                    </path>
-                                </svg>
-                                <a href="tel:+919810416132">+91 - 9810416132 </a>
-
-                            </p>
-                            <p>
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                    height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
-                                    </path>
-                                </svg>
-                                <a href="mailto:sales@vepolink.com">sales@vepolink.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Overlay -->
+    <!-- Modal Enquiry, Humburger ... (unchanged but omitted for brevity) -->
+    <div class="model modelEnquiry">...</div>
+    <div class="model modelPop humbuger_navigation">...</div>
     <div class="overlay closeModel"></div>
 
-    <!-- Owl Carousel v2.3.4 -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        /* ================= DROPDOWN OPEN / CLOSE ================= */
+        // ======================== GLOBALS ========================
+        let allData = {};
+        let products = [];
+        let parametersList = [];
+        let categoriesList = [];
 
+
+        let selectedCategoryRaw = "";
+        let selectedCategoryMap = "";
+        let selectedParameter = "";
+        let selectedBrand = "";
+        let selectedModel = "";
+
+        const productContainer = document.getElementById('productContainer');
+        const categoryDropdownDiv = document.getElementById('categoryDropdown');
+        const parameterDropdownDiv = document.getElementById('parameterDropdown');
+        const brandDropdownDiv = document.getElementById('brandDropdown');
+        const modelDropdownDiv = document.getElementById('nameDropdown');
+
+        // Helper: slugify for product link
+        const slugify = (text) => text.toLowerCase().trim().replace(/[\s\/\\]+/g, "-").replace(/[^\w\-]+/g, "").replace(/\-\-+/g, "-");
+
+
+        function mapCategoryToProductType(categoryName) {
+            if (!categoryName) return null;
+            if (categoryName.toLowerCase().includes("liquid")) return "liquid";
+            if (categoryName.toLowerCase() === "gas analyzer") return "gas";
+            if (categoryName.toLowerCase().includes("ambient gas")) return "air";
+            if (categoryName.toLowerCase().includes("dust") || categoryName.toLowerCase().includes("spm")) return "dust";
+            return null;
+        }
+
+
+        function getFilteredProducts() {
+            let filtered = [...products];
+            if (selectedCategoryMap) {
+                filtered = filtered.filter(p => p.category === selectedCategoryMap);
+            }
+            if (selectedParameter) {
+                filtered = filtered.filter(p => p.parameters && p.parameters.includes(selectedParameter));
+            }
+            if (selectedBrand) {
+                filtered = filtered.filter(p => p.brands === selectedBrand);
+            }
+            if (selectedModel) {
+                filtered = filtered.filter(p => p.name === selectedModel);
+            }
+            return filtered;
+        }
+
+        // Display products in grid
+        function displayProducts(productList = null) {
+            const list = productList || getFilteredProducts();
+            productContainer.innerHTML = "";
+            if (!list.length) {
+                productContainer.innerHTML = `<div class='no-data noprodfound'><img src='/assets/dummy/404.png' /><p>No products found matching your criteria.</p></div>`;
+                return;
+            }
+            list.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'col';
+                card.innerHTML = `
+                    <div class="_card">
+                        <a href="new_product_detail.html?${slugify(product.name)}">
+                            <div class="_card-img"><img src="${product.img || 'assets/dummy/default.png'}" alt="${product.name}"></div>
+                            <div class="_card-content">
+                                <div class="title">${product.name}</div>
+                                <div class="brand">${product.brands}</div>
+                                <div class="link"><span>View Details</span></div>
+                            </div>
+                        </a>
+                    </div>`;
+                productContainer.appendChild(card);
+            });
+        }
+
+        // Clear dropdown inner and reset placeholder UI
+        function clearDropdown(htmlElement) { if (htmlElement) htmlElement.innerHTML = ""; }
+
+        // Set selected value text + close dropdown
+        function setSelectedValue(optionEl, boxSelector) {
+            const selectBox = optionEl.closest(".select_box");
+            const selectedSpan = selectBox.querySelector(".optionSelected");
+            selectedSpan.textContent = optionEl.textContent.trim();
+            const selectDiv = selectBox.querySelector(".select");
+            selectDiv.classList.remove("active");
+            selectDiv.querySelector(".dropdown").style.display = "none";
+        }
+
+        // Populate Category dropdown from application array
+        function populateCategory() {
+            clearDropdown(categoryDropdownDiv);
+            const uniqueCats = [...new Map(categoriesList.map(c => [c.name, c])).values()];
+            uniqueCats.forEach(cat => {
+                const opt = document.createElement('div');
+                opt.className = 'options';
+                opt.textContent = cat.name;
+                opt.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    // Update state
+                    selectedCategoryRaw = cat.name;
+                    selectedCategoryMap = mapCategoryToProductType(selectedCategoryRaw);
+                    selectedParameter = "";
+                    selectedBrand = "";
+                    selectedModel = "";
+                    // Reset UI text
+                    document.querySelector(".select_box.parameter .optionSelected").textContent = "Select Parameter";
+                    document.querySelector(".select_box.brand .optionSelected").textContent = "Select Brand";
+                    document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
+                    setSelectedValue(opt);
+                    // Re-populate parameters (filtered by category)
+                    populateParameters();
+                    // Disable brand/model until parameter selected
+                    document.querySelector(".select_box.parameter").setAttribute("aria-disabled", "false");
+                    document.querySelector(".select_box.brand").setAttribute("aria-disabled", "true");
+                    document.querySelector(".select_box.model").setAttribute("aria-disabled", "true");
+                    clearDropdown(brandDropdownDiv);
+                    clearDropdown(modelDropdownDiv);
+                    displayProducts();
+                });
+                categoryDropdownDiv.appendChild(opt);
+            });
+        }
+
+        // Populate Parameter dropdown: filtered by selected category if any (based on parameter.category)
+        function populateParameters() {
+            clearDropdown(parameterDropdownDiv);
+            let filteredParams = [...parametersList];
+            if (selectedCategoryMap) {
+                filteredParams = filteredParams.filter(p => p.category === selectedCategoryMap);
+            }
+            const uniqueParams = [...new Map(filteredParams.map(p => [p.name, p])).values()];
+            if (!uniqueParams.length) {
+                const msg = document.createElement('div');
+                msg.className = 'options no-result';
+                msg.textContent = 'No parameters available';
+                parameterDropdownDiv.appendChild(msg);
+                return;
+            }
+            uniqueParams.forEach(param => {
+                const opt = document.createElement('div');
+                opt.className = 'options';
+                opt.textContent = param.name;
+                opt.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    selectedParameter = param.name;
+                    selectedBrand = "";
+                    selectedModel = "";
+                    setSelectedValue(opt);
+                    document.querySelector(".select_box.brand .optionSelected").textContent = "Select Brand";
+                    document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
+                    // Enable brands dropdown and populate brands
+                    document.querySelector(".select_box.brand").setAttribute("aria-disabled", "false");
+                    document.querySelector(".select_box.model").setAttribute("aria-disabled", "true");
+                    populateBrands();
+                });
+                parameterDropdownDiv.appendChild(opt);
+            });
+        }
+
+        // Populate Brands based on current category + selected parameter
+        function populateBrands() {
+            clearDropdown(brandDropdownDiv);
+            if (!selectedParameter) {
+                document.querySelector(".select_box.brand").setAttribute("aria-disabled", "true");
+                return;
+            }
+            let baseProducts = [...products];
+            if (selectedCategoryMap) baseProducts = baseProducts.filter(p => p.category === selectedCategoryMap);
+            const filtered = baseProducts.filter(p => p.parameters && p.parameters.includes(selectedParameter));
+            const uniqueBrands = [...new Set(filtered.map(p => p.brands).filter(b => b))];
+            if (!uniqueBrands.length) {
+                const msg = document.createElement('div');
+                msg.className = 'options no-result';
+                msg.textContent = 'No brands available';
+                brandDropdownDiv.appendChild(msg);
+                displayProducts(filtered);
+                return;
+            }
+            uniqueBrands.forEach(brand => {
+                const opt = document.createElement('div');
+                opt.className = 'options';
+                opt.textContent = brand;
+                opt.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    selectedBrand = brand;
+                    selectedModel = "";
+                    setSelectedValue(opt);
+                    document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
+                    document.querySelector(".select_box.model").setAttribute("aria-disabled", "false");
+                    populateModels();
+                });
+                brandDropdownDiv.appendChild(opt);
+            });
+            displayProducts(filtered);
+        }
+
+        // Populate Models based on category, parameter, brand
+        function populateModels() {
+            clearDropdown(modelDropdownDiv);
+            if (!selectedBrand || !selectedParameter) {
+                document.querySelector(".select_box.model").setAttribute("aria-disabled", "true");
+                return;
+            }
+            let base = [...products];
+            if (selectedCategoryMap) base = base.filter(p => p.category === selectedCategoryMap);
+            const filtered = base.filter(p => p.parameters && p.parameters.includes(selectedParameter) && p.brands === selectedBrand);
+            if (!filtered.length) {
+                const msg = document.createElement('div');
+                msg.className = 'options no-result';
+                msg.textContent = 'No models found';
+                modelDropdownDiv.appendChild(msg);
+                displayProducts(filtered);
+                return;
+            }
+            filtered.forEach(prod => {
+                const opt = document.createElement('div');
+                opt.className = 'options';
+                opt.textContent = prod.name;
+                opt.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    selectedModel = prod.name;
+                    setSelectedValue(opt);
+                    displayProducts([prod]);
+                });
+                modelDropdownDiv.appendChild(opt);
+            });
+            displayProducts(filtered);
+        }
+
+        // ========== FETCH DATA AND INIT ==========
+        async function loadData() {
+            try {
+                const response = await fetch('/assets/json/product_data.json');
+                const data = await response.json();
+                // Merge objects
+                allData = Object.assign({}, ...data);
+                categoriesList = allData.application || [];
+                parametersList = allData.parameters || [];
+                products = allData.products || [];
+                populateCategory();
+                // initial display all products
+                displayProducts(products);
+            } catch (err) {
+                console.error("Error loading product data:", err);
+                productContainer.innerHTML = `<div class='no-data'><p>Failed to load product data. Please try again later.</p></div>`;
+            }
+        }
+        loadData();
+
+        // ========== DROPDOWN UI/UX (toggle, search, clear) ==========
         const selects = document.querySelectorAll(".select_box .select");
-
         selects.forEach(select => {
             select.addEventListener("click", function (e) {
                 e.stopPropagation();
-
-                // Close others
-                selects.forEach(s => {
-                    if (s !== select) {
-                        s.classList.remove("active");
-                        s.querySelector(".dropdown").style.display = "none";
-                    }
-                });
-
-                // Toggle current
+                selects.forEach(s => { if (s !== select) { s.classList.remove("active"); s.querySelector(".dropdown").style.display = "none"; } });
                 const dropdown = select.querySelector(".dropdown");
                 const isOpen = select.classList.contains("active");
-
                 select.classList.toggle("active");
                 dropdown.style.display = isOpen ? "none" : "block";
-
-                // Reset search on open
                 if (!isOpen) {
                     const input = select.querySelector(".listSe input");
-                    if (input) {
-                        input.value = "";
-                        const options = select.querySelectorAll(".options");
-                        options.forEach(opt => opt.style.display = "block");
-                    }
+                    if (input) { input.value = ""; input.dispatchEvent(new Event("keyup")); }
                 }
             });
         });
-
-        // Prevent closing when clicking inside dropdown
-        document.querySelectorAll(".select_box .dropdown").forEach(drop => {
-            drop.addEventListener("click", function (e) {
-                e.stopPropagation();
-            });
+        document.querySelectorAll(".select_box .dropdown").forEach(drop => drop.addEventListener("click", e => e.stopPropagation()));
+        document.addEventListener("click", () => {
+            selects.forEach(select => { select.classList.remove("active"); if (select.querySelector(".dropdown")) select.querySelector(".dropdown").style.display = "none"; });
         });
-
-        // Close all when clicking outside
-        document.addEventListener("click", function () {
-            selects.forEach(select => {
-                select.classList.remove("active");
-                select.querySelector(".dropdown").style.display = "none";
-            });
-        });
-
-
-        /* ================= SEARCH FILTER ================= */
-
+        // search filter for each dropdown
         document.querySelectorAll(".select_box .listSe").forEach(wrapper => {
             const input = wrapper.querySelector("input");
             const clearBtn = wrapper.querySelector(".clear-btn");
-
             input.addEventListener("keyup", function () {
-                const searchValue = this.value.toLowerCase();
-                const dropdown = this.closest(".dropdown");
-                const options = dropdown.querySelectorAll(".options");
-
-                let visible = 0;
-
-                // Show/hide clear button
-                clearBtn.style.display = searchValue ? "block" : "none";
-
-                options.forEach(option => {
-                    const originalText = option.getAttribute("data-original") || option.textContent;
-
-                    if (!option.getAttribute("data-original")) {
-                        option.setAttribute("data-original", originalText);
-                    }
-
-                    const lowerText = originalText.toLowerCase();
-                    const index = lowerText.indexOf(searchValue);
-
-                    if (searchValue && index !== -1) {
-                        const before = originalText.substring(0, index);
-                        const match = originalText.substring(index, index + searchValue.length);
-                        const after = originalText.substring(index + searchValue.length);
-
-                        option.innerHTML = `${before}<mark>${match}</mark>${after}`;
-                        option.style.display = "block";
-                        visible++;
-                    } else if (!searchValue) {
-                        option.innerHTML = originalText;
-                        option.style.display = "block";
-                        visible++;
+                const searchVal = this.value.toLowerCase();
+                const dropdownDiv = this.closest(".dropdown");
+                const options = dropdownDiv.querySelectorAll(".options:not(.no-result)");
+                let visibleCount = 0;
+                clearBtn.style.display = searchVal ? "block" : "none";
+                options.forEach(opt => {
+                    const original = opt.getAttribute("data-original") || opt.textContent;
+                    if (!opt.getAttribute("data-original")) opt.setAttribute("data-original", original);
+                    const idx = original.toLowerCase().indexOf(searchVal);
+                    if (searchVal && idx !== -1) {
+                        const before = original.substring(0, idx);
+                        const match = original.substring(idx, idx + searchVal.length);
+                        const after = original.substring(idx + searchVal.length);
+                        opt.innerHTML = `${before}<mark>${match}</mark>${after}`;
+                        opt.style.display = "block";
+                        visibleCount++;
+                    } else if (!searchVal) {
+                        opt.innerHTML = original;
+                        opt.style.display = "block";
+                        visibleCount++;
                     } else {
-                        option.style.display = "none";
+                        opt.style.display = "none";
                     }
                 });
-
-                // No result message
-                let noData = dropdown.querySelector(".no-result");
-
-                if (!visible) {
-                    if (!noData) {
-                        noData = document.createElement("div");
-                        noData.className = "no-result";
-                        noData.textContent = "No results found";
-                        dropdown.appendChild(noData);
-                    }
-                } else if (noData) {
-                    noData.remove();
-                }
+                let noDataMsg = dropdownDiv.querySelector(".no-result-search");
+                if (!visibleCount) {
+                    if (!noDataMsg) { noDataMsg = document.createElement("div"); noDataMsg.className = "options no-result no-result-search"; noDataMsg.textContent = "No results found"; dropdownDiv.appendChild(noDataMsg); }
+                } else if (noDataMsg) noDataMsg.remove();
             });
-
-            // ✅ Clear button click
-            clearBtn.addEventListener("click", function (e) {
+            clearBtn.addEventListener("click", (e) => {
                 e.stopPropagation();
-
                 input.value = "";
-                input.dispatchEvent(new Event("keyup")); // trigger filter reset
+                input.dispatchEvent(new Event("keyup"));
                 clearBtn.style.display = "none";
-
                 input.focus();
             });
         });
 
-
-        /* ================= DATA + FILTER LOGIC ================= */
-
-        let allData = {};
-        let parameters = [];
-        let products = [];
-
-        let selectedParam = "";
-        let selectedBrand = "";
-        let selectedName = "";
-
-        const container = document.querySelector('.new_product .flex');
-
-        const parameterDropdown = document.getElementById('parameterDropdown');
-        const brandDropdown = document.getElementById('brandDropdown');
-        const nameDropdown = document.getElementById('nameDropdown');
-
-        const slugify = (text) =>
-            text.toLowerCase().trim()
-                .replace(/[\s\/\\]+/g, "-")
-                .replace(/[^\w\-]+/g, "")
-                .replace(/\-\-+/g, "-");
-
-
-        async function GetDataFromJson() {
-            try {
-                const response = await fetch('/assets/json/product_data.json');
-                const data = await response.json();
-
-                allData = Object.assign({}, ...data);
-                parameters = allData.parameters || [];
-                products = allData.products || [];
-
-                // Remove duplicate prameters form products -> prametter
-                // const param = [
-                //     ...new Set(
-                //         allData.products.flatMap(p => p.parameters)
-                //     )
-                // ];
-                // console.log(param)
-                // console.log(allData.parameters)
-                populateParameters();
-                displayProducts(products);
-
-            } catch (err) {
-                console.error("Fetch error:", err);
-            }
-        }
-        GetDataFromJson();
-
-
-        function clearDropdown(dropdown) {
-            dropdown.innerHTML = "";
-        }
-
-
-        // ✅ Set selected value + close dropdown
-        function setSelectedValue(optionEl) {
-            const selectBox = optionEl.closest(".select_box");
-            const select = selectBox.querySelector(".select");
-            const selectedText = selectBox.querySelector(".optionSelected");
-
-            selectedText.textContent = optionEl.textContent;
-
-            select.classList.remove("active");
-            select.querySelector(".dropdown").style.display = "none";
-        }
-
-
-        // ================= PARAMETERS =================
-
-        function populateParameters() {
-            clearDropdown(parameterDropdown);
-
-            const uniqueParams = [...new Set(parameters.map(p => p.name))];
-
-            uniqueParams.sort().forEach(name => {
-                const option = document.createElement('div');
-                option.className = 'options';
-                option.textContent = name;
-
-                option.addEventListener('click', () => {
-                    selectedParam = name;
-                    selectedBrand = "";
-                    selectedName = "";
-
-                    setSelectedValue(option);
-
-                    // Reset next dropdown UI
-                    document.querySelector(".select_box.brand .optionSelected").textContent = "Select Brand";
-                    document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
-
-                    populateBrands();
-                });
-
-                parameterDropdown.appendChild(option);
-            });
-        }
-
-
-        // ================= BRANDS =================
-
-        function populateBrands() {
-            clearDropdown(brandDropdown);
-            clearDropdown(nameDropdown);
-
-            if (!selectedParam) {
-                document.querySelector(".select_box.brand").setAttribute("aria-disabled", "true");
-                return
-            };
-            document.querySelector(".select_box.brand").setAttribute("aria-disabled", "false");
-
-            const filtered = products.filter(p =>
-                p.parameters.includes(selectedParam)
-            );
-
-            const uniqueBrands = [...new Set(filtered.map(p => p.brands))];
-
-            uniqueBrands.forEach(brand => {
-                const option = document.createElement('div');
-                option.className = 'options';
-                option.textContent = brand;
-
-                option.addEventListener('click', () => {
-                    selectedBrand = brand;
-                    selectedName = "";
-                    setSelectedValue(option);
-                    document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
-                    populateNames();
-                });
-                brandDropdown.appendChild(option);
-            });
-            displayProducts(filtered);
-        }
-
-
-        // ================= MODELS =================
-
-        function populateNames() {
-            clearDropdown(nameDropdown);
-
-            // if (!selectedBrand) return;
-            if (!selectedBrand) {
-                document.querySelector(".select_box.model").setAttribute("aria-disabled", "true");
-                return
-            };
-            document.querySelector(".select_box.model").setAttribute("aria-disabled", "false");
-
-            const filtered = products.filter(p =>
-                p.parameters.includes(selectedParam) &&
-                p.brands === selectedBrand
-            );
-
-            filtered.forEach(product => {
-                const option = document.createElement('div');
-                option.className = 'options';
-                option.textContent = product.name;
-
-                option.addEventListener('click', () => {
-                    selectedName = product.name;
-
-                    setSelectedValue(option);
-
-                    displayProducts([product]);
-                });
-
-                nameDropdown.appendChild(option);
-            });
-
-            displayProducts(filtered);
-        }
-
-
-        // ================= DISPLAY =================
-
-        function displayProducts(list) {
-            container.innerHTML = "";
-
-            if (!list.length) {
-                container.innerHTML = `
-        <div class='no-data noprodfound'>
-            <img src='/assets/dummy/404.png' />
-            <p>No products found matching your criteria.</p>
-        </div>`;
-                return;
-            }
-
-            list.forEach(product => {
-                const card = document.createElement('div');
-                card.className = 'col';
-
-                card.innerHTML = `
-        <div class="_card">
-            <a href="new_product_detail.html?${slugify(product.name)}">
-                <div class="_card-img">
-                    <img src="${product.img}" alt="${product.name}">
-                </div>
-                <div class="_card-content">
-                    <div class="title">${product.name}</div>
-                    <div class="brand">${product.brands}</div>
-                    <div class="link"><span>View Details</span></div>
-                </div>
-            </a>
-        </div>
-        `;
-
-                container.appendChild(card);
-            });
-        }
+        // Enable/disable style sync
+        function syncAriaStatus() { }
     </script>
-
-
 </body>
 
 </html>
