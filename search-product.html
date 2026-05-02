@@ -459,7 +459,12 @@
         }
 
         // Clear dropdown inner and reset placeholder UI
-        function clearDropdown(htmlElement) { if (htmlElement) htmlElement.innerHTML = ""; }
+        function clearDropdown(htmlElement) {
+            if (htmlElement) {
+                console.log(htmlElement)
+                htmlElement.innerHTML = ""
+            };
+        }
 
         // Set selected value text + close dropdown
         function setSelectedValue(optionEl, boxSelector) {
@@ -481,18 +486,17 @@
                 opt.textContent = cat.name;
                 opt.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    // Update state
                     selectedCategoryRaw = cat.name;
                     selectedCategoryMap = mapCategoryToProductType(selectedCategoryRaw);
                     selectedParameter = "";
                     selectedBrand = "";
                     selectedModel = "";
-                    // Reset UI text
+                    // Reset
                     document.querySelector(".select_box.parameter .optionSelected").textContent = "Select Parameter";
                     document.querySelector(".select_box.brand .optionSelected").textContent = "Select Brand";
                     document.querySelector(".select_box.model .optionSelected").textContent = "Select Model";
                     setSelectedValue(opt);
-                    // Re-populate parameters (filtered by category)
+                    // Re-populate parameters
                     populateParameters();
                     // Disable brand/model until parameter selected
                     document.querySelector(".select_box.parameter").setAttribute("aria-disabled", "false");
@@ -579,7 +583,7 @@
             displayProducts(filtered);
         }
 
-        // Populate Models based on category, parameter, brand
+        // Populate Data based on category, parameter, brand
         function populateModels() {
             clearDropdown(modelDropdownDiv);
             if (!selectedBrand || !selectedParameter) {
@@ -617,13 +621,12 @@
             try {
                 const response = await fetch('/assets/json/product_data.json');
                 const data = await response.json();
-                // Merge objects
                 allData = Object.assign({}, ...data);
                 categoriesList = allData.application || [];
                 parametersList = allData.parameters || [];
                 products = allData.products || [];
                 populateCategory();
-                // initial display all products
+                // display all products
                 displayProducts(products);
             } catch (err) {
                 console.error("Error loading product data:", err);
@@ -632,7 +635,7 @@
         }
         loadData();
 
-        // ========== DROPDOWN UI/UX (toggle, search, clear) ==========
+        // ========== DROPDOWN ==========
         const selects = document.querySelectorAll(".select_box .select");
         selects.forEach(select => {
             select.addEventListener("click", function (e) {
@@ -652,7 +655,7 @@
         document.addEventListener("click", () => {
             selects.forEach(select => { select.classList.remove("active"); if (select.querySelector(".dropdown")) select.querySelector(".dropdown").style.display = "none"; });
         });
-        // search filter for each dropdown
+        // search filter
         document.querySelectorAll(".select_box .listSe").forEach(wrapper => {
             const input = wrapper.querySelector("input");
             const clearBtn = wrapper.querySelector(".clear-btn");
@@ -695,8 +698,6 @@
             });
         });
 
-        // Enable/disable style sync
-        function syncAriaStatus() { }
     </script>
 </body>
 
