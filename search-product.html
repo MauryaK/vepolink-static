@@ -373,7 +373,7 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- Modal Enquiry, Humburger ... (unchanged but omitted for brevity) -->
+    <!-- Modal Enquiry, Humburger -->
     <div class="model modelEnquiry">...</div>
     <div class="model modelPop humbuger_navigation">...</div>
     <div class="overlay closeModel"></div>
@@ -444,8 +444,8 @@
                 const card = document.createElement('div');
                 card.className = 'col';
                 card.innerHTML = `
-                    <div class="_card">
-                        <a href="new_product_detail.html?${slugify(product.name)}">
+                    <div class="_card" data-link="${slugify(product.name)}">
+                        <a href="new_product_detail.html?${slugify(product.name)}" title="${product.name}">
                             <div class="_card-img"><img src="${product.img || 'assets/dummy/default.png'}" alt="${product.name}"></div>
                             <div class="_card-content">
                                 <div class="title">${product.name}</div>
@@ -461,7 +461,6 @@
         // Clear dropdown inner and reset placeholder UI
         function clearDropdown(htmlElement) {
             if (htmlElement) {
-                console.log(htmlElement)
                 htmlElement.innerHTML = ""
             };
         }
